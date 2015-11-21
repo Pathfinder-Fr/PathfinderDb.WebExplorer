@@ -1,0 +1,83 @@
+﻿@model DbBrowser.Models.FeatIndexViewModel
+
+@section SideBar {
+    @Html.Partial("FeatNav", this.Model)
+}
+
+@section Scripts {
+    <script type="text/javascript">
+        var arrayItemSeparator = '@ArrayExtensions.ArrayItemSeparator';
+        var arrayItemValueSeparator = '@ArrayExtensions.ArrayItemValueSeparator';
+
+        $(function () {
+            $("#addClass").bind('click', function () {
+                var container = $("#addClassGroup");
+                var newName = $("#addClassName").val();
+                var classLevelInput = $("#addClassLevel");
+                var newLevel = parseInt(classLevelInput.val());
+
+                if (isNaN(newLevel)) {
+                    container.addClass("error");
+                    classLevelInput.tooltip({ title: "La niveau doit être un nombre", trigger: "manual" }).tooltip('show');
+                    return;
+                }
+
+                container.removeClass("error");
+                classLevelInput.tooltip('destroy');
+
+                var input = $("#addClassLevels");
+
+                var val = input.val();
+                var classLevels = val.split(arrayItemSeparator);
+                if (val == "") classLevels = [];
+
+                var newVal = [];
+                var found = false;
+                for (var i = 0; i < classLevels.length; i++) {
+                    var level = classLevels[i];
+                    var args = level.split(arrayItemValueSeparator);
+                    var name = args[0];
+                    var int = parseInt(args[1]);
+
+                    if (newName == name) {
+                        found = true;
+                        if (newLevel != 0) {
+                            int = newLevel;
+                            newVal.push(name + arrayItemValueSeparator + newLevel);
+                        }
+                    }
+                    else {
+                        newVal.push(level);
+                    }
+                }
+                if (!found) {
+                    newVal.push(newName + arrayItemValueSeparator + newLevel);
+                }
+
+                input.val(newVal.join(arrayItemSeparator));
+
+                $("#addClassForm").submit();
+            });
+        });
+    </script>
+}
+
+<div class="btn-toolbar pull-right">
+    <div class="btn-group">
+        <a class="btn  btn-small @Model.Query.ViewModeState("", "disabled")" href="@Url.Action("Index", "Feat", Model.Query.Clone().WithViewMode(null).AsRouteValue())" title="vue liste">
+            <i class="icon-align-justify"></i></a>
+        <a class="btn btn-small @Model.Query.ViewModeState("tab", "disabled")" href="@Url.Action("Index", "Feat", Model.Query.Clone().WithViewMode("Tab").AsRouteValue())" title="vue tableau">
+            <i class="icon-th"></i></a>
+    </div>
+</div>
+<h1>Dons <small class="">@Model.Feats.Count()</small></h1>
+<hr />
+
+@if (this.Model.Query.ViewMode == "Tab")
+{
+    @Html.Partial("FeatTab", this.Model)   
+}
+else
+{
+    @Html.Partial("FeatDetail", this.Model)   
+}

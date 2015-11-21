@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xml:lang="fr-FR" xmlns="urn:pathfinderDb">
+  <sources>
+    <source id="paizoBlog" />
+  </sources>
+  <spells>
+    <spell id="breeze" school="evocation" descriptor="air">
+      <source id="paizoBlog">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brise.ashx">Wiki Pathfinder-fr.org</reference>
+          <reference href="http://www.regles-pathfinder.fr/Brise.html">DRP Black-Book-Éditions</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;download_id=138">Page téléchargement BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Wiki/GetFile.aspx?File=/ADJ/Pathfinder-RPG/UMToursDeMagie.pdf">Téléchargement Pathfinder-fr.org</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;actu_id=398">Annonce BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Blog/post/Un-coup-de-baguette-magique.aspx">Annonce Pathfinder-fr.org</reference>
+          <reference xml:lang="en-US" href="http://paizo.com/pathfinderRPG/prd/spells/breeze.html#_breeze">Paizo PRD</reference>
+        </references>
+      </source>
+      <localization>
+        <language sourceId="pfrpg" xml:lang="en-US">
+          <entry href="name">Breeze</entry>
+        </language>
+      </localization>
+      <name>Brise</name>
+      <levels>
+        <level list="sorcerer-wizard" level="0" />
+      </levels>
+      <components kinds="V S M">un éventail miniature</components>
+      <range unit="close" />
+      <target>une créature ou un objet</target>
+      <castingTime value="1" />
+      <savingThrow target="will" effect="negates" />
+      <spellResistance resist="true" />
+      <summary />
+    </spell>
+    <spell id="jolt" school="transmutation" descriptor="electricity">
+      <source id="paizoBlog">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Choc.ashx">Wiki Pathfinder-fr.org</reference>
+          <reference href="http://www.regles-pathfinder.fr/Choc.html">DRP Black-Book-Éditions</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;download_id=138">Page téléchargement BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Wiki/GetFile.aspx?File=/ADJ/Pathfinder-RPG/UMToursDeMagie.pdf">Téléchargement Pathfinder-fr.org</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;actu_id=398">Annonce BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Blog/post/Un-coup-de-baguette-magique.aspx">Annonce Pathfinder-fr.org</reference>
+          <reference xml:lang="en-US" href="http://paizo.com/pathfinderRPG/prd/spells/jolt.html#_jolt">Paizo PRD</reference>
+        </references>
+      </source>
+      <localization>
+        <language sourceId="pfrpg" xml:lang="en-US">
+          <entry href="name">Jolt</entry>
+        </language>
+      </localization>
+      <name>Choc</name>
+      <levels>
+        <level list="sorcerer-wizard" level="0" />
+      </levels>
+      <components kinds="V S" />
+      <range unit="close" />
+      <target>étincelle d'électricité</target>
+      <castingTime value="1" />
+      <savingThrow target="none" effect="none" />
+      <spellResistance resist="true" />
+      <summary />
+    </spell>
+    <spell id="drench" school="conjuration" descriptor="water">
+      <source id="paizoBlog">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Détremper.ashx">Wiki Pathfinder-fr.org</reference>
+          <reference href="http://www.regles-pathfinder.fr/Détremper.html">DRP Black-Book-Éditions</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;download_id=138">Page téléchargement BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Wiki/GetFile.aspx?File=/ADJ/Pathfinder-RPG/UMToursDeMagie.pdf">Téléchargement Pathfinder-fr.org</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;actu_id=398">Annonce BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Blog/post/Un-coup-de-baguette-magique.aspx">Annonce Pathfinder-fr.org</reference>
+          <reference xml:lang="en-US" href="http://paizo.com/pathfinderRPG/prd/spells/drench.html#_drench">Paizo PRD</reference>
+        </references>
+      </source>
+      <localization>
+        <language sourceId="pfrpg" xml:lang="en-US">
+          <entry href="name">Drench</entry>
+        </language>
+      </localization>
+      <name>Détremper</name>
+      <levels>
+        <level list="sorcerer-wizard" level="0" />
+      </levels>
+      <components kinds="V S" />
+      <range unit="close" />
+      <target>une créature ou un objet de taille G maximum</target>
+      <castingTime value="1" />
+      <savingThrow target="reflex" effect="negates" />
+      <spellResistance resist="true" objects="true" />
+      <summary />
+    </spell>
+    <spell id="penumbra" school="evocation" descriptor="darkness">
+      <source id="paizoBlog">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pénombre.ashx">Wiki Pathfinder-fr.org</reference>
+          <reference href="http://www.regles-pathfinder.fr/Pénombre.html">DRP Black-Book-Éditions</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;download_id=138">Page téléchargement BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Wiki/GetFile.aspx?File=/ADJ/Pathfinder-RPG/UMToursDeMagie.pdf">Téléchargement Pathfinder-fr.org</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;actu_id=398">Annonce BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Blog/post/Un-coup-de-baguette-magique.aspx">Annonce Pathfinder-fr.org</reference>
+          <reference xml:lang="en-US" href="http://paizo.com/pathfinderRPG/prd/spells/penumbra.html#_penumbra">Paizo PRD</reference>
+        </references>
+      </source>
+      <localization>
+        <language sourceId="pfrpg" xml:lang="en-US">
+          <entry href="name">Penumbra</entry>
+        </language>
+      </localization>
+      <name>Pénombre</name>
+      <levels>
+        <level list="sorcerer-wizard" level="0" />
+      </levels>
+      <components kinds="V S M">un peu de suie</components>
+      <range unit="touch" />
+      <target>créature ou objet touché</target>
+      <castingTime value="1" />
+      <savingThrow target="will" effect="negates" />
+      <spellResistance resist="true" />
+      <summary />
+    </spell>
+    <spell id="root" school="transmutation" descriptor="earth">
+      <source id="paizoBlog">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Racine.ashx">Wiki Pathfinder-fr.org</reference>
+          <reference href="http://www.regles-pathfinder.fr/Racine.html">DRP Black-Book-Éditions</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;download_id=138">Page téléchargement BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Wiki/GetFile.aspx?File=/ADJ/Pathfinder-RPG/UMToursDeMagie.pdf">Téléchargement Pathfinder-fr.org</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;actu_id=398">Annonce BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Blog/post/Un-coup-de-baguette-magique.aspx">Annonce Pathfinder-fr.org</reference>
+          <reference xml:lang="en-US" href="http://paizo.com/pathfinderRPG/prd/spells/root.html#_root">Paizo PRD</reference>
+        </references>
+      </source>
+      <localization>
+        <language sourceId="pfrpg" xml:lang="en-US">
+          <entry href="name">Root</entry>
+        </language>
+      </localization>
+      <name>Racine</name>
+      <levels>
+        <level list="sorcerer-wizard" level="0" />
+      </levels>
+      <components kinds="V S M">une pincée de terre</components>
+      <range unit="touch" />
+      <target>créature touchée</target>
+      <castingTime value="1" />
+      <savingThrow target="will" effect="negates" />
+      <spellResistance resist="true" />
+      <summary />
+    </spell>
+    <spell id="scoop" school="evocation" descriptor="force">
+      <source id="paizoBlog">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scoop.ashx">Wiki Pathfinder-fr.org</reference>
+          <reference href="http://www.regles-pathfinder.fr/Scoop.html">DRP Black-Book-Éditions</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;download_id=138">Page téléchargement BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Wiki/GetFile.aspx?File=/ADJ/Pathfinder-RPG/UMToursDeMagie.pdf">Téléchargement Pathfinder-fr.org</reference>
+          <reference href="http://www.black-book-editions.fr/index.php?site_id=59&amp;actu_id=398">Annonce BBE</reference>
+          <reference href="http://www.pathfinder-fr.org/Blog/post/Un-coup-de-baguette-magique.aspx">Annonce Pathfinder-fr.org</reference>
+          <reference xml:lang="en-US" href="http://paizo.com/pathfinderRPG/prd/spells/scoop.html#_scoop">Paizo PRD</reference>
+        </references>
+      </source>
+      <localization>
+        <language sourceId="pfrpg" xml:lang="en-US">
+          <entry href="name">Scoop</entry>
+        </language>
+      </localization>
+      <name>Scoop</name>
+      <levels>
+        <level list="sorcerer-wizard" level="0" />
+      </levels>
+      <components kinds="V S" />
+      <range unit="close" />
+      <target>un récipient de force de 15 cm de diamètre</target>
+      <castingTime value="1" />
+      <savingThrow target="none" effect="none" />
+      <spellResistance resist="true" />
+      <summary />
+    </spell>
+  </spells>
+  <spellLists />
+  <feats />
+</dataSet>

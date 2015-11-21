@@ -1,0 +1,25 @@
+﻿@model FeatIndexViewModel
+@foreach (var feat in this.Model.Feats)
+{
+    <h3>@feat.Name
+        @foreach (var type in feat.Types)
+        {
+            <span class="label @type.AsCssClass()">@type.AsDisplayName()</span>
+        } </h3>
+    <div>
+    </div>
+    <blockquote>@feat.Description</blockquote>
+        if (feat.Prerequisites != null && feat.Prerequisites.Length != 0)
+        {
+    <p>
+        <strong>Conditions.</strong>
+        @Html.Raw(feat.RenderPrerequisites(p => Html.ActionLink(p.Description, "Index", new { Feat = p.Value })))
+    </p>
+        }
+        if (!string.IsNullOrWhiteSpace(feat.Benefit))
+        {
+    <p><strong>Avantage.</strong> @feat.Benefit</p>
+        }
+    <p class="muted">Source : @Model.AllSources.First(s => s.Id == feat.Source.Id).Name
+        - <a href="@feat.Source.References.First().HrefString" target="_blank">Page Wiki</a></p>
+}

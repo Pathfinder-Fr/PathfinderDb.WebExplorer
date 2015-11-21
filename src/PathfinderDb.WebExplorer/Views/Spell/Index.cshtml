@@ -1,0 +1,85 @@
+﻿@model DbBrowser.Models.SpellIndexViewModel
+
+@section SideBar {
+    <ul class="nav nav-list">
+        <li class="nav-header">Sources</li>
+        <li><a href="@Url.Action("Index", this.Model.Query.Clone().ClearSources())">(Toutes)</a>
+        </li>
+        @foreach (var src in this.Model.AllSources)
+        {
+            <li>@Html.ActionLink(src.ShortName(), "Index", this.Model.Query.Clone().ToggleSource(src.Id).AsRouteValue(), new RouteValueDictionary(new { @class = this.Model.Query.IsPresentCssClass(this.Model.Query.Sources, src.Id), title = src.Name }))
+            </li>
+        }
+    </ul>
+    <ul class="nav nav-list">
+        <li class="nav-header">Listes</li>
+        <li><a href="@Url.Action("Index", this.Model.Query.Clone().ClearList())">(Toutes)</a>
+        </li>
+        @foreach (var list in this.Model.AllLists)
+        {
+            <li>@Html.ActionLink(list.DisplayName, "Index", this.Model.Query.Clone().SetList(list.Id).AsRouteValue(), new RouteValueDictionary(new { @class = this.Model.Query.IsEqualCssClass(Model.Query.List, list.Id) }))
+            </li>
+        }
+    </ul>
+}
+
+<div class="btn-toolbar pull-right">
+    <div class="btn-group">
+        <a class="btn  btn-small @Model.Query.ViewModeState(SpellIndexViewMode.Alphabetical, "disabled")" href="@Url.Action("Index", "Spell", Model.Query.Clone().WithViewMode(SpellIndexViewMode.Alphabetical).AsRouteValue())" title="ordre alphabétique">
+            <i class="icon-font"></i></a>
+        <a class="btn btn-small @Model.Query.ViewModeState(SpellIndexViewMode.ByLevel, "disabled")" href="@Url.Action("Index", "Spell", Model.Query.Clone().WithViewMode(SpellIndexViewMode.ByLevel).AsRouteValue())" title="par niveau">
+            <i class="icon-signal"></i></a>
+    </div>
+</div>
+
+<h1>Sorts <small class="">@Model.Spells.Count()</small></h1>
+@if (Model.SpellGroups != null)
+{
+    foreach (var group in Model.SpellGroups)
+    {
+    <hr />
+    <h3>@Model.DisplayGroupKey(group.Key)</h3>
+        foreach (var spell in group)
+        {
+    <h4>@spell.Name <small>@spell.SchoolDisplayName()</small></h4>
+    <blockquote>
+        <p>@spell.Summary</p>
+    </blockquote>
+    <p class="muted">
+        Source : @Model.AllSources.First(s => s.Id == spell.Source.Id).Name
+        - <a href="@spell.Source.References.First(r => r.Name == "Wiki Pathfinder-fr.org").HrefString" target="_blank">Page Wiki</a>
+    </p>
+        }
+    }
+}
+else
+{
+    <hr />
+    foreach (var spell in Model.Spells)
+    {
+    <h4>@spell.Name <small>@spell.SchoolDisplayName()</small></h4>
+    <p>
+        @foreach (var level in spell.Levels)
+        {
+            var listItem = Model.AllLists.FirstOrDefault(l => l.Id == level.List);
+            <span>@(listItem != null ? listItem.DisplayName : level.List) @level.Level</span>
+        }
+    </p>
+    <blockquote>
+        <p>@spell.Summary</p>
+    </blockquote>
+    <p class="muted">
+        @{
+        var sourceId = spell.Source.Id;
+        var allSources = Model.AllSources;
+        var source = allSources.FirstOrDefault(s => s.Id == sourceId);
+        if (source == null)
+        {
+            throw new InvalidOperationException();
+        }
+        }
+        Source : @Model.AllSources.First(s => s.Id == spell.Source.Id).Name
+        - <a href="@spell.Source.References.First(r => r.Name == "Wiki Pathfinder-fr.org").HrefString" target="_blank">Page Wiki</a>
+    </p>
+    }
+}

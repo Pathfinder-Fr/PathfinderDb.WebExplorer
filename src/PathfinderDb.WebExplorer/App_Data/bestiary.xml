@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xml:lang="fr-FR" xmlns="urn:pathfinderDb">
+  <sources>
+    <source id="bestiary" />
+  </sources>
+  <spells />
+  <spellLists />
+  <feats>
+    <feat id="arme-naturelle-supérieure">
+      <source id="bestiary">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme naturelle supérieure.ashx">Wiki Pathfinder-fr.org</reference>
+        </references>
+      </source>
+      <name>Arme naturelle supérieure</name>
+      <types>
+        <type>monster</type>
+      </types>
+      <prerequisites>
+        <prerequisite type="other">Posséder une arme naturelle</prerequisite>
+        <prerequisite type="bba" number="4">BBA +4</prerequisite>
+      </prerequisites>
+      <description>Les attaques naturelles de la créature infligent de sévères blessures.</description>
+      <benefit>Les effets de ce don s’appliquent à une des armes naturelles de la créature. Ses dégâts augmentent d’une catégorie selon la progression suivante (comme si la taille de la créature avait augmenté d’un cran). Les dés de dégâts progressent comme suit : 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 3d6, 4d6, 6d6, 8d6, 12d6. Si l’arme ou l’attaque inflige 1d10 points de dégâts, la progression est la suivante : 1d10, 2d8, 3d8, 4d8, 6d8, 8d8, 12d8.</benefit>
+    </feat>
+    <feat id="armure-naturelle-supérieure">
+      <source id="bestiary">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure naturelle supérieure.ashx">Wiki Pathfinder-fr.org</reference>
+        </references>
+      </source>
+      <name>Armure naturelle supérieure</name>
+      <types>
+        <type>monster</type>
+      </types>
+      <prerequisites>
+        <prerequisite type="other">Posséder une armure naturelle</prerequisite>
+        <prerequisite type="attribute" value="con" number="13">Con 13</prerequisite>
+      </prerequisites>
+      <description>La peau de la créature est plus épaisse que la normale.</description>
+      <benefit>Le bonus d’armure naturelle de la créature augmente de +1.</benefit>
+    </feat>
+    <feat id="attaque-en-vol">
+      <source id="bestiary">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque en vol.ashx">Wiki Pathfinder-fr.org</reference>
+        </references>
+      </source>
+      <name>Attaque en vol</name>
+      <types>
+        <type>monster</type>
+      </types>
+      <prerequisites>
+        <prerequisite type="other">Posséder une vitesse de vol</prerequisite>
+      </prerequisites>
+      <description>La créature peut se déplacer avant et après une attaque lorsqu’elle est en vol.</description>
+      <benefit>Lorsqu’elle est en vol, la créature peut effectuer une action de mouvement et autre action simple à n’importe quel moment de son déplacement. Elle ne peut pas réaliser une seconde action de mouvement au cours d’un round où elle utilise Attaque en vol.</benefit>
+    </feat>
+    <feat id="attaque-spéciale-renforcée">
+      <source id="bestiary">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque spéciale renforcée.ashx">Wiki Pathfinder-fr.org</reference>
+        </references>
+      </source>
+      <name>Attaque spéciale renforcée</name>
+      <types>
+        <type>monster</type>
+      </types>
+      <prerequisites>
+        <prerequisite type="other">Posséder une attaque spéciale</prerequisite>
+      </prerequisites>
+      <description>Il est particulièrement difficile de résister à l’une des attaques spéciales de la créature.</description>
+      <benefit>Les effets de ce don s’appliquent à une des attaques spéciales de la créature. Le DD de tous les jets de sauvegarde pour résister à celle-ci augmente de +2.</benefit>
+    </feat>
+    <feat id="attaques-multiples">
+      <source id="bestiary">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaques multiples.ashx">Wiki Pathfinder-fr.org</reference>
+        </references>
+      </source>
+      <name>Attaques multiples</name>
+      <types>
+        <type>general</type>
+      </types>
+      <prerequisites>
+        <prerequisite type="other">Au moins trois attaques naturelles</prerequisite>
+      </prerequisites>
+      <description>La créature est particulièrement douée pour attaquer avec ses armes naturelles.</description>
+      <benefit>Les attaques que la créature effectue avec des armes naturelles secondaires ne subissent qu’une pénalité de –2.</benefit>
+    </feat>
+    <feat id="capture">
+      <source id="bestiary">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Capture.ashx">Wiki Pathfinder-fr.org</reference>
+        </references>
+      </source>
+      <name>Capture</name>
+      <types>
+        <type>monster</type>
+      </types>
+      <prerequisites>
+        <choice>
+          <prerequisite type="other">Taille supérieure</prerequisite>
+          <prerequisite type="other">égale à TG</prerequisite>
+        </choice>
+      </prerequisites>
+      <description>La créature peut facilement attraper des proies.</description>
+      <benefit>Lorsque la créature touche un adversaire à l’aide d’une attaque de griffe ou de morsure, elle peut l’agripper comme si elle possédait la capacité d’étreinte. Si cet adversaire appartient à une catégorie de taille inférieure de trois crans ou plus à celle de la créature, cette dernière peut l’écraser et lui infliger automatiquement des dégâts de griffe ou de morsure chaque round en réussissant un test de manœuvre  offensive. Si l’adversaire est maintenu dans la gueule de la créature, il ne reçoit pas de jet de Réflexes pour résister au souffle de la créature (si elle possède une telle attaque).
+La créature peut lâcher l’adversaire agrippé par une action libre ou le lancer au loin en utilisant une action simple. Dans ce cas, l’adversaire parcourt une distance de 1d6 × 3 m (2 c) et subit 1d6 points de dégât par tranche de 3 m (2 c) dans cette distance. Si la créature est en vol lorsqu’elle lance son adversaire, celui-ci subit soit les dégâts indiqués plus haut, soit les dégâts correspondant à la chute (les plus élevés des deux).</benefit>
+    </feat>
+    <feat id="combat-à-plusieurs-armes">
+      <source id="bestiary">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Combat à plusieurs armes.ashx">Wiki Pathfinder-fr.org</reference>
+        </references>
+      </source>
+      <name>Combat à plusieurs armes</name>
+      <types>
+        <type>general</type>
+      </types>
+      <prerequisites>
+        <prerequisite type="attribute" value="dex" number="13">Dex 13</prerequisite>
+        <prerequisite type="other">au moins trois mains</prerequisite>
+      </prerequisites>
+      <description>La créature sait utiliser ses nombreux bras pour attaquer avec plusieurs armes.</description>
+      <benefit>Lorsque la créature attaque avec plusieurs armes, les malus sont réduits de –2 pour les attaques effectuées avec la main directrice et de –6 pour les autres.
+Normal. Sans ce don, la créature subit un malus de –6 à toutes les attaques effectuées avec sa main directrice et de –10 à toutes les attaques effectuées avec les autres mains (elle ne possède qu’une seule main directrice). Voir Combat à deux armes.</benefit>
+    </feat>
+    <feat id="création-de-créatures-artificielles">
+      <source id="bestiary">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Création de créatures artificielles.ashx">Wiki Pathfinder-fr.org</reference>
+        </references>
+      </source>
+      <name>Création de créatures artificielles</name>
+      <types>
+        <type>general</type>
+      </types>
+      <prerequisites>
+        <prerequisite type="spellcasterLevel" number="5">NLS 5</prerequisite>
+        <prerequisite type="feat" value="création-darmes-et-armures-magiques">Création d'armes et d'armures magiques</prerequisite>
+        <prerequisite type="other">Créations d'objets merveilleux</prerequisite>
+      </prerequisites>
+      <description>Le personnage peut construire des créatures artificielles (des [[golem|golems]] par exemple).</description>
+      <benefit>Le personnage peut construire toutes les créatures artificielles pour lesquelles il remplit les conditions. L’animation d’une créature artificielle prend un jour par tranche de 1000 po de son prix. Pour construire une créature artificielle, le personnage doit utiliser des matières premières valant la moitié du prix de base plus le prix (complet) du corps créé pour la créature artificielle. Les coûts et les conditions pour créer une créature artificielle sont résumés dans une section spéciale sur la page où elle est décrite. Le nombre de points de vie qu’une créature artificielle nouvellement créée possède correspond à la moyenne de ses dés de vie.</benefit>
+    </feat>
+    <feat id="familier-supérieur">
+      <source id="bestiary">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Familier supérieur.ashx">Wiki Pathfinder-fr.org</reference>
+        </references>
+      </source>
+      <name>Familier supérieur</name>
+      <types>
+        <type>general</type>
+      </types>
+      <prerequisites>
+        <prerequisite type="other">Capacité à acquérir un nouveau familier</prerequisite>
+        <prerequisite type="other">alignement compatible</prerequisite>
+        <prerequisite type="other">niveau suffisant (voir plus bas)</prerequisite>
+      </prerequisites>
+      <description>Ce don permet au personnage d’acquérir un puissant familier mais seulement quand il a la possibilité d’acquérir un nouveau familier ordinaire.</description>
+      <benefit>Quand le personnage choisit un nouveau familier, il peut choisir l’une des créatures indiquées ci-après. Il peut choisir un familier dont l’alignement ne diffère pas du sien de plus d’un cran sur chaque axe (de Loyal à Chaotique et de Bon à Mauvais).
+Les familiers supérieurs obéissent aux règles des familiers ordinaires à deux exceptions près : si le type de la créature n’est pas « animal » il ne change pas et les familiers supérieurs ne gagnent pas la capacité à parler avec d’autres créatures de leur espèce (bien que beaucoup possèdent une capacité innée à communiquer).
+{| CLASS="tablo"
+|- CLASS="titre"
+| Familier || Alignement || Niveau de lanceur de sorts
+|- CLASS="premier"
+| Aigle céleste (1) || Neutre Bon || 3
+|- CLASS="alt"
+| Rat sanguinaire || Neutre || 3
+|-
+| Vipère fiélone (2) || Neutre Mauvais || 3
+|- CLASS="alt"
+| Élémentaire P (n’importe quel type) || Neutre || 5
+|-
+| Strige || Neutre || 5
+|- CLASS="alt"
+| Homoncule (3) || N’importe || 7
+|-
+| Diablotin || Loyal Mauvais || 7
+|- CLASS="alt"
+| Méphite (n’importe quel type) || Neutre || 7
+|-
+| Pseudo-dragon || Neutre Bon || 7
+|- CLASS="alt"
+| Dragon féerique || NB, CB ou CN || 7
+|-
+| Quasit || Chaotique Mauvais || 7
+|}
+1 - Ou l’équivalent céleste de toute autre créature de la liste des familiers ordinaires. &lt;br/&gt;
+2 - Ou l’équivalent fiélon de toute autre créature de la liste des familiers ordinaires. &lt;br/&gt;
+3 - Le maître de l’homoncule doit tout d’abord le fabriquer.
+Les familiers supérieurs suivants sont issus du bestiaire 2
+{| CLASS="tablo"
+|- CLASS="titre"
+| Familier || Alignement || Niveau de lanceur de sorts
+|- CLASS="premier"
+|  Aéon, paraclétus || Neutre || (7)
+|- CLASS="alt"
+|  Agathion, Silvanshie || Neutre Bon || (7)
+|-
+| Cassisien || Bon || (7)
+|- CLASS="alt"
+| Lyrakien || Chaotique bon || 7
+|-
+| Cacodaémon || (Neutre mauvais) || 7
+|- CLASS="alt"
+| Cythnigot || Chaotique mauvais || 7
+|-
+| Ver du néant || Chaotique Neutre || 7
+|- CLASS="alt"
+| Arbitre || Loyal neutre || 7
+|-
+| Lutin || Neutre strict || 5
+|}
+Les données entre parenthèses du tableau ci-dessus sont liées à l'absence de précisions dans les bestiaires concernés tant en vo qu'en vf.
+Les familiers supérieurs suivants sont issus du bestiaire 3
+{| CLASS="tablo"
+|- CLASS="titre"
+| Familier || Alignement || Niveau de lanceur de sorts
+|- CLASS="premier"
+|  Archon, annonciateur || Loyal bon || 7
+|- CLASS="alt"
+|  Asura, Tripurasura || Loyal mauvais || 7
+|-
+|  Div, Doru || Neutre mauvais || 7
+|- CLASS="alt"
+| Esprit follet || Chaotique neutre || 5
+|-
+| Kami, shikigami || Loyal neutre || 7
+|- CLASS="alt"
+| Kyton, augure || Loyal mauvais || 7
+|-
+| Oni, esprit || Loyal mauvais || 7
+|- CLASS="alt"
+| Rakshasa, Raktavarna || Loyal mauvais || 7
+|}</benefit>
+    </feat>
+  </feats>
+</dataSet>

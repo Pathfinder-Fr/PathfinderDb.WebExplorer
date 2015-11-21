@@ -1,0 +1,100 @@
+﻿@model FeatIndexViewModel
+<ul class="nav nav-list">
+    <li class="nav-header">Sources</li>
+    <li><a href="@Url.Action("Index", this.Model.Query.Clone().ClearSources())">(Toutes)</a>
+    </li>
+    @foreach (var src in this.Model.AllSources)
+    {
+        <li>@Html.ActionLink(src.ShortName(), "Index", this.Model.Query.Clone().ToggleSource(src.Id).AsRouteValue(), new RouteValueDictionary(new { @class = this.Model.Query.IsPresentCssClass(this.Model.Query.Sources, src.Id), title = src.Name }))
+        </li>
+    }
+</ul>
+<ul class="nav nav-list">
+    <li class="nav-header">Types</li>
+    <li><a href="@Url.Action("Index", this.Model.Query.Clone().ClearTypes())">(Tous)</a>
+    </li>
+    @foreach (var type in this.Model.AllTypes)
+    {
+        <li>@Html.ActionLink(type.DisplayName, "Index", this.Model.Query.Clone().ToggleType(type.Id).AsRouteValue(), new RouteValueDictionary(new { @class = this.Model.Query.IsPresentCssClass(this.Model.Query.Types, type.Id) }))
+        </li>
+    }
+</ul>
+<ul class="nav" style="margin-bottom: 0">
+    <li class="nav-header">Classes</li>
+    <li>
+        <span id="addClassGroup" class="control-group">
+            <select id="addClassName" name="Class" style="width: 122px">
+                @foreach (var item in this.Model.AllClasses.GroupBy(c => c.Group))
+                {
+                    <optgroup label="@item.Key" />
+                    foreach (var subItem in item)
+                    {
+                    <option value="@subItem.Id">@subItem.DisplayName</option>
+                    }
+                }
+            </select>
+            <input id="addClassLevel" type="text" name="Level" class="span1" placeholder="Niv" />
+            <button id="addClass" class="btn btn-small" style="margin-bottom: 9px">
+                <i class="icon-plus"></i>
+            </button>
+            @using (Html.BeginForm("Index", "Feat", this.Model.Query.Clone().ClearClassLevels().AsRouteValue(), FormMethod.Get, new RouteValueDictionary(new { id = @"addClassForm", style = "margin:0" })))
+            {
+                <input id="addClassLevels" name="ClassLevels" type="hidden" value="@this.Model.Query.ClassLevels" />
+            }
+        </span>
+    </li>
+</ul>
+<ul class="nav nav-list" style="margin-bottom: 20px">
+
+    @foreach (var classLevel in ClassLevel.FromStringArray(this.Model.Query.ClassLevels))
+    {
+        <li>@Html.ActionLink(classLevel.FullName, "Index", this.Model.Query.Clone().ToggleClassLevel(classLevel.AsArrayItem()).AsRouteValue(), new RouteValueDictionary(new { @class = "text-success" }))</li>
+    }
+</ul>
+<ul class="nav">
+    <li class="nav-header">Caractéristiques</li>
+    <li>
+        @using (Html.BeginForm("Index", "Feat", FormMethod.Get, new { @class = "" }))
+        {
+            <input type="hidden" name="Types" value="@Model.Query.Types" />
+            <input type="hidden" name="Sources" value="@Model.Query.Sources" />
+            <input type="hidden" name="ClassLevels" value="@Model.Query.ClassLevels" />
+            <label for="BBA.Min">
+                <span>BBA</span>
+                <input name="BBA.Min" type="text" class="span1" placeholder="Min" value="@Model.Query.BBA.Min" />
+                <input name="BBA.Max" type="text" class="span1" placeholder="Max" value="@Model.Query.BBA.Max" />
+            </label>
+            <label for="Str.Min">
+                <span>For</span>
+                <input name="Str.Min" type="text" class="span1" placeholder="Min" value="@Model.Query.Str.Min" />
+                <input name="Str.Max" type="text" class="span1" placeholder="Max" value="@Model.Query.Str.Max" />
+            </label>
+            <label for="Dex.Min">
+                <span>Dex</span>
+                <input name="Dex.Min" type="text" class="span1" placeholder="Min" value="@Model.Query.Dex.Min" />
+                <input name="Dex.Max" type="text" class="span1" placeholder="Max" value="@Model.Query.Dex.Max" />
+            </label>
+            <label for="Con.Min">
+                <span>Con</span>
+                <input name="Con.Min" type="text" class="span1" placeholder="Min" value="@Model.Query.Con.Min" />
+                <input name="Con.Max" type="text" class="span1" placeholder="Max" value="@Model.Query.Con.Max" />
+            </label>
+            <label for="Int.Min">
+                <span>Int</span>
+                <input name="Int.Min" type="text" class="span1" placeholder="Min" value="@Model.Query.Int.Min" />
+                <input name="Int.Max" type="text" class="span1" placeholder="Max" value="@Model.Query.Int.Max" />
+            </label>
+            <label for="Wis.Min">
+                <span>Sag</span>
+                <input name="Wis.Min" type="text" class="span1" placeholder="Min" value="@Model.Query.Wis.Min" />
+                <input name="Wis.Max" type="text" class="span1" placeholder="Max" value="@Model.Query.Wis.Max" />
+            </label>
+            <label for="Cha.Min">
+                <span>Cha</span>
+                <input name="Cha.Min" type="text" class="span1" placeholder="Min" value="@Model.Query.Cha.Min" />
+                <input name="Cha.Max" type="text" class="span1" placeholder="Max" value="@Model.Query.Cha.Max" />
+            </label>                
+            <button type="submit" class="btn">Filtrer</button>
+        }
+    </li>
+</ul>
