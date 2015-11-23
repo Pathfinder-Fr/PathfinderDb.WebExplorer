@@ -81,6 +81,7 @@
       <target>une créature/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres</target>
       <castingTime value="1" />
       <savingThrow target="none" effect="none" />
+      <spellResistance resist="special">non&lt;br/&gt;</spellResistance>
       <summary>Comme adaptation planaire mais affecte des cibles multiples.</summary>
     </spell>
     <spell id="planar-adaptation" school="transmutation">
@@ -584,6 +585,29 @@
       <castingTime value="1" />
       <summary>+4 For et Dex, +2 bonus aux attaques de croc-en-jambe.</summary>
     </spell>
+    <spell id="delayed-consumption" school="transmutation">
+      <source id="apg">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assimilation retardée.ashx">Wiki Pathfinder-fr.org</reference>
+          <reference href="http://www.regles-pathfinder.fr/Assimilation-Retardée.html">DRP Black-Book-Éditions</reference>
+          <reference xml:lang="en-US" href="http://paizo.com/pathfinderRPG/prd/advanced/spells/delayedConsumption.html#_delayed-consumption">Paizo PRD</reference>
+        </references>
+      </source>
+      <localization>
+        <language sourceId="pfrpg" xml:lang="en-US">
+          <entry href="name">Delayed Consumption</entry>
+        </language>
+      </localization>
+      <name>Assimilation retardée</name>
+      <levels>
+        <level list="alchemist" level="5" />
+      </levels>
+      <components kinds="S" />
+      <range unit="personal" />
+      <target>lanceur de sorts</target>
+      <castingTime value="1" />
+      <summary>L'extrait ne fait pas effet tant que le personnage ne l'a pas décidé.</summary>
+    </spell>
     <spell id="aura-of-greater-courage" school="abjuration" descriptor="emotion">
       <source id="apg">
         <references>
@@ -874,6 +898,31 @@
       <spellResistance resist="true" />
       <summary>Petites sphères de foudre volantes qui infligent chacune 3d6 points de dégâts d'électricité.</summary>
     </spell>
+    <spell id="firebrand" school="transmutation" descriptor="fire">
+      <source id="apg">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brandon.ashx">Wiki Pathfinder-fr.org</reference>
+          <reference href="http://www.regles-pathfinder.fr/Brandon.html">DRP Black-Book-Éditions</reference>
+          <reference xml:lang="en-US" href="http://paizo.com/pathfinderRPG/prd/advanced/spells/firebrand.html#_firebrand">Paizo PRD</reference>
+        </references>
+      </source>
+      <localization>
+        <language sourceId="pfrpg" xml:lang="en-US">
+          <entry href="name">Firebrand</entry>
+        </language>
+      </localization>
+      <name>Brandon</name>
+      <levels>
+        <level list="sorcerer-wizard" level="7" />
+      </levels>
+      <components kinds="V S" />
+      <range unit="close" />
+      <target>une créature/4 niveaux, qui doivent se trouver à moins de 9 m (6 c) les unes des autres</target>
+      <castingTime value="1" />
+      <savingThrow target="will" effect="negates">Volonté pour annuler (inoffensif), voir plus bas</savingThrow>
+      <spellResistance resist="true" harmless="true" />
+      <summary>Les alliés gagnent arme enflammée, sont immunisés contre les sorts de feu du personnage et bénéficient d'un rayon de feu.</summary>
+    </spell>
     <spell id="burst-bonds" school="evocation">
       <source id="apg">
         <references>
@@ -1124,11 +1173,11 @@
       <levels>
         <level list="sorcerer-wizard" level="1" />
         <level list="ranger" level="1" />
-        <level list="druid" level="1" />
         <level list="cleric" level="1" />
-        <level list="summoner" level="1" />
         <level list="alchemist" level="1" />
         <level list="oracle" level="1" />
+        <level list="summoner" level="1" />
+        <level list="druid" level="1" />
       </levels>
       <components kinds="V S M/DF">petite poulie</components>
       <range unit="touch" />
@@ -1460,6 +1509,31 @@
       <savingThrow target="none" effect="none" />
       <summary>Crée une carte au trésor à partir du cadavre d’une créature.</summary>
     </spell>
+    <spell id="create-pit" school="conjuration">
+      <source id="apg">
+        <references>
+          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Création de fosse.ashx">Wiki Pathfinder-fr.org</reference>
+          <reference href="http://www.regles-pathfinder.fr/Création-De-Fosse.html">DRP Black-Book-Éditions</reference>
+          <reference xml:lang="en-US" href="http://paizo.com/pathfinderRPG/prd/advanced/spells/createPit.html#_create-pit">Paizo PRD</reference>
+        </references>
+      </source>
+      <localization>
+        <language sourceId="pfrpg" xml:lang="en-US">
+          <entry href="name">Create Pit</entry>
+        </language>
+      </localization>
+      <name>Création de fosse</name>
+      <levels>
+        <level list="sorcerer-wizard" level="2" />
+        <level list="summoner" level="2" />
+      </levels>
+      <components kinds="V S F">une pelle miniature qui coûte 10 po</components>
+      <range unit="medium" />
+      <target>trou de 3 m (2 c) sur 3m (2 c), 3 m (2 c) de profondeur/2 niveaux</target>
+      <castingTime value="1" />
+      <savingThrow target="reflex" effect="negates" />
+      <summary>Crée une fosse extradimensionnelle.</summary>
+    </spell>
     <spell id="screech" school="evocation" descriptor="sonic">
       <source id="apg">
         <references>
@@ -1576,7 +1650,7 @@
         <level list="bard" level="1" />
         <level list="ranger" level="1" />
         <level list="druid" level="1" />
-        <level list="sorcerer-wizard" level="1" />
+        <level list="sorcerer-wizard" level="0" />
       </levels>
       <components kinds="V S" />
       <range unit="close" />
@@ -2212,30 +2286,6 @@
       <savingThrow target="will" effect="negates" />
       <summary>Accorde deux évolutions à l’eidolon pour un total de 6 points d’évolution.</summary>
     </spell>
-    <spell id="evolution-surge" school="transmutation">
-      <source id="apg">
-        <references>
-          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Évolution.ashx">Wiki Pathfinder-fr.org</reference>
-          <reference href="http://www.regles-pathfinder.fr/Évolution.html">DRP Black-Book-Éditions</reference>
-          <reference xml:lang="en-US" href="http://paizo.com/pathfinderRPG/prd/advanced/spells/evolutionSurge.html#_evolution-surge">Paizo PRD</reference>
-        </references>
-      </source>
-      <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
-          <entry href="name">Evolution Surge</entry>
-        </language>
-      </localization>
-      <name>Évolution</name>
-      <levels>
-        <level list="summoner" level="3" />
-      </levels>
-      <components kinds="V S M">une écaille de caméléon</components>
-      <range unit="touch" />
-      <target>l'eidolon du personnage</target>
-      <castingTime value="1" />
-      <savingThrow target="will" effect="negates" />
-      <summary>Accorde à l’eidolon une évolution coûtant 4 points d’évolution.</summary>
-    </spell>
     <spell id="expeditious-excavation" school="transmutation" descriptor="earth">
       <source id="apg">
         <references>
@@ -2335,7 +2385,7 @@
       <castingTime value="1" />
       <savingThrow target="will" effect="negates" />
       <spellResistance resist="true" />
-      <summary>(Oracle uniquement ) La créature est affectée par les effets négatifs de la malédiction de l’oracle.</summary>
+      <summary>(Oracle uniquement) La créature est affectée par les effets négatifs de la malédiction de l’oracle.</summary>
     </spell>
     <spell id="feast-of-ashes" school="transmutation" descriptor="curse">
       <source id="apg">
@@ -3188,7 +3238,7 @@
       <target>lanceur de sorts plus 1 créature touchée/3 niveaux</target>
       <castingTime value="1" />
       <savingThrow target="fortitude" effect="negates" />
-      <spellResistance resist="true" harmless="true" />
+      <spellResistance resist="special">oui (inoffensif)&lt;br/&gt;</spellResistance>
       <summary>Comme infatigable poursuivant mais affecte plusieurs créatures.</summary>
     </spell>
     <spell id="innocence" school="transmutation">
@@ -3237,7 +3287,7 @@
       <target>cube de 3 m (2 c) de côté</target>
       <castingTime value="1" />
       <savingThrow target="none" effect="none" />
-      <summary>Gagne +10 aux tests de Bluff pour paraître innocent.</summary>
+      <summary>Voit la zone comme s'il l'examinait.</summary>
     </spell>
     <spell id="brilliant-inspiration" school="evocation" descriptor="languageDependent">
       <source id="apg">
@@ -5075,30 +5125,6 @@
       <savingThrow target="none" effect="none" />
       <summary>Comme régénération d'eidolon mineure mais guérit de 5d10 points de dégâts +1/niveau (max +20).</summary>
     </spell>
-    <spell id="rejuvenate-eidolon" school="conjuration">
-      <source id="apg">
-        <references>
-          <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Régénération deidolon.ashx">Wiki Pathfinder-fr.org</reference>
-          <reference href="http://www.regles-pathfinder.fr/Régénération-Deidolon.html">DRP Black-Book-Éditions</reference>
-          <reference xml:lang="en-US" href="http://paizo.com/pathfinderRPG/prd/advanced/spells/rejuvenateEidolon.html#_rejuvenate-eidolon">Paizo PRD</reference>
-        </references>
-      </source>
-      <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
-          <entry href="name">Rejuvenate Eidolon</entry>
-        </language>
-      </localization>
-      <name>Régénération d'eidolon</name>
-      <levels>
-        <level list="summoner" level="3" />
-      </levels>
-      <components kinds="V S M">une goutte du sang du lanceur de sorts</components>
-      <range unit="touch" />
-      <target>eidolon touché</target>
-      <castingTime value="1" />
-      <savingThrow target="none" effect="none" />
-      <summary>Comme régénération d'eidolon mineure mais guérit de 3d10 points de dégâts +1/niveau (max +10).</summary>
-    </spell>
     <spell id="devolution" school="transmutation">
       <source id="apg">
         <references>
@@ -5734,7 +5760,7 @@
         <level list="cleric" level="3" />
         <level list="oracle" level="3" />
       </levels>
-      <components kinds="V S M" />
+      <components kinds="V S M">un petit oreiller de soie d'une valeur de 100 po</components>
       <range unit="squares">6</range>
       <target>émanation de 9 m (6 c) de rayon</target>
       <castingTime unit="minute" value="1" />
@@ -6147,7 +6173,6 @@
       <name>Transformation</name>
       <levels>
         <level list="summoner" level="4" />
-        <level list="magus" level="6" />
       </levels>
       <components kinds="V S M">une fiole de vif-argent d'une valeur de 1 000 po</components>
       <range unit="touch" />
@@ -6580,13 +6605,12 @@
   </spells>
   <spellLists />
   <feats>
-    <feat id="aide-rapide">
+    <feat id="aide-rapide" name="Aide rapide">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aide rapide.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Aide rapide</name>
       <types>
         <type>general</type>
       </types>
@@ -6598,13 +6622,12 @@
       <description>D’un simple mouvement rapide mais inoffensif de son arme, le personnage peut aider un compagnon de combat.</description>
       <benefit>Par une action rapide, le personnage peut tenter d’utiliser l’action « aider quelqu’un » pour octroyer à un allié un bonus de +1 au prochain jet d’attaque ou à sa CA.</benefit>
     </feat>
-    <feat id="apparence-enfantine">
+    <feat id="apparence-enfantine" name="Apparence enfantine">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Apparence enfantine.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Apparence enfantine</name>
       <types>
         <type>general</type>
       </types>
@@ -6615,13 +6638,12 @@
       <description>Le personnage ressemble tellement à un enfant humain que les autres ont tendance à lui faire confiance, peut-être à tort.</description>
       <benefit>Le personnage peut faire 10 sur les tests de Bluff pour convaincre ses interlocuteurs qu’il dit la vérité pour autant que son histoire lui donne le rôle d’un innocent. Il gagne un bonus de +2 aux tests de Déguisement pour se faire passer pour un enfant humain et il ignore les pénalités normalement imposées pour un déguisement en un individu d’une autre race et d’une autre catégorie d’âge dans ce cas-là.</benefit>
     </feat>
-    <feat id="appel-du-conjurateur">
+    <feat id="appel-du-conjurateur" name="Appel du conjurateur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel du conjurateur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Appel du conjurateur</name>
       <types>
         <type>general</type>
       </types>
@@ -6631,13 +6653,12 @@
       <description>Chaque fois que l’invocateur appelle son eidolon, il est plus puissant pendant un certain temps.</description>
       <benefit>Chaque fois que le personnage appelle son eidolon, il peut lui octroyer un bonus d’altération de +2 en Force, Dextérité ou Constitution. Ce bonus persiste pendant 10 minutes après la fin du rituel de conjuration.</benefit>
     </feat>
-    <feat id="art-du-devin">
+    <feat id="art-du-devin" name="Art du devin">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Art du devin.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Art du devin</name>
       <types>
         <type>general</type>
       </types>
@@ -6647,13 +6668,12 @@
       <description>Grâce à ses puissants instincts magiques, le personnage peut lire les signes, les symboles et les indices mystiques plus facilement et plus rapidement.</description>
       <benefit>Le personnage gagne un bonus de +2 aux tests de NLS des divinations pour percer la résistance à la magie ou les effets qui bloquent les divinations (comme un sort d’antidétection). Lorsqu’il utilise un sort de divination nécessitant de la concentration, il reçoit les informations données par le sort avec 1 round d’avance (ainsi, il gagne les informations des 2 premiers rounds après 1 round de concentration, puis les informations du 3e round au bout du 2e round de concentration).</benefit>
     </feat>
-    <feat id="artisanat-de-groupe">
+    <feat id="artisanat-de-groupe" name="Artisanat de groupe">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Artisanat de groupe.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Artisanat de groupe</name>
       <types>
         <type>general</type>
       </types>
@@ -6664,13 +6684,12 @@
       <description>Le personnage peut aider efficacement à la fabrication d’objets.</description>
       <benefit>Le personnage peut aider un autre personnage à fabriquer des objets magiques ou non magiques. Les deux personnages doivent posséder la compétence d’Artisanat adéquate ou le don de création correspondant, mais il suffit que chacune des autres conditions de fabrication soit satisfaite par l’un ou par l’autre. Le personnage offre un bonus de circonstances de +2 à tous les tests d’Artisanat ou d’Art de la magie relatifs à la fabrication d’un objet et, grâce à son aide, la quantité d’objets qu’il est possible de fabriquer en un jour (quantité exprimée en pièces d’or) est doublée.</benefit>
     </feat>
-    <feat id="assaut-hébétant">
+    <feat id="assaut-hébétant" name="Assaut hébétant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assaut hébétant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Assaut hébétant</name>
       <types>
         <type>combat</type>
       </types>
@@ -6682,13 +6701,12 @@
       <description>Le personnage peut hébéter ses ennemis en attaquant sauvagement.</description>
       <benefit>Le personnage peut choisir d’accepter une pénalité de -5 sur tous les jets d’attaque au corps à corps et tous les tests de manœuvres de combat pour hébéter les adversaires touchés par ses attaques au corps à corps pendant 1 round (en plus de leur infliger des dégâts normaux). Un jet de Vigueur réussi permet aux cibles d’annuler l’effet. Le DD de celui-ci est de 10 + le BBA du personnage. Le personnage doit choisir s’il veut utiliser ce don ou pas avant de réaliser le jet d’attaque. Les effets du don persistent jusqu’à son prochain tour.</benefit>
     </feat>
-    <feat id="assaut-repoussant">
+    <feat id="assaut-repoussant" name="Assaut repoussant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assaut repoussant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Assaut repoussant</name>
       <types>
         <type>general</type>
       </types>
@@ -6700,13 +6718,12 @@
       <description>En portant un coup avec une arme à deux mains, le personnage peut faire reculer une créature de taille similaire à la sienne.</description>
       <benefit>Lorsque le personnage touche une créature de taille inférieure ou égale à la sienne avec une arme à deux mains lors d’une Attaque en puissance, il peut choisir de faire reculer la cible de 1,50 m (en ligne droite par rapport à lui) au lieu de lui infliger les dégâts supplémentaires résultant du don Attaque en puissance. Si l’attaque en question est un coup critique, le personnage peut choisir de faire reculer la cible de 3 mètres (2 cases). Le mouvement de la cible ne provoque pas d’attaques d’opportunité et celle-ci doit terminer son mouvement dans un espace sûr suffisamment grand pour l’accueillir. Le personnage choisit quel effet appliquer après avoir effectué le jet d’attaque, mais avant de lancer les dégâts.</benefit>
     </feat>
-    <feat id="assaut-sanglant">
+    <feat id="assaut-sanglant" name="Assaut sanglant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assaut sanglant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Assaut sanglant</name>
       <types>
         <type>general</type>
       </types>
@@ -6718,13 +6735,12 @@
       <description>En sacrifiant un peu de précision, le personnage peut infliger des blessures sanglantes qui guérissent très lentement.</description>
       <benefit>Le personnage peut choisir d’accepter une pénalité de -5 à tous ses jets d’attaque au corps à corps et tests de manœuvres de combat pour ajouter 1d4 points de dégâts de saignement aux dégâts normaux de ses attaques des armes au corps à corps. La créature touchée continue de subir des dégâts de saignement chaque round au début de son round. On peut arrêter les dégâts de saignement à l’aide d’un test de Premiers secours contre un DD de 15 ou avec n’importe quel soin magique. Les dégâts de saignement provenant de ce don ne se cumulent pas entre eux. Le personnage doit choisir s’il veut utiliser ce don ou pas avant de réaliser le jet d’attaque. Les effets du don persistent jusqu’au début de son prochain tour (mais le saignement, lui, continue jusqu’à la guérison).</benefit>
     </feat>
-    <feat id="assaut-étourdissant">
+    <feat id="assaut-étourdissant" name="Assaut étourdissant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assaut étourdissant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Assaut étourdissant</name>
       <types>
         <type>general</type>
       </types>
@@ -6736,13 +6752,12 @@
       <description>Malgré leur manque de précision, les puissantes attaques du personnage peuvent étourdir ses ennemis.</description>
       <benefit>Le personnage peut choisir d’accepter une pénalité de -5 sur tous les jets d’attaque au corps à corps et tous les tests de manœuvres de combat pour étourdir les créatures touchées par ses attaques au corps à corps pendant 1 round. Un jet de Vigueur contre un DD égal à 10 + le BBA du personnage permet d’annuler l’effet. Le personnage doit choisir d’utiliser ce don avant de réaliser le jet d’attaque. Ses effets persistent jusqu’à son prochain tour.</benefit>
     </feat>
-    <feat id="astuce-déquitation">
+    <feat id="astuce-déquitation" name="Astuce d'équitation">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Astuce déquitation.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Astuce d'équitation</name>
       <types>
         <type>general</type>
       </types>
@@ -6753,13 +6768,12 @@
       <description>Le personnage ne se contente pas de simplement contrôler sa monture au combat ; il a érigé cela en art !</description>
       <benefit>Lorsque le personnage porte une armure légère ou aucune armure, il n’a pas besoin de réaliser de test pour toutes les tâches citées dans la description de la compétence d’Équitation dont le DD est inférieur ou égal à 15. Il ne subit pas la pénalité de -5 lorsqu’il monte sans selle. Il peut effectuer un test pour annuler une attaque portée contre sa monture (voir Combat monté) deux fois par round au lieu d’une seule fois.</benefit>
     </feat>
-    <feat id="attaque-en-groupe">
+    <feat id="attaque-en-groupe" name="Attaque en groupe">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque en groupe.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Attaque en groupe</name>
       <types>
         <type>general</type>
       </types>
@@ -6770,13 +6784,12 @@
       <description>Le personnage sait comment attaquer efficacement en groupe.</description>
       <benefit>On considère que le personnage prend en tenaille tout ennemi qui se trouve dans la zone contrôlée par au moins deux de ses alliés et ce, quelle que soit sa position exacte.</benefit>
     </feat>
-    <feat id="attaque-magique">
+    <feat id="attaque-magique" name="Attaque magique">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque magique.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Attaque magique</name>
       <types>
         <type>general</type>
       </types>
@@ -6787,13 +6800,12 @@
       <description>Le personnage peut convertir des sorts en attaques magiques.</description>
       <benefit>Par une action simple, le personnage peut sacrifier un sort préparé (ou un emplacement de sort inutilisé) de niveau supérieur ou égal à 1 et le transformer en un rayon ciblant n’importe quel ennemi situé dans un rayon de 9 mètres (6 cases) et nécessitant une attaque de contact à distance. Cette attaque inflige 2d6 points de dégâts plus 1d6 points de dégâts par niveau du sort (ou de l’emplacement) sacrifié. Les sorts de niveau 0 ne peuvent pas être sacrifiés dans le cadre de ce don.</benefit>
     </feat>
-    <feat id="avance-et-frappe">
+    <feat id="avance-et-frappe" name="Avance et frappe">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Avance et frappe.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Avance et frappe</name>
       <types>
         <type>general</type>
       </types>
@@ -6806,13 +6818,12 @@
       <description>Lorsqu’un ennemi tente de s’éloigner, le personnage peut le suivre et l’attaquer.</description>
       <benefit>Lorsque le personnage utilise le don S’avancer ou Poursuite pour suivre un ennemi, il peut effectuer une unique attaque de corps à corps contre cet ennemi en utilisant son BBA le plus élevé. Cette attaque compte comme une attaque d’opportunité pour le round. Utiliser ce don ne réduit pas le nombre d’actions qu’il est possible d’accomplir à chaque round.</benefit>
     </feat>
-    <feat id="bien-préparé">
+    <feat id="bien-préparé" name="Bien préparé">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bien préparé.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Bien préparé</name>
       <types>
         <type>general</type>
       </types>
@@ -6822,13 +6833,12 @@
       <description>Quelle que soit la situation, le personnage semble toujours avoir l’outil ou l’objet qu’il faut.</description>
       <benefit>Une fois par jour, lorsque le personnage est confronté à une situation où un objet habituel est nécessaire, il peut effectuer un test d’Escamotage contre un DD de 10 + le coût de l’objet en pièces d’or pour « justement » l’avoir sur lui. Par exemple, il faut atteindre un DD de 12 pour avoir un pied de biche, alors qu’un DD de 20 est nécessaire pour une fiole d’acide. Il doit s’agir d’un objet facilement transportable : si le personnage est à pied et qu’il ne possède qu’un sac à dos, il ne peut pas avoir de grand chaudron en fer. Ce don ne concerne pas les objets magiques ni les objets spécifiques (comme la clef ouvrant une porte en particulier). Si le personnage est privé de son équipement ou de ses possessions, il perd le bénéfice de ce don jusqu’à ce qu’il ait disposé d’au moins un jour pour « acquérir » de nouveaux objets. Le personnage doit payer le prix normal de ces objets.</benefit>
     </feat>
-    <feat id="bouclier-contre-les-projectiles">
+    <feat id="bouclier-contre-les-projectiles" name="Bouclier contre les projectiles">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier contre les projectiles.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Bouclier contre les projectiles</name>
       <types>
         <type>general</type>
       </types>
@@ -6839,13 +6849,12 @@
       <description>Le personnage sait comment parer les attaques à distance à l’aide de son bouclier.</description>
       <benefit>Le personnage doit utiliser une rondache, un écu ou un pavois pour tirer parti de ce don. Une fois par round, lorsqu’il devrait normalement être touché par une attaque effectuée à l’aide d’une arme à distance (autre qu’un effet de sort, une attaque naturelle ou une attaque par un projectile de grande taille), il peut la parer et ainsi ne subir aucun dégât, comme s’il possédait le don Parade de projectiles. Cela ne fonctionne pas si le personnage est pris au dépourvu ou surpris par l’attaque.</benefit>
     </feat>
-    <feat id="bouclier-contre-les-rayons">
+    <feat id="bouclier-contre-les-rayons" name="Bouclier contre les rayons">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier contre les rayons.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Bouclier contre les rayons</name>
       <types>
         <type>general</type>
       </types>
@@ -6857,13 +6866,12 @@
       <description>Le personnage est capable de parer les rayons grâce à son bouclier.</description>
       <benefit>Le personnage doit utiliser une rondache, un écu ou un pavois pour tirer parti de ce don. Une fois par round, lorsqu’il devrait normalement être touché par une attaque de contact à distance (qui peut être un rayon ou un autre effet magique), il peut la parer et ainsi ne subir aucun dégât. Le bouclier du personnage, quant à lui, subit les pleins effets du sort ou de l’effet si ceux-ci lui sont applicables.</benefit>
     </feat>
-    <feat id="bouclier-magique">
+    <feat id="bouclier-magique" name="Bouclier magique">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier magique.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Bouclier magique</name>
       <types>
         <type>general</type>
       </types>
@@ -6874,13 +6882,12 @@
       <description>Le personnage peut convertir des sorts en protections magiques.</description>
       <benefit>Par une action immédiate, le personnage peut sacrifier un sort préparé (ou un emplacement de sort inutilisé) de niveau supérieur ou égal à 1 afin d’obtenir un bonus de parade à la CA égal au niveau du sort (ou de l’emplacement) sacrifié pendant 1 round. Les sorts de niveau 0 ne peuvent pas être sacrifiés dans le cadre de ce don.</benefit>
     </feat>
-    <feat id="bouclier-pour-la-monture">
+    <feat id="bouclier-pour-la-monture" name="Bouclier pour la monture">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier pour la monture.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Bouclier pour la monture</name>
       <types>
         <type>general</type>
       </types>
@@ -6891,13 +6898,12 @@
       <description>Les manœuvres défensives du personnage permettent de le protéger lui et sa monture.</description>
       <benefit>Le personnage peut ajouter le bonus de base de son bouclier (y compris le bonus offert par Art du bouclier mais pas les bonus d’altération) à la CA de sa monture. De plus, il peut ajouter ce bonus aux tests d’Équitation visant à annuler une attaque portée contre sa monture (grâce au don Combat monté).</benefit>
     </feat>
-    <feat id="bouclier-protecteur">
+    <feat id="bouclier-protecteur" name="Bouclier protecteur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier protecteur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Bouclier protecteur</name>
       <types>
         <type>general</type>
       </types>
@@ -6908,13 +6914,12 @@
       <description>Le personnage sait comment utiliser son bouclier pour se protéger et protéger ses alliés.</description>
       <benefit>Chaque fois que le personnage utilise l’action de défense totale avec une rondache, un écu ou un pavois, il peut offrir à un allié adjacent de taille inférieure ou égale à la sienne un bonus d’abri à la CA égal au bonus de bouclier conféré par son bouclier. Ce bonus persiste jusqu’au début de son prochain tour. Le bouclier du personnage ne donne pas de bonus d’abri aux jets de Réflexes cependant.</benefit>
     </feat>
-    <feat id="bouclier-salvateur">
+    <feat id="bouclier-salvateur" name="Bouclier salvateur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier salvateur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Bouclier salvateur</name>
       <types>
         <type>general</type>
       </types>
@@ -6924,13 +6929,12 @@
       <description>Le personnage parvient à parer des attaques qui pourraient se révéler mortelles pour ses alliés.</description>
       <benefit>Chaque fois qu’un allié adjacent au personnage est la cible d’une attaque, le personnage peut, par une action immédiate, lui octroyer un bonus de bouclier à la CA de +2. Le personnage doit tenir une rondache, un écu ou un pavois pour pouvoir utiliser ce don.</benefit>
     </feat>
-    <feat id="boyaux-dacier">
+    <feat id="boyaux-dacier" name="Boyaux dacier">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boyaux dacier.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Boyaux dacier</name>
       <types>
         <type>general</type>
       </types>
@@ -6945,13 +6949,12 @@
       <description>L’estomac du personnage est particulièrement résistant.</description>
       <benefit>Le personnage gagne un bonus racial de +2 aux jets de sauvegarde contre tout effet infligeant l’état préjudiciable fiévreux ou nauséeux ainsi que contre les poisons ingérés (mais pas les autres). En plus de cela, il reçoit un bonus de +2 aux tests de Survie pour trouver de la nourriture pour lui-même (et seulement lui-même).</benefit>
     </feat>
-    <feat id="briseur-dobjets">
+    <feat id="briseur-dobjets" name="Briseur d'objets">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Briseur dobjets.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Briseur d'objets</name>
       <types>
         <type>general</type>
       </types>
@@ -6962,13 +6965,12 @@
       <description>Le personnage surmonte les obstacles en les détruisant.</description>
       <benefit>Lorsque le personnage attaque un objet inanimé et abandonné (ne faisant pas partie de l’équipement d’une créature), il ignore les 5 premiers points de sa solidité. Il reçoit également un bonus de +5 aux tests de Force pour enfoncer ou briser des portes.</benefit>
     </feat>
-    <feat id="carnage-effroyable">
+    <feat id="carnage-effroyable" name="Carnage effroyable">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carnage effroyable.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Carnage effroyable</name>
       <types>
         <type>general</type>
       </types>
@@ -6981,13 +6983,12 @@
       <description>En tuant un adversaire, le personnage peut démoraliser les autres ennemis proches.</description>
       <benefit>Chaque fois que le personnage réduit un adversaire à 0 point de vie ou moins, il peut effectuer un test d’Intimidation pour démoraliser tous les ennemis dans un rayon de 6 mètres (4 cases) par une action libre. Seuls les ennemis qui peuvent voir le personnage et l’adversaire réduit à 0 point de vie ou moins peuvent être affectés.</benefit>
     </feat>
-    <feat id="chanteur-de-guerre">
+    <feat id="chanteur-de-guerre" name="Chanteur de guerre">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chanteur de guerre.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Chanteur de guerre</name>
       <types>
         <type>general</type>
       </types>
@@ -7002,13 +7003,12 @@
       <description>Les mélodies du personnage s’inspirent des chants sauvages et des manières brutales de son peuple et poussent ceux qui les entendent à plus de violence et de sauvagerie.</description>
       <benefit>Lorsque le personnage utilise une représentation bardique avec une composante sonore sur un champ de bataille (c’est-à-dire n’importe quelle zone où au moins 12 combattants s’affrontent), la portée ou la zone de la représentation choisie est doublée. De plus, le DD des jets de sauvegarde contre les représentations bardiques du personnage augmente de +2 pour les créatures du sous-type orque et ce, quel que soit l’endroit où cela se produit.</benefit>
     </feat>
-    <feat id="chanteur-de-la-nature">
+    <feat id="chanteur-de-la-nature" name="Chanteur de la nature">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chanteur de la nature.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Chanteur de la nature</name>
       <types>
         <type>general</type>
       </types>
@@ -7023,13 +7023,12 @@
       <description>Les chansons du personnage évoquent les habitudes et les secrets de son peuple.</description>
       <benefit>Lorsque le personnage utilise une représentation bardique avec une composante sonore dans une forêt, la portée ou la zone de la représentation choisie est doublée. De plus, le DD des jets de sauvegarde contre les représentations bardiques du personnage augmente de +2 pour les créatures du type fée et ce, quel que soit l’endroit où cela se produit.</benefit>
     </feat>
-    <feat id="chanteur-des-roches">
+    <feat id="chanteur-des-roches" name="Chanteur des roches">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chanteur des roches.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Chanteur des roches</name>
       <types>
         <type>general</type>
       </types>
@@ -7039,15 +7038,14 @@
         <prerequisite type="other">nain</prerequisite>
       </prerequisites>
       <description>Les chansons du personnage évoquent les traditions et les terres de son peuple.</description>
-      <benefit>Lorsque le personnage utilise une représentation bardique avec une composante sonore sous terre, la portée ou la zone de la représentation choisie est doublée et elle peut affecter les créatures [sourd|sourdes]] si elles possèdent la capacité de perception des vibrations et se trouvent dans la nouvelle portée de la représentation. De plus, le DD des jets de sauvegarde contre les représentations bardiques du personnage augmente de +2 pour les créatures du sous-type Terre et ce, quel que soit l’endroit où cela se produit.</benefit>
+      <benefit>Lorsque le personnage utilise une représentation bardique avec une composante sonore sous terre, la portée ou la zone de la représentation choisie est doublée et elle peut affecter les créatures [sourd|sourdes] si elles possèdent la capacité de perception des vibrations et se trouvent dans la nouvelle portée de la représentation. De plus, le DD des jets de sauvegarde contre les représentations bardiques du personnage augmente de +2 pour les créatures du sous-type Terre et ce, quel que soit l’endroit où cela se produit.</benefit>
     </feat>
-    <feat id="charge-renversante">
+    <feat id="charge-renversante" name="Charge renversante">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge renversante.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Charge renversante</name>
       <types>
         <type>general</type>
       </types>
@@ -7060,26 +7058,24 @@
       <description>Le personnage peut renverser des ennemis lorsqu’il charge.</description>
       <benefit>Lorsque le personnage charge, il peut tenter de renverser une créature située dans la trajectoire de sa charge par une action libre. Si la tentative de renversement est couronnée de succès, il peut poursuivre sa charge. En cas d’échec, sa charge se termine dans l’espace précédant cette créature.</benefit>
     </feat>
-    <feat id="combattre-au-delà-de-la-mort">
+    <feat id="combattre-au-delà-de-la-mort" name="Combattre au-delà de la mort">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Combattre au-delà de la mort.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Combattre au-delà de la mort</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage peut continuer à combattre même lorsqu’il devrait normalement être mort.</description>
       <benefit>Une fois par jour, le personnage peut gagner un nombre de points de vie temporaires égal à son modificateur de Constitution. Il peut activer ce don par une action immédiate lorsqu’il est réduit à 0 point de vie ou moins, ce qui peut lui permettre d’éviter de mourir. Ces points de vie temporaires persistent pendant 1 minute. Si les points de vie du personnage descendent sous 0 lorsque ces points de vie temporaires disparaissent, il tombe inconscient et devient mourant (conformément aux règles normales). S’il possède également le trait racial Férocité, il peut l’utiliser après la disparition des points de vie temporaires offerts par ce don.</benefit>
     </feat>
-    <feat id="concentration-malgré-la-fureur">
+    <feat id="concentration-malgré-la-fureur" name="Concentration malgré la fureur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Concentration malgré la fureur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Concentration malgré la fureur</name>
       <types>
         <type>general</type>
       </types>
@@ -7091,26 +7087,24 @@
       <description>Au milieu du carnage et des coups féroces et sanglants, le personnage reste concentré. Même ses attaques les plus sauvages font mouche.</description>
       <benefit>Lorsque le personnage manipule une arme à deux mains ou une arme à une main tenue à deux mains et qu’il utilise le don Attaque en puissance, il ne subit pas le malus aux jets d’attaque normalement imposé par ce don lors de la première attaque de chacun de ses tours. La pénalité s’applique normalement aux autres attaques cependant (y compris aux attaques d’opportunité).</benefit>
     </feat>
-    <feat id="connaissance-supérieure-de-la-pierre">
+    <feat id="connaissance-supérieure-de-la-pierre" name="Connaissance supérieure de la pierre">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissance supérieure de la pierre.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Connaissance supérieure de la pierre</name>
       <types>
         <type>general</type>
       </types>
       <description>Rien ne peut tromper les sens du personnage lorsqu’il s’agit d’ouvrages en pierre.</description>
       <benefit>Le personnage reçoit un bonus de +4 aux tests de Perception pour détecter des ouvrages de pierre inhabituels. Ce bonus remplace le bonus normal de Perception donné par la capacité de connaissance de la pierre.</benefit>
     </feat>
-    <feat id="connaissances-magiques-étendues">
+    <feat id="connaissances-magiques-étendues" name="Connaissances magiques étendues">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances magiques étendues.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Connaissances magiques étendues</name>
       <types>
         <type>general</type>
       </types>
@@ -7121,26 +7115,24 @@
       <description>Les recherches du personnage lui ont révélé de nouveaux sorts.</description>
       <benefit>Le personnage peut ajouter à sa liste de sorts connus un sort issu de la liste des sorts de sa classe. Ce sort vient en plus de ceux qu’il gagne normalement en obtenant un niveau supplémentaire dans sa classe. Au lieu de cela, le personnage peut choisir deux sorts issus de la liste des sorts de sa classe et appartenant à des niveaux strictement inférieurs au niveau de sorts maximum auquel il a accès (pour la classe concernée). Une fois faits, tous ces choix ne peuvent plus être modifiés par la suite.</benefit>
     </feat>
-    <feat id="cosmopolite">
+    <feat id="cosmopolite" name="Cosmopolite">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cosmopolite.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Cosmopolite</name>
       <types>
         <type>general</type>
       </types>
       <description>En vivant dans de grandes villes exotiques, le personnage a rencontré de nombreuses civilisations, cultures et races.</description>
       <benefit>Le personnage peut parler et lire deux langues de plus (de son choix). En plus de cela, il peut choisir deux compétences dépendant de l’Intelligence, de la Sagesse ou du Charisme, qui deviennent des compétences de classe pour lui.</benefit>
     </feat>
-    <feat id="coup-bousculant">
+    <feat id="coup-bousculant" name="Coup bousculant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup bousculant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup bousculant</name>
       <types>
         <type>general</type>
       </types>
@@ -7154,13 +7146,12 @@
       <benefit>Chaque fois que le personnage porte un coup critique avec une attaque au corps à corps, il peut repousser son adversaire en plus de lui infliger des dégâts normaux. Si le jet de confirmation du coup critique est supérieur ou égal au DMD de la cible, le personnage peut la repousser comme s’il effectuait une manœuvre de bousculade réussie. Le personnage ne doit pas forcément se déplacer avec la cible en cas de réussite. Cela ne provoque pas d’attaque d’opportunité.
 Normal. Il faut réaliser un test de manœuvre séparé pour bousculer un adversaire.</benefit>
     </feat>
-    <feat id="coup-dans-lombre">
+    <feat id="coup-dans-lombre" name="Coup dans l'ombre">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup dans lombre.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup dans l'ombre</name>
       <types>
         <type>general</type>
       </types>
@@ -7170,13 +7161,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour bousculer un advers
       <description>Le personnage peut frapper avec précision même lorsqu’il ne peut pas voir clairement ses ennemis.</description>
       <benefit>Le personnage peut infliger des dégâts de précision (comme des dégâts d’attaque sournoise) aux cibles qui bénéficient d’un camouflage (mais pas d’un camouflage total).</benefit>
     </feat>
-    <feat id="coup-de-bouclier-opportuniste">
+    <feat id="coup-de-bouclier-opportuniste" name="Coup de bouclier opportuniste">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup de bouclier opportuniste.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup de bouclier opportuniste</name>
       <types>
         <type>general</type>
       </types>
@@ -7189,13 +7179,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour bousculer un advers
       <description>Lorsque le personnage inflige un coup puissant avec son arme, il peut en profiter pour enchaîner avec un coup de bouclier.</description>
       <benefit>Chaque fois que le personnage inflige un coup critique avec une arme de corps à corps, il peut, par une action libre, effectuer une attaque de bouclier contre la même cible en utilisant le même bonus d’attaque.</benefit>
     </feat>
-    <feat id="coup-de-flèche">
+    <feat id="coup-de-flèche" name="Coup de flèche">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup de flèche.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup de flèche</name>
       <types>
         <type>general</type>
       </types>
@@ -7206,13 +7195,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour bousculer un advers
       <description>Le personnage sait comment faire de la place pour pouvoir continuer à utiliser son arc.</description>
       <benefit>Lorsque le personnage est adjacent à un adversaire et qu’il effectue une attaque à outrance avec un arc (court, long ou composite), il peut choisir d’effectuer une attaque au corps à corps avec une flèche plutôt que de la décocher avec l’arc. Si l’attaque touche (peu importe si elle inflige des dégâts), le personnage repousse la cible en arrière sur 1,50 m (1 case). Il peut ensuite tirer normalement des flèches avec son arc, en visant la même cible ou un autre ennemi à portée. Cette attaque au corps à corps remplace l’attaque supplémentaire donnée par Tir rapide et tous les jets d’attaque que le personnage effectue au cours de ce round (l’attaque de corps à corps et les attaques à distance) subissent une pénalité de -2. Si, après l’attaque initiale, le personnage ne se trouve plus dans la zone contrôlée par aucun ennemi, il peut effectuer les attaques à distance suivantes sans provoquer d’attaques d’opportunité.</benefit>
     </feat>
-    <feat id="coup-de-la-cockatrice">
+    <feat id="coup-de-la-cockatrice" name="Coup de la cockatrice">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup de la cockatrice.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup de la cockatrice</name>
       <types>
         <type>general</type>
       </types>
@@ -7225,13 +7213,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour bousculer un advers
       <description>Le personnage peut transformer la chair de sa cible en pierre.</description>
       <benefit>Par une action complexe, le personnage peut porter une unique attaque à mains nues contre un ennemi ébloui, pris au dépourvu, paralysé, chancelant, étourdi ou inconscient. Si cette attaque résulte en un coup critique, la cible est pétrifiée, à moins qu’elle ne réussisse un jet de Vigueur contre un DD égal à 10 + la moitié du niveau du personnage + son modificateur de Sagesse. Il s’agit d’un effet surnaturel de métamorphose.</benefit>
     </feat>
-    <feat id="coup-destructeur">
+    <feat id="coup-destructeur" name="Coup destructeur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup destructeur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup destructeur</name>
       <types>
         <type>general</type>
       </types>
@@ -7245,13 +7232,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour bousculer un advers
       <benefit>Chaque fois que le personnage porte un coup critique avec une attaque au corps à corps, il peut détruire l’arme de son adversaire en plus d’infliger des dégâts normaux à celui-ci. Si le jet de confirmation du coup critique est supérieur ou égal au DMD de la cible, le personnage peut endommager l’arme de son ennemi comme s’il effectuait une manœuvre de destruction réussie. Cela ne provoque pas d’attaque d’opportunité.
 Normal. Il faut réaliser un test de manœuvre séparé pour détruire l’arme d’un adversaire.</benefit>
     </feat>
-    <feat id="coup-désarmant">
+    <feat id="coup-désarmant" name="Coup désarmant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup désarmant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup désarmant</name>
       <types>
         <type>general</type>
       </types>
@@ -7265,13 +7251,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour détruire l’arme 
       <benefit>Chaque fois que le personnage porte un coup critique avec une attaque au corps à corps, il peut désarmer son adversaire en plus de lui infliger des dégâts normaux. Si le jet de confirmation du coup critique est supérieur ou égal au DMD de la cible, le personnage peut la désarmer comme s’il effectuait une manœuvre de désarmement réussie. Cela ne provoque pas d’attaque d’opportunité.
 Normal. Il faut réaliser un test de manœuvre séparé pour désarmer un adversaire.</benefit>
     </feat>
-    <feat id="coup-déséquilibrant">
+    <feat id="coup-déséquilibrant" name="Coup déséquilibrant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup déséquilibrant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup déséquilibrant</name>
       <types>
         <type>general</type>
       </types>
@@ -7285,13 +7270,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour désarmer un advers
       <benefit>Chaque fois que le personnage porte un coup critique avec une attaque au corps à corps, il peut déséquilibrer son adversaire en plus de lui infliger des dégâts normaux. Si le jet de confirmation du coup critique est supérieur ou égal au DMD de la cible, le personnage peut la mettre à terre comme s’il effectuait une manœuvre de croc-en-jambe réussie. Cela ne provoque pas d’attaque d’opportunité.
 Normal. Il faut réaliser un test de manœuvre séparé pour mettre un adversaire au sol.</benefit>
     </feat>
-    <feat id="coup-mémorable">
+    <feat id="coup-mémorable" name="Coup mémorable">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup mémorable.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup mémorable</name>
       <types>
         <type>general</type>
       </types>
@@ -7302,15 +7286,14 @@ Normal. Il faut réaliser un test de manœuvre séparé pour mettre un adversair
         <prerequisite type="bba" number="8">BBA +8</prerequisite>
       </prerequisites>
       <description>Les coups donnés par le personnage sont si puissants qu’il peut les utiliser pour repousser ou faire tomber ses ennemis.</description>
-      <benefit>Le personnage doit déclarer qu’il utilise ce don avant de réaliser son jet d’attaque (de sorte qu’un échec compte comme une tentative). En cas de réussite, l’attaque inflige des dégâts normaux et le personnage peut choisir de repousser sa cible de 1,50 m (1 case) ou de tenter de la faire tomber. S’il choisit de la repousser, la cible s’éloigne de 1,50 m (1 case) de lui en ligne droite. Ce mouvement ne provoque pas d’attaque d’opportunité et la cible doit terminer son déplacement dans un endroit sûr suffisamment grand pour l’accueillir. Si le personnage choisit plutôt de tenter de la faire tomber, la cible peut tenter un jet de Vigueur contre un DD égal à 10 + la moitié du niveau du personnage + le modificateur du personnage pour annuler l’effet. Le personnage peut tenter un coup mémorable par jour pour chaque tranche de 4 niveaux qu’il possède (mais voir Spécial), mais jamais plus d’une fois par round.</benefit>
+      <benefit>Le personnage doit déclarer qu’il utilise ce don avant de réaliser son jet d’attaque (de sorte qu’un échec compte comme une tentative). En cas de réussite, l’attaque inflige des dégâts normaux et le personnage peut choisir de repousser sa cible de 1,50 m (1 case) ou de tenter de la faire tomber. S’il choisit de la repousser, la cible s’éloigne de 1,50 m (1 case) de lui en ligne droite. Ce mouvement ne provoque pas d’attaque d’opportunité et la cible doit terminer son déplacement dans un endroit sûr suffisamment grand pour l’accueillir. Si le personnage choisit plutôt de tenter de la faire tomber, la cible peut tenter un jet de Vigueur contre un DD égal à 10 + la moitié du niveau du personnage + le modificateur de Sagesse du personnage pour annuler l’effet. Le personnage peut tenter un coup mémorable par jour pour chaque tranche de 4 niveaux qu’il possède (mais voir Spécial), mais jamais plus d’une fois par round.</benefit>
     </feat>
-    <feat id="coup-odieux">
+    <feat id="coup-odieux" name="Coup odieux">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup odieux.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup odieux</name>
       <types>
         <type>general</type>
       </types>
@@ -7320,13 +7303,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour mettre un adversair
       <description>Le personnage sait comment profiter de l’état d’un ennemi mal en point pour tenter un coup de grâce.</description>
       <benefit>Le personnage peut effectuer un coup de grâce sur une cible recroquevillée sur elle-même ou étourdie.</benefit>
     </feat>
-    <feat id="coup-parfait">
+    <feat id="coup-parfait" name="Coup parfait">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup parfait.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup parfait</name>
       <types>
         <type>general</type>
       </types>
@@ -7339,26 +7321,24 @@ Normal. Il faut réaliser un test de manœuvre séparé pour mettre un adversair
       <description>Lorsque le personnage utilise une arme de moine, ses attaques peuvent être extrêmement précises.</description>
       <benefit>Le personnage doit déclarer qu’il utilise ce don avant de faire son jet d’attaque (de sorte qu’un échec compte comme une tentative). Il doit manier l’une des armes suivantes pour porter un coup parfait : bâton, kama, nunchaku, sai ou siangham. Il peut effectuer deux jets d’attaque et choisir le résultat le plus élevé. Si l’un de ces jets indique une possibilité de critique, l’autre dé est utilisé comme jet de confirmation (le joueur peut choisir quel dé utiliser pour l’attaque et pour la confirmation si les deux résultats indiquent une possibilité de critique). Le personnage peut tenter un coup parfait par jour pour chaque tranche de 4 niveaux qu’il possède (mais voir Spécial), mais jamais plus d’une fois par round.</benefit>
     </feat>
-    <feat id="coup-précis">
+    <feat id="coup-précis" name="Coup précis">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup précis.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup précis</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage sait comment frapper là où ça fait mal, pour autant qu’un de ses alliés distraie sa cible.</description>
       <benefit>Chaque fois que le personnage et un allié possédant également ce don prennent en tenaille un même adversaire, le personnage lui inflige 1d6 points de dégâts de précision supplémentaires lors de chaque attaque au corps à corps réussie. Ces dégâts en bonus se cumulent avec les autres sources de dégâts de précision comme les attaques sournoises. Ces dégâts supplémentaires ne sont pas multipliés en cas de coup critique.</benefit>
     </feat>
-    <feat id="coup-repositionnant">
+    <feat id="coup-repositionnant" name="Coup repositionnant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup repositionnant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coup repositionnant</name>
       <types>
         <type>general</type>
       </types>
@@ -7372,26 +7352,24 @@ Normal. Il faut réaliser un test de manœuvre séparé pour mettre un adversair
       <benefit>Chaque fois que le personnage porte un coup critique avec une attaque au corps à corps, il peut déplacer son adversaire en plus de lui infliger des dégâts normaux. Si le jet de confirmation du coup critique est supérieur ou égal au DMD de la cible, le personnage peut la déplacer comme s’il effectuait une manœuvre de repositionnement réussie. Cela ne provoque pas d’attaque d’opportunité.
 Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un adversaire.</benefit>
     </feat>
-    <feat id="couple-dopportunistes">
+    <feat id="couple-dopportunistes" name="Couple d'opportunistes">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Couple dopportunistes.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Couple d'opportunistes</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage sait comment profiter d’un ennemi qui baisse sa garde.</description>
       <benefit>Chaque fois que le personnage est adjacent à un allié qui possède également ce don, il reçoit un bonus de circonstances de +4 aux attaques d’opportunité portées contre les créatures situées dans une zone contrôlée à la fois par le personnage et son allié. De plus, chaque fois qu’un ennemi provoque une attaque d’opportunité de la part de l’allié du personnage, le personnage a également l’occasion de lui porter une attaque d’opportunité (à condition que l’ennemi en question se trouve dans une case contrôlée par le personnage). Le personnage a le droit de porter cette attaque d’opportunité même si, en temps normal, la situation ou l’une des capacités de l’ennemi l’en empêcherait. Cela ne permet toutefois pas au personnage d’effectuer plus qu’une seule attaque d’opportunité en réponse à une action donnée.</benefit>
     </feat>
-    <feat id="coups-protecteurs">
+    <feat id="coups-protecteurs" name="Coups protecteurs">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coups protecteurs.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Coups protecteurs</name>
       <types>
         <type>general</type>
       </types>
@@ -7403,13 +7381,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage peut se protéger en enchaînant plusieurs attaques sauvages.</description>
       <benefit>Lorsque le personnage effectue une attaque à outrance avec une arme à deux mains, il peut choisir de réduire les dégâts de 50% en échange d’un bonus de bouclier de +4 à la CA et au DMD jusqu’au début de son prochain tour. La réduction de dégâts s’applique jusqu’au début de son prochain tour.</benefit>
     </feat>
-    <feat id="critique-handicapant">
+    <feat id="critique-handicapant" name="Critique handicapant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Critique handicapant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Critique handicapant</name>
       <types>
         <type>general</type>
       </types>
@@ -7420,13 +7397,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage peut affecter les capacités de déplacement des cibles qu’il met à mal.</description>
       <benefit>Chaque fois que le personnage porte un coup critique contre un adversaire, la vitesse de déplacement de celui-ci est divisée par deux pendant 1 minute. Un jet de Vigueur réussi réduit la durée à 1d4 rounds. Le DD de ce jet de sauvegarde est de 10 + le BBA du personnage. Si la cible possède plusieurs modes de mouvement, il doit choisir lequel d’entre eux est affecté. S’il s’agit d’une cible volante, elle doit réussir un test de Vol de DD 10 pour rester en vol et elle voit sa manœuvrabilité réduite d’une catégorie.</benefit>
     </feat>
-    <feat id="crocs-acérés">
+    <feat id="crocs-acérés" name="Crocs acérés">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crocs acérés.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Crocs acérés</name>
       <types>
         <type>general</type>
       </types>
@@ -7436,13 +7412,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>La puissante mâchoire ou dentition du personnage est assez dangereuse pour lui permettre d’attaquer en mordant.</description>
       <benefit>Le personnage dispose d’une attaque de morsure qui inflige 1d4 points de dégâts plus son modificateur de Force. Il est formé à l’utilisation de cette arme et peut lui appliquer des dons ou des effets fonctionnant sur les attaques naturelles. S’il utilise son attaque de morsure au cours d’une attaque à outrance, elle fonctionne comme une attaque secondaire effectuée à son plein BBA moins 5 et dont les dégâts sont majorés de la moitié de son modificateur de Force.</benefit>
     </feat>
-    <feat id="cul-sec">
+    <feat id="cul-sec" name="Cul sec">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cul sec.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Cul sec</name>
       <types>
         <type>general</type>
       </types>
@@ -7453,13 +7428,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage avale rapidement l’alcool pour en tirer du ki.</description>
       <benefit>Une action rapide suffit (au lieu d’une action simple) pour consommer de l’alcool fort et gagner du ki temporaire.</benefit>
     </feat>
-    <feat id="cœur-de-vermine">
+    <feat id="cœur-de-vermine" name="Cœur de vermine">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cœur de vermine.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Cœur de vermine</name>
       <types>
         <type>general</type>
       </types>
@@ -7469,13 +7443,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Un lien spécial unit le personnage avec toutes les choses qui rampent, glissent, serpentent et piquent.</description>
       <benefit>Les sorts ou capacités spéciales du personnage qui n’affectent normalement que les animaux peuvent cibler les vermines (celles qui pouvaient déjà affecter les vermines continuent de fonctionner). Il peut utiliser sa capacité d’empathie sauvage pour influencer les vermines aussi facilement que s’il s’agissait d’animaux.</benefit>
     </feat>
-    <feat id="découverte-supplémentaire">
+    <feat id="découverte-supplémentaire" name="Découverte supplémentaire">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Découverte supplémentaire.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Découverte supplémentaire</name>
       <types>
         <type>general</type>
       </types>
@@ -7485,26 +7458,24 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage a réalisé une nouvelle découverte alchimique.</description>
       <benefit>Le personnage gagne une découverte alchimique de plus dont il doit en remplir les conditions d’accès.</benefit>
     </feat>
-    <feat id="défenses-coordonnées">
+    <feat id="défenses-coordonnées" name="Défenses coordonnées">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Défenses coordonnées.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Défenses coordonnées</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage sait comment combattre avec ses alliés pour éviter d’être victime de manœuvres de combat.</description>
       <benefit>Chaque fois que le personnage est adjacent à un allié qui possède également ce don, il reçoit un bonus de compétence de +2 à son DMD. Ce bonus passe à +4 si la créature qui tente la manœuvre appartient à une catégorie de taille plus grande que celles du personnage et de son allié.</benefit>
     </feat>
-    <feat id="démarche-de-laraignée">
+    <feat id="démarche-de-laraignée" name="Démarche de l'araignée">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Démarche de laraignée.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Démarche de l'araignée</name>
       <types>
         <type>general</type>
       </types>
@@ -7516,13 +7487,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>La maîtrise physique du personnage lui permet de marcher là où d’autres ne le peuvent pas.</description>
       <benefit>Par une action de mouvement, le personnage peut se déplacer de la moitié de la distance de chute ralentie (maximum 15 mètres) sur un mur, au plafond, sur une corde, sur des branches ou même sur l’eau ou n’importe quelle autre surface qui ne pourrait normalement pas supporter son poids. Il doit atteindre une surface solide et horizontale à la fin de son tour, sous peine de tomber.</benefit>
     </feat>
-    <feat id="entraînement-supérieur">
+    <feat id="entraînement-supérieur" name="Entraînement supérieur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Entraînement supérieur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Entraînement supérieur</name>
       <types>
         <type>general</type>
       </types>
@@ -7535,13 +7505,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Les ennemis que le personnage entraîne avec lui sont déséquilibrés.</description>
       <benefit>Le personnage reçoit un bonus de +2 aux tests des tentatives d’entraînement. Ce bonus se cumule avec celui offert par le don Science de l’entraînement. Chaque fois que le personnage entraîne un ennemi derrière lui, le mouvement de ce dernier provoque des attaques d’opportunité de la part de tous les alliés du personnage (mais pas du personnage lui-même).</benefit>
     </feat>
-    <feat id="expertise-magique-majeure">
+    <feat id="expertise-magique-majeure" name="Expertise magique majeure">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise magique majeure.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Expertise magique majeure</name>
       <types>
         <type>general</type>
       </types>
@@ -7552,13 +7521,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage peut lancer un sort de bas niveau en tant que pouvoir magique.</description>
       <benefit>Le personnage choisit un sort qu’il connaît et qui appartient au 5&lt;sup&gt;ème&lt;/sup&gt; niveau ou à un niveau inférieur. Il peut lancer ce sort deux fois par jour en tant que pouvoir magique avec un NLS égal à son NLS dans la classe associée à la liste de sorts d’où le sort choisi est extrait. Le DD du jet de sauvegarde pour ce pouvoir magique dépend du Charisme du personnage. Les sorts qui requièrent une composante matérielle ou un focalisateur coûteux ne peuvent pas être choisis pour ce don. Le personnage ne peut pas appliquer de dons de métamagie au sort choisi.</benefit>
     </feat>
-    <feat id="expertise-magique-mineure">
+    <feat id="expertise-magique-mineure" name="Expertise magique mineure">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise magique mineure.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Expertise magique mineure</name>
       <types>
         <type>general</type>
       </types>
@@ -7568,13 +7536,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage peut lancer un sort de 1&lt;sup&gt;er&lt;/sup&gt; niveau en tant que pouvoir magique.</description>
       <benefit>Le personnage choisit un sort de 1&lt;sup&gt;er&lt;/sup&gt; niveau qu’il connaît. Il peut lancer ce sort deux fois par jour en tant que pouvoir magique avec un NLS égal à son NLS dans la classe associée à la liste de sorts à laquelle il appartient. Le DD du jet de sauvegarde pour ce pouvoir magique dépend du Charisme du personnage. Les sorts qui requièrent une composante matérielle ou un focalisateur coûteux ne peuvent pas être choisis pour ce don. Le personnage ne peut pas appliquer de dons de métamagie au sort choisi.</benefit>
     </feat>
-    <feat id="expériences-variées">
+    <feat id="expériences-variées" name="Expériences variées">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expériences variées.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Expériences variées</name>
       <types>
         <type>general</type>
       </types>
@@ -7589,13 +7556,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Même si le personnage est encore jeune pour sa race, il a déjà accumulé de nombreux savoirs et talents.</description>
       <benefit>Le personnage obtient un bonus de +2 à tous les tests de Connaissances et de Profession  et il peut utiliser ces compétences même sans formation.</benefit>
     </feat>
-    <feat id="garde-du-corps">
+    <feat id="garde-du-corps" name="Garde du corps">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Garde du corps.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Garde du corps</name>
       <types>
         <type>general</type>
       </types>
@@ -7605,13 +7571,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Les attaques rapides que porte le personnage empêchent ses adversaires d’attaquer les alliés qui se trouvent près de lui.</description>
       <benefit>Lorsqu’un allié adjacent au personnage est attaqué, le personnage peut utiliser une attaque d’opportunité pour tenter d’améliorer la CA de son allié grâce à une action « aider quelqu’un ». Ce don ne lui permet pas d’utiliser « aider quelqu’un » pour améliorer le jet d’attaque de son allié.</benefit>
     </feat>
-    <feat id="grande-tenaille">
+    <feat id="grande-tenaille" name="Grande tenaille">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grande tenaille.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Grande tenaille</name>
       <types>
         <type>general</type>
       </types>
@@ -7621,26 +7586,24 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage est à l’affût de toutes les ouvertures lorsqu’il prend un adversaire en tenaille.</description>
       <benefit>Chaque fois que le personnage et un allié possédant également ce don prennent un adversaire en tenaille, le bonus de tenaille dont bénéficient les jets d’attaque du personnage passe à +4. De plus, chaque fois qu’il porte un coup critique contre la créature prise en tenaille, cette dernière entraîne une attaque d’opportunité de la part de l’allié du personnage.</benefit>
     </feat>
-    <feat id="griffes-coupantes">
+    <feat id="griffes-coupantes" name="Griffes coupantes">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Griffes coupantes.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Griffes coupantes</name>
       <types>
         <type>general</type>
       </types>
       <description>Les griffes du personnage infligent des dégâts supérieurs.</description>
       <benefit>Si le personnage touche une créature avec ses deux attaques de griffes au cours de son tour, la seconde griffe inflige 1d6 points de dégâts supplémentaires. Il s’agit de dégâts de précision qui ne sont pas multipliés en cas de coup critique. Le personnage peut utiliser ce don une fois par round.</benefit>
     </feat>
-    <feat id="griffes-magiques">
+    <feat id="griffes-magiques" name="Griffes magiques">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Griffes magiques.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Griffes magiques</name>
       <types>
         <type>general</type>
       </types>
@@ -7652,13 +7615,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage n’a pas besoin d’armes magiques : ces babioles enchantées font pâle figure à côté de sa férocité bestiale.</description>
       <benefit>Les armes naturelles du personnage fonctionnent à la fois comme des armes magiques et des armes en argent vis-à-vis de la résistance aux dégâts.</benefit>
     </feat>
-    <feat id="gros-buveur">
+    <feat id="gros-buveur" name="Gros buveur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gros buveur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Gros buveur</name>
       <types>
         <type>general</type>
       </types>
@@ -7670,13 +7632,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage acquiert une plus grande quantité de ki lors de ses libations.</description>
       <benefit>Chaque fois que le personnage gagne du ki temporaire grâce à sa capacité de ki alcoolisé, il obtient 2 points temporaires de ki au lieu d’un seul.</benefit>
     </feat>
-    <feat id="guérison-rapide">
+    <feat id="guérison-rapide" name="Guérison rapide">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guérison rapide.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Guérison rapide</name>
       <types>
         <type>general</type>
       </types>
@@ -7688,13 +7649,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage guérit facilement et les effets des sorts ou de la guérison naturelle sont augmentés.</description>
       <benefit>Lorsque le personnage regagne des points de vie en se reposant ou grâce à de la magie curative, il récupère des points de vie supplémentaires en quantité égale à la moitié de son modificateur de Constitution (minimum +1).</benefit>
     </feat>
-    <feat id="halfelin-porte-chance">
+    <feat id="halfelin-porte-chance" name="Halfelin porte-chance">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Halfelin porte-chance.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Halfelin porte-chance</name>
       <types>
         <type>general</type>
       </types>
@@ -7704,13 +7664,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage porte chance à ses compagnons de voyage.</description>
       <benefit>Une fois par jour, lorsqu’un des alliés du personnage rate un jet de sauvegarde alors qu’il se trouve à au plus 9 mètres (6 cases) du personnage, ce dernier (le personnage donc) peut tenter d’effectuer le même jet de sauvegarde, comme s’il était la cible de l’effet associé. Le personnage doit utiliser cette capacité après que son allié a effectué son jet de sauvegarde mais avant que le MJ n’ait déclaré s’il s’agissait d’une réussite ou d’un échec. L’allié peut alors choisir d’utiliser le résultat du personnage au lieu du sien.</benefit>
     </feat>
-    <feat id="homme-de-main">
+    <feat id="homme-de-main" name="Homme de main">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Homme de main.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Homme de main</name>
       <types>
         <type>general</type>
       </types>
@@ -7720,13 +7679,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage sait comment susciter la peur chez ceux qu’il brutalise.</description>
       <benefit>Chaque fois que le personnage inflige des dégâts non létaux avec une arme de corps à corps, il peut effectuer un test d’Intimidation pour démoraliser sa cible par une action libre. Si ce test réussit, la cible est secouée pendant un nombre de rounds égal aux dégâts infligés. Si l’attaque s’est soldée par un coup critique, la cible est effrayée pendant 1 round en cas de test d’Intimidation réussi, en plus d’être secouée pendant un nombre de rounds égal aux dégâts infligés.</benefit>
     </feat>
-    <feat id="héritage-racial">
+    <feat id="héritage-racial" name="Héritage racial">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Héritage racial.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Héritage racial</name>
       <types>
         <type>general</type>
       </types>
@@ -7736,13 +7694,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le sang d’un ancêtre non humain coule dans les veines du personnage.</description>
       <benefit>Le personnage choisit une race autre que humain. Pour tous les effets liés à la race, le personnage fonctionne à la fois comme humain et comme membre de cette autre race. Par exemple, s’il choisit la race des nains, le personnage fonctionne à la fois comme un humain et comme un nain lorsqu’il s’agit de choisir des traits ou des dons ou de déterminer la manière dont un sort ou un objet magique l’affecte, et ainsi de suite.</benefit>
     </feat>
-    <feat id="inaperçu">
+    <feat id="inaperçu" name="Inaperçu">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Inaperçu.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Inaperçu</name>
       <types>
         <type>general</type>
       </types>
@@ -7756,13 +7713,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>La petite taille du personnage lui permet de se dissimuler rapidement.</description>
       <benefit>Au cours du premier round de combat, on considère que les ennemis du personnage qui sont pris au dépourvu ne l’ont pas encore aperçu. Il peut donc tenter un test de Discrétion pour se cacher.</benefit>
     </feat>
-    <feat id="interception-de-coups">
+    <feat id="interception-de-coups" name="Interception de coups">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Interception de coups.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Interception de coups</name>
       <types>
         <type>general</type>
       </types>
@@ -7772,13 +7728,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage se jette au devant du danger pour sauver ses alliés.</description>
       <benefit>Quand le personnage utilise l’action « aider quelqu’un » pour améliorer la CA d’un allié adjacent, il peut intercepter une attaque réussie contre cet allié en utilisant une action immédiate qui lui permet de subir l’intégralité des dégâts de cette attaque, ainsi que ses effets spéciaux le cas échéant (saignement, empoisonnement, etc.) Une même créature ne peut pas bénéficier de ce don plus d’une fois par attaque.</benefit>
     </feat>
-    <feat id="intuition-partagée">
+    <feat id="intuition-partagée" name="Intuition partagée">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Intuition partagée.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Intuition partagée</name>
       <types>
         <type>general</type>
       </types>
@@ -7789,13 +7744,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage peut attirer l’attention des autres là où il veut.</description>
       <benefit>Par une action de mouvement, le personnage peut donner à toutes les créatures amicales situées dans un rayon de 9 mètres (6 cases) et capables de le voir ou de l’entendre un bonus de +2 aux tests de Perception pendant un nombre de rounds égal à son modificateur de Sagesse (au minimum 1 round).</benefit>
     </feat>
-    <feat id="lancer-ki">
+    <feat id="lancer-ki" name="Lancer ki">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lancer ki.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Lancer ki</name>
       <types>
         <type>general</type>
       </types>
@@ -7806,13 +7760,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Les aptitudes physiques du personnage et sa maîtrise de l’inertie lui permettent de lancer ses adversaires.</description>
       <benefit>Lorsque le personnage réussit une manœuvre de croc-en-jambe à mains nues contre une cible de taille inférieure ou égale à la sienne, il peut la lancer et la faire tomber au sol dans n’importe quelle case de la zone qu’il contrôle. Le mouvement de la cible ne provoque pas d’attaque d’opportunité et le personnage ne peut pas la lancer dans une case occupée par une autre créature.</benefit>
     </feat>
-    <feat id="lanceur-de-sort-allié">
+    <feat id="lanceur-de-sort-allié" name="Lanceur de sort allié">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lanceur de sort allié.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Lanceur de sort allié</name>
       <types>
         <type>general</type>
       </types>
@@ -7822,26 +7775,24 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage sait comment percer les protections magiques des autres créatures avec l’aide d’un allié.</description>
       <benefit>Chaque fois que le personnage est adjacent à un allié possédant ce même don, il reçoit un bonus de compétences de +2 aux tests de NLS effectués pour percer la résistance à la magie d’une cible. Si l’allié a préparé le même sort (ou s’il connaît ce sort et dispose d’un emplacement de sort adéquat pour le lancer spontanément), ce bonus passe à +4 et le personnage reçoit un bonus de +1 au NLS pour le calcul de toutes les variables qui en dépendent (comme la durée, la portée et l’effet).</benefit>
     </feat>
-    <feat id="lanceur-de-sort-protégé">
+    <feat id="lanceur-de-sort-protégé" name="Lanceur de sort protégé">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lanceur de sort protégé.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Lanceur de sort protégé</name>
       <types>
         <type>general</type>
       </types>
       <description>Les alliés du personnage le protègent quand il lance des sorts complexes.</description>
       <benefit>Chaque fois que le personnage est adjacent à un allié qui possède également ce don, il reçoit un bonus de compétence de +4 aux tests de Concentration. Si l’allié porte une targe ou une rondache, ce bonus augmente de +1. S’il porte un écu ou un pavois, il augmente de +2. Enfin, si un ennemi contrôle à la fois l’espace où le personnage se trouve et celui où son allié se trouve et si cet ennemi possède le don Perturbateur ou une autre capacité qui augmente le DD des tests de Concentration, l’accroissement du DD est réduite de 50%.</benefit>
     </feat>
-    <feat id="maléfice-supplémentaire">
+    <feat id="maléfice-supplémentaire" name="Maléfice supplémentaire">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Maléfice supplémentaire.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Maléfice supplémentaire</name>
       <types>
         <type>general</type>
       </types>
@@ -7851,26 +7802,24 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage a percé le secret d’un nouveau maléfice.</description>
       <benefit>Le personnage obtient un maléfice supplémentaire. Il doit en remplir les conditions d’accès.</benefit>
     </feat>
-    <feat id="manœuvres-coordonnées">
+    <feat id="manœuvres-coordonnées" name="Manœuvres coordonnées">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manœuvres coordonnées.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Manœuvres coordonnées</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage sait comment collaborer avec ses alliés pour accomplir de dangereuses manœuvres lors des combats.</description>
       <benefit>Chaque fois que le personnage est adjacent à un allié qui possède également ce don, il reçoit un bonus de compétence de +2 à tous ses tests de BMO. Ce bonus passe à +4 lorsqu’il tente de se libérer d’une lutte.</benefit>
     </feat>
-    <feat id="marche-sur-les-nuages">
+    <feat id="marche-sur-les-nuages" name="Marche sur les nuages">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marche sur les nuages.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Marche sur les nuages</name>
       <types>
         <type>general</type>
       </types>
@@ -7881,13 +7830,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <description>Le personnage a le pas extraordinairement léger.</description>
       <benefit>Par une action de mouvement, le personnage peut marcher dans les airs (comme le sort) sur une distance maximale égale à la moitié de sa distance de chute ralentie avec un maximum de 15 mètres. Il doit atteindre une surface solide et suffisamment horizontale à la fin de son tour, sous peine de tomber.</benefit>
     </feat>
-    <feat id="maître-alchimiste">
+    <feat id="maître-alchimiste" name="Maître alchimiste">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Maître alchimiste.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Maître alchimiste</name>
       <types>
         <type>general</type>
       </types>
@@ -7898,13 +7846,12 @@ Normal. Il faut réaliser un test de manœuvre séparé pour repositionner un ad
       <benefit>Le personnage reçoit un bonus de +2 aux tests d’Artisanat (Alchimie) et il peut créer des objets alchimiques communs beaucoup plus vite que la normale. Lorsqu’il fabrique des poisons, il peut créer un nombre de doses égal à son modificateur d’Intelligence (au minimum 1) en même temps. Ces doses supplémentaires n’augmentent pas le temps requis mais bien le coût en matières premières.
 De plus, chaque fois que le personnage fabrique des objets alchimiques ou des poisons à l’aide de la compétence d’Artisanat (Alchimie), on utilise la valeur de l’objet en pièces d’or au lieu de sa valeur en pièces d’argent pour calculer ses progrès (ne multipliez pas la valeur en pièces d’or par 10 pour déterminer la valeur en pièces d’argent).</benefit>
     </feat>
-    <feat id="maîtrise-des-arbalètes">
+    <feat id="maîtrise-des-arbalètes" name="Maîtrise des arbalètes">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Maîtrise des arbalètes.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Maîtrise des arbalètes</name>
       <types>
         <type>general</type>
       </types>
@@ -7917,13 +7864,12 @@ De plus, chaque fois que le personnage fabrique des objets alchimiques ou des po
       <description>Le personnage peut recharger les arbalètes à toute vitesse et même tirer à bout portant sans craindre de contre-attaque.</description>
       <benefit>Quel que soit le type d’arbalète utilisé, il ne faut au personnage qu’une action libre pour la recharger. Lors d’une attaque à outrance, il peut effectuer autant d’attaques à l’arbalète que s’il utilisait un arc. Lorsque le personnage recharge une arbalète correspondant au type d’arbalète choisi pour le don Rechargement Rapide, il ne provoque plus d’attaque d’opportunité.</benefit>
     </feat>
-    <feat id="maîtrise-du-combat-en-aveugle">
+    <feat id="maîtrise-du-combat-en-aveugle" name="Maîtrise du combat en aveugle">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Maîtrise du combat en aveugle.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Maîtrise du combat en aveugle</name>
       <types>
         <type>general</type>
       </types>
@@ -7935,13 +7881,12 @@ De plus, chaque fois que le personnage fabrique des objets alchimiques ou des po
       <benefit>Lorsque le personnage porte une attaque au corps à corps, il ignore le pourcentage d’échec dû au camouflage si celui-ci est inférieur à un camouflage total et il traite les adversaires bénéficiant d’un camouflage total comme s’ils ne disposaient que d’un camouflage normal (20% d’échec des attaques au lieu de 50%). En cas d’échec, le personnage a toujours la possibilité de relancer le jet de pourcentage.
 Si le personnage parvient à localiser avec précision un attaquant invisible ou caché, ce dernier ne bénéficie d’aucun avantage spécial lorsqu’il attaque le personnage à distance, quelle que soit la distance qui les sépare. En d’autres termes, le personnage ne perd pas son bonus de Dextérité à la CA et l’attaquant ne bénéficie pas du bonus de +2 auquel il aurait normalement droit vu son invisibilité.</benefit>
     </feat>
-    <feat id="maîtrise-du-tir-à-bout-portant">
+    <feat id="maîtrise-du-tir-à-bout-portant" name="Maîtrise du tir à bout portant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Maîtrise du tir à bout portant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Maîtrise du tir à bout portant</name>
       <types>
         <type>general</type>
       </types>
@@ -7952,26 +7897,24 @@ Si le personnage parvient à localiser avec précision un attaquant invisible ou
       <benefit>Choisissez un type d’armes à distance. Le personnage ne provoque pas d’attaque d’opportunité lorsqu’il tire avec cette arme à distance depuis un espace contrôlé par un ennemi.
 Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi provoque des attaques d’opportunité.</benefit>
     </feat>
-    <feat id="mur-de-boucliers">
+    <feat id="mur-de-boucliers" name="Mur de boucliers">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mur de boucliers.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Mur de boucliers</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage peut former un mur défensif avec ceux qui l’entourent.</description>
       <benefit>Chaque fois que le personnage porte un bouclier et est adjacent à un allié qui porte aussi un bouclier et possède ce don, le bonus de CA que le personnage obtient de son bouclier augmente en fonction du type de bouclier utilisé par son allié. Si l’allié porte une targe ou une rondache, le bonus de bouclier du personnage augmente de +1. Si l’allié porte un écu ou un pavois, le bonus de bouclier du personnage augmente de +2. Le personnage conserve ces bonus même si son allié perd son propre bonus de bouclier parce qu’il porte un coup de bouclier. Si l’allié adjacent au personnage utilise un pavois pour gagner un abri total, le personnage en bénéficie également si l’attaque qui le cible passe à travers le bord de case correspondant au bouclier (voir la description du pavois).</benefit>
     </feat>
-    <feat id="odorat-supérieur">
+    <feat id="odorat-supérieur" name="Odorat supérieur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Odorat supérieur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Odorat supérieur</name>
       <types>
         <type>general</type>
       </types>
@@ -7985,13 +7928,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage a le nez aussi fin que celui d’un prédateur sauvage.</description>
       <benefit>Le personnage gagne la capacité spéciale d’odorat.</benefit>
     </feat>
-    <feat id="par-dessus-et-par-dessous">
+    <feat id="par-dessus-et-par-dessous" name="Par-dessus et par-dessous">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Par-dessus et par-dessous.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Par-dessus et par-dessous</name>
       <types>
         <type>general</type>
       </types>
@@ -8005,13 +7947,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage peut se glisser sous les ennemis qui tentent de l’agripper pour les faire tomber.</description>
       <benefit>Si une créature plus grande que le personnage tente de l’agripper et échoue, le personnage peut effectuer une tentative de croc-en-jambe contre elle par une action immédiate et avec un bonus de +2. Cela ne provoque pas d’attaque d’opportunité.</benefit>
     </feat>
-    <feat id="parade-de-sorts">
+    <feat id="parade-de-sorts" name="Parade de sorts">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Parade de sorts.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Parade de sorts</name>
       <types>
         <type>general</type>
       </types>
@@ -8022,26 +7963,24 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage peut renvoyer à ses ennemis les sorts qu’ils lui lancent.</description>
       <benefit>Chaque fois que le personnage parvient à contrer un sort, celui-ci retourne vers celui qui l’a lancé. Cela fonctionne exactement comme le sort renvoi des sorts.</benefit>
     </feat>
-    <feat id="pas-de-côté">
+    <feat id="pas-de-côté" name="Pas de côté">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pas de côté.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Pas de côté</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage peut se repositionner lorsqu’il échappe à une attaque manquée.</description>
       <benefit>Chaque fois qu’un adversaire rate le personnage avec une attaque au corps à corps, il peut se déplacer de 1,50 m (1 case) par une action immédiate, pour autant qu’il reste dans l’espace contrôlé par l’ennemi en question. Ce déplacement ne provoque pas d’attaque d’opportunité. Si le personnage choisit de faire ce déplacement, il ne peut pas effectuer de pas de placement de 1,50 m au cours de son prochain tour. S’il utilise une action de mouvement pour se déplacer au cours de son prochain tour, il doit soustraire 1,50 m (1 case) à la distance totale qu’il peut parcourir.</benefit>
     </feat>
-    <feat id="pas-léger">
+    <feat id="pas-léger" name="Pas léger">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pas léger.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Pas léger</name>
       <types>
         <type>general</type>
       </types>
@@ -8053,13 +7992,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage peut agilement se frayer un passage à travers tous les terrains, même les plus dangereux et les plus accidentés.</description>
       <benefit>Le personnage peut ignorer les effets des terrains difficiles dans les environnements naturels et fonctionner comme s’il s’agissait d’un terrain normal.</benefit>
     </feat>
-    <feat id="passer-pour-un-humain">
+    <feat id="passer-pour-un-humain" name="Passer pour un humain">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Passer pour un humain.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Passer pour un humain</name>
       <types>
         <type>general</type>
       </types>
@@ -8073,13 +8011,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>On prend souvent le personnage pour un humain alors qu’il est d’une race différente.</description>
       <benefit>Lorsque le personnage se déguise en humain, il reçoit un bonus de +10 au test de Déguisement et le fait de se déguiser en une créature d’une autre race ne lui impose aucune pénalité. Dans les zones colonisées par les humains ou à forte population humaine, il peut prendre 10 sur ses jets de Déguisement, ce qui signifie que la plupart des gens pensent qu’il est humain, à moins qu’on ne leur donne une raison d’en douter.</benefit>
     </feat>
-    <feat id="patrouille-en-combat">
+    <feat id="patrouille-en-combat" name="Patrouille en combat">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Patrouille en combat.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Patrouille en combat</name>
       <types>
         <type>general</type>
       </types>
@@ -8091,13 +8028,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage se déplace sur le champ de bataille pour faire face aux menaces où qu’elles surviennent.</description>
       <benefit>Par une action complexe, le personnage peut se mettre à patrouiller au cours d’un combat. Concrètement, il augmente le rayon de la zone qu’il contrôle de 1,50 m pour chaque tranche de 5 points dans son BBA. Jusqu’au début de son prochain tour, il peut porter des attaques d’opportunité contre n’importe quel adversaire qui en provoque une au sein de la zone qu’il contrôle. Il peut se déplacer au cours de ces attaques d’opportunité, pour autant que le déplacement total qu’il effectue avant le début de son prochain tour ne dépasse pas sa vitesse de déplacement. Normalement, les déplacements du personnage provoquent des attaques d’opportunité.</benefit>
     </feat>
-    <feat id="peau-de-fer">
+    <feat id="peau-de-fer" name="Peau de fer">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Peau de fer.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Peau de fer</name>
       <types>
         <type>general</type>
       </types>
@@ -8112,13 +8048,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>La peau du personnage est plus épaisse et plus résistante que celle d’un membre normal de sa race.</description>
       <benefit>Le personnage gagne un bonus d’armure naturelle de +1 grâce à sa peau particulièrement épaisse.</benefit>
     </feat>
-    <feat id="perception-de-la-peur">
+    <feat id="perception-de-la-peur" name="Perception de la peur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Perception de la peur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Perception de la peur</name>
       <types>
         <type>general</type>
       </types>
@@ -8132,13 +8067,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage peut percevoir l’odeur amère de la peur.</description>
       <benefit>Le personnage reçoit un bonus de +4 aux tests de Perception pour détecter les créatures affectées par un état préjudiciable parmi secoué, effrayé et paniqué. Il peut également utiliser sa compétence de Perception pour effectuer les tests de Psychologie contre les cibles possédant l’un de ces états préjudiciables ou tentant de camoufler leur peur d’une manière ou d’une autre.</benefit>
     </feat>
-    <feat id="perception-via-la-pierre">
+    <feat id="perception-via-la-pierre" name="Perception via la pierre">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Perception via la pierre.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Perception via la pierre</name>
       <types>
         <type>general</type>
       </types>
@@ -8149,13 +8083,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage peut sentir les mouvements via la terre et les pierres qui l’entourent.</description>
       <benefit>Le personnage gagne la capacité de perception des vibrations sur une portée de 3 mètres (2 cases).</benefit>
     </feat>
-    <feat id="perfection-magique">
+    <feat id="perfection-magique" name="Perfection magique">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Perfection magique.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Perfection magique</name>
       <types>
         <type>general</type>
       </types>
@@ -8166,13 +8099,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage sait lancer un sort en particulier comme personne d’autre.</description>
       <benefit>Le personnage choisit un sort qu’il est capable de lancer. Chaque fois qu’il lance ce sort, il peut appliquer un des dons de métamagie qu’il connaît sans modifier le niveau du sort ni le temps d’incantation tant que le niveau modifié du sort ne dépasse pas le 9&lt;sup&gt;ème&lt;/sup&gt; niveau. De plus, si le personnage possède d’autres dons qui lui permettent d’appliquer un bonus numérique fixe à l’une des variables du sort (comme Arme de prédilection (rayon), École renforcée ou Efficacité des sorts accrue par exemple), le bonus est doublé lorsqu’il s’agit du sort choisi pour ce don.</benefit>
     </feat>
-    <feat id="poing-élémentaire">
+    <feat id="poing-élémentaire" name="Poing élémentaire">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poing élémentaire.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Poing élémentaire</name>
       <types>
         <type>general</type>
       </types>
@@ -8185,13 +8117,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage peut renforcer ses coups avec de l’énergie élémentaire.</description>
       <benefit>Lorsque le personnage utilise ce don, il choisit l’un des types d’énergie suivants : acide, électricité, feu ou froid. Une attaque réussie inflige des dégâts normaux plus 1d6 points de dégâts du type choisi. Le personnage doit déclarer qu’il utilise ce don avant le jet d’attaque (une attaque ratée consomme donc une tentative). Le personnage peut effectuer une attaque de Poing élémentaire par jour par tranche de 4 niveaux (voir Spécial), mais jamais plus d’une par round.</benefit>
     </feat>
-    <feat id="poursuite">
+    <feat id="poursuite" name="Poursuite">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poursuite.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Poursuite</name>
       <types>
         <type>general</type>
       </types>
@@ -8202,13 +8133,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage peut se rapprocher des ennemis qui tentent de le fuir sans que cela ne limite ses possibilités de déplacement.</description>
       <benefit>Lorsque le personnage utilise le don S’avancer pour suivre un ennemi adjacent, il peut parcourir une distance allant jusqu’à 3 mètres (2 cases). Cela ne l’empêche pas d’effectuer un pas de placement d’1,50 m (1 case) lors de son prochain tour et le déplacement effectué en utilisant le don S’avancer ne réduit en aucune manière la distance qu’il peut parcourir au cours de son prochain tour.</benefit>
     </feat>
-    <feat id="pouvoir-de-rage-supplémentaire">
+    <feat id="pouvoir-de-rage-supplémentaire" name="Pouvoir de rage supplémentaire">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pouvoir de rage supplémentaire.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Pouvoir de rage supplémentaire</name>
       <types>
         <type>general</type>
       </types>
@@ -8218,13 +8148,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage a développé une nouvelle capacité utilisable lorsqu’il est en rage.</description>
       <benefit>Le personnage gagne un pouvoir de rage supplémentaire. Il doit en remplir les conditions d’accès.</benefit>
     </feat>
-    <feat id="prestidigitateur-gnome">
+    <feat id="prestidigitateur-gnome" name="Prestidigitateur gnome">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Prestidigitateur gnome.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Prestidigitateur gnome</name>
       <types>
         <type>general</type>
       </types>
@@ -8236,39 +8165,36 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Les talents magiques du personnage ne se limitent pas aux illusions.</description>
       <benefit>En plus des pouvoirs magiques gnomes normaux, le personnage gagne les suivants : 1/jour – manipulation à distance et prestidigitation.</benefit>
     </feat>
-    <feat id="proche-de-la-terre">
+    <feat id="proche-de-la-terre" name="Proche de la terre">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Proche de la terre.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Proche de la terre</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage sait parler aux animaux enfouisseurs.</description>
       <benefit>Le personnage peut utiliser communication avec les animaux en tant que pouvoir magique à volonté, mais seulement pour communiquer avec les animaux enfouisseurs tels que les taupes, les géomyidés et autres animaux similaires. Il reste capable d’utiliser sa capacité gnome de communication avec les animaux une fois par jour pour communiquer avec n’importe quel animal.</benefit>
     </feat>
-    <feat id="profil-bas">
+    <feat id="profil-bas" name="Profil bas">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Profil bas.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Profil bas</name>
       <types>
         <type>general</type>
       </types>
       <description>Grâce à sa stature réduite, le personnage peut facilement éviter les attaques à distance.</description>
       <benefit>Le personnage gagne un bonus d’esquive de +1 à la CA contre les attaques à distance. De plus, il n’offre pas d’abri mou aux créatures lorsque les attaques à distance passent à travers sa case.</benefit>
     </feat>
-    <feat id="protection-contre-un-ennemi-juré">
+    <feat id="protection-contre-un-ennemi-juré" name="Protection contre un ennemi juré">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection contre un ennemi juré.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Protection contre un ennemi juré</name>
       <types>
         <type>general</type>
       </types>
@@ -8278,13 +8204,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage se sert de sa ruse pour se protéger contre les attaques de ses proies.</description>
       <benefit>Le personnage choisit un type d’ennemi juré. Il ajoute la moitié de son bonus d’ennemi juré à son DMD et à sa CA (en tant que bonus d’esquive) contre les attaques de ce type d’ennemi.</benefit>
     </feat>
-    <feat id="précision-elfique">
+    <feat id="précision-elfique" name="Précision elfique">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Précision elfique.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Précision elfique</name>
       <types>
         <type>general</type>
       </types>
@@ -8294,13 +8219,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Grâce à sa vision aiguisée, le personnage peut accomplir plus facilement des tirs difficiles.</description>
       <benefit>Si le personnage attaque avec un arc long ou un arc court (ou encore un arc composite) et que l’attaque rate à cause d’un camouflage, il peut relancer le pourcentage d’échec (une seule fois) afin de voir s’il est parvenu à toucher sa cible.</benefit>
     </feat>
-    <feat id="raillerie">
+    <feat id="raillerie" name="Raillerie">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Raillerie.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Raillerie</name>
       <types>
         <type>general</type>
       </types>
@@ -8314,13 +8238,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>L’impact des remarques acerbes du personnage est inversement proportionnel à sa taille.</description>
       <benefit>Le personnage peut démoraliser des adversaires en utilisant la compétence de Bluff au lieu d’Intimidation (voir la description d’Intimidation pour les détails) sans subir de pénalité au test due au fait qu’il est plus petit que sa cible.</benefit>
     </feat>
-    <feat id="repositionnement-supérieur">
+    <feat id="repositionnement-supérieur" name="Repositionnement supérieur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repositionnement supérieur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Repositionnement supérieur</name>
       <types>
         <type>general</type>
       </types>
@@ -8328,31 +8251,29 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
         <prerequisite type="attribute" value="int" number="13">Int 13</prerequisite>
         <prerequisite type="feat" value="expertise-du-combat">Expertise du combat</prerequisite>
         <prerequisite type="feat" value="science-du-repositionnement">Science du repositionnement</prerequisite>
-        <prerequisite type="bba" number="4">BBA +4</prerequisite>
+        <prerequisite type="bba" number="6">BBA +6</prerequisite>
       </prerequisites>
       <description>Lorsque le personnage repositionne des ennemis, ces derniers sont vulnérables aux attaques de ses alliés.</description>
       <benefit>Le personnage reçoit un bonus de +2 aux tests visant à repositionner un ennemi. Ce bonus se cumule avec celui offert par le don Science du repositionnement. Chaque fois que le personnage repositionne un ennemi, le mouvement de ce dernier provoque des attaques d’opportunité de la part de tous les alliés du personnage (mais pas du personnage lui-même).</benefit>
     </feat>
-    <feat id="représentation-obsédante">
+    <feat id="représentation-obsédante" name="Représentation obsédante">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Représentation obsédante.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Représentation obsédante</name>
       <types>
         <type>general</type>
       </types>
       <description>Les effets des représentations bardiques du personnage se prolongent, même après qu’il a cessé de jouer.</description>
       <benefit>Les bonus et pénalités découlant des représentations bardiques du personnage persistent pendant 2 rounds après qu’il a cessé de jouer. Les autres conditions (comme la portée ou les conditions spécifiques) doivent encore être remplies pour que l’effet continue. Si le personnage entame une nouvelle représentation bardique pendant cette période, les effets de la représentation précédente cessent immédiatement.</benefit>
     </feat>
-    <feat id="récupération-héroïque">
+    <feat id="récupération-héroïque" name="Récupération héroïque">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Récupération héroïque.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Récupération héroïque</name>
       <types>
         <type>general</type>
       </types>
@@ -8362,15 +8283,14 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
         <prerequisite type="other">bonus de base de Vigueur +4</prerequisite>
       </prerequisites>
       <description>Le personnage peut combattre les effets des conditions débilitantes.</description>
-      <benefit>Une fois par jour, par une action libre, le personnage peut tenter un nouveau jet de sauvegarde contre une condition débilitante ou une affliction qui l’affecte et qui impose un jet de Vigueur. Si ce nouveau jet de sauvegarde échoue, aucun effet supplémentaire n’est appliqué. Dans le cas contraire, il compte comme une réussite pour déterminer si le personnage parvient à se débarrasser de l’affliction (comme un poison ou une maladie). Le personnage ne peut pas utiliser ce don pour combattre les effets instantanés, les effets qui n’autorisent aucun jet de sauvegarde, ni ceux qui imposent autre chose qu’un jet de Vigueur.</benefit>
+      <benefit>Une fois par jour, par une action simple, le personnage peut tenter un nouveau jet de sauvegarde contre une condition débilitante ou une affliction qui l’affecte et qui impose un jet de Vigueur. Si ce nouveau jet de sauvegarde échoue, aucun effet supplémentaire n’est appliqué. Dans le cas contraire, il compte comme une réussite pour déterminer si le personnage parvient à se débarrasser de l’affliction (comme un poison ou une maladie). Le personnage ne peut pas utiliser ce don pour combattre les effets instantanés, les effets qui n’autorisent aucun jet de sauvegarde, ni ceux qui imposent autre chose qu’un jet de Vigueur.</benefit>
     </feat>
-    <feat id="résistance-héroïque">
+    <feat id="résistance-héroïque" name="Résistance héroïque">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Résistance héroïque.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Résistance héroïque</name>
       <types>
         <type>general</type>
       </types>
@@ -8382,13 +8302,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage continue à se battre quand d’autres baisseraient les bras.</description>
       <benefit>Une fois par jour, par une action immédiate, le personnage peut retarder l’application d’un état préjudiciable ou d’une affliction (comme paniqué, paralysé, étourdi, etc.), même s’il s’agit d’un état permanent ou instantané. En utilisant ce don, le personnage repousse l’application de la condition débilitante à la fin de son prochain tour, moment auquel celle-ci prend effet normalement. Ce don n’a aucun effet sur les dégâts de points de vie ou les affaiblissements/réductions de caractéristiques.</benefit>
     </feat>
-    <feat id="sale-coup-supérieur">
+    <feat id="sale-coup-supérieur" name="Sale coup supérieur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sale coup supérieur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sale coup supérieur</name>
       <types>
         <type>general</type>
       </types>
@@ -8401,13 +8320,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Les sales coups joués par le personnage affaiblissent réellement ses ennemis.</description>
       <benefit>Le personnage reçoit un bonus de +2 aux tests des tentatives de sale coup. Ce bonus se cumule avec celui offert par le don Science du sale coup. Chaque fois qu’il réussit un sale coup, la pénalité persiste pendant 1d4 rounds plus 1 round par tranche de 5 points de différence entre le résultat de son test et le DMD de son adversaire. De plus, la cible a besoin d’une action simple pour supprimer la pénalité.</benefit>
     </feat>
-    <feat id="science-de-la-seconde-chance">
+    <feat id="science-de-la-seconde-chance" name="Science de la seconde chance">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science de la seconde chance.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Science de la seconde chance</name>
       <types>
         <type>general</type>
       </types>
@@ -8420,13 +8338,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage peut tenter sa chance une seconde fois après une attaque ratée, sans devoir sacrifier ses futures attaques.</description>
       <benefit>Lorsque le personnage relance un jet d’attaque raté en utilisant le don Seconde chance, il peut quand même effectuer le reste de ses attaques pour ce round, mais avec une pénalité de -5 sur chacun des jets d’attaque.</benefit>
     </feat>
-    <feat id="science-de-la-subtilisation">
+    <feat id="science-de-la-subtilisation" name="Science de la subtilisation">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science de la subtilisation.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Science de la subtilisation</name>
       <types>
         <type>general</type>
       </types>
@@ -8437,26 +8354,24 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <description>Le personnage est doué lorsqu’il s’agit de prélever des objets sur ses adversaires.</description>
       <benefit>Le personnage ne provoque pas d’attaque d’opportunité lorsqu’il effectue une manœuvre de subtilisation. De plus, il reçoit un bonus de +2 aux tests des tentatives de subtilisation. Il bénéficie également d’un bonus de +2 à son DMD contre les tentatives de subtilisation effectuées par ses adversaires.</benefit>
     </feat>
-    <feat id="science-de-lentraînement">
+    <feat id="science-de-lentraînement" name="Science de l'entraînement">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science de lentraînement.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Science de l'entraînement</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage est doué lorsqu’il s’agit d’entraîner ses ennemis avec lui sur le champ de bataille.</description>
       <benefit>Le personnage ne provoque pas d’attaque d’opportunité lorsqu’il effectue une manœuvre d’entraînement. De plus, il reçoit un bonus de +2 aux tests des tentatives d’entraînement. Il bénéficie également d’un bonus de +2 à son DMD contre les tentatives d’entraînement effectuées par ses adversaires.</benefit>
     </feat>
-    <feat id="science-du-combat-en-aveugle">
+    <feat id="science-du-combat-en-aveugle" name="Science du combat en aveugle">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science du combat en aveugle.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Science du combat en aveugle</name>
       <types>
         <type>general</type>
       </types>
@@ -8468,13 +8383,12 @@ Normal. Utiliser une arme à distance dans un espace contrôlé par un ennemi pr
       <benefit>Lorsque le personnage attaque au corps au corps, il ignore le pourcentage d’échec dû au camouflage si celui-ci est inférieur à un camouflage total. En cas d’échec, le personnage a toujours la possibilité de relancer le jet de pourcentage.
 Si le personnage parvient à localiser avec précision un attaquant invisible ou caché dans un rayon de 9 m (6 cases), ce dernier ne bénéficie d’aucun avantage spécial lorsqu’il attaque le personnage à distance. En d’autres termes, le personnage ne perd pas son bonus de Dextérité à la CA et l’attaquant ne bénéficie pas du bonus de +2 auquel il aurait normalement droit vu son invisibilité.</benefit>
     </feat>
-    <feat id="science-du-lancer-ki">
+    <feat id="science-du-lancer-ki" name="Science du lancer ki">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science du lancer ki.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Science du lancer ki</name>
       <types>
         <type>general</type>
       </types>
@@ -8486,13 +8400,12 @@ Si le personnage parvient à localiser avec précision un attaquant invisible ou
       <benefit>Quand le personnage utilise le don Lancer ki, il peut lancer son adversaire vers n’importe quelle case située dans la zone qu’il contrôle et occupée par une autre créature. Il effectue un test de manœuvre de bousculade avec une pénalité de -4 contre cette créature. En cas de réussite, l’adversaire lancé se retrouve au sol dans la case de la créature visée et cette dernière est repoussée dans une case adjacente, où elle se retrouve également au sol. Si le test échoue, l’adversaire lancé se retrouve au sol dans la case la plus proche du personnage parmi celles qui sont à la fois adjacentes à l’emplacement de la créature visée et situées dans la zone de contrôle du personnage.
 Si le personnage lance un adversaire de taille supérieure ou égale à G dans une zone contenant plusieurs créatures, il subit une pénalité supplémentaire de -4 sur son test de manœuvre pour chaque créature visée en plus de la première.</benefit>
     </feat>
-    <feat id="science-du-partage-des-sorts">
+    <feat id="science-du-partage-des-sorts" name="Science du partage des sorts">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science du partage des sorts.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Science du partage des sorts</name>
       <types>
         <type>general</type>
       </types>
@@ -8511,26 +8424,24 @@ Si le sort ou effet a une durée autre que « instantanée », il cesse d’af
 Grâce à ce don, le personnage peut même partager des sorts qui n’affectent normalement pas les créatures du type de la créature liée.
 Ce don ne s’applique qu’aux compagnons animaux, eidolons, familiers et montures spéciales acquis grâce à une aptitude de classe.</benefit>
     </feat>
-    <feat id="science-du-pas-de-côté">
+    <feat id="science-du-pas-de-côté" name="Science du pas de côté">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science du pas de côté.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Science du pas de côté</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage sait comment faire un pas de côté pour éviter les attaques au corps à corps de ses adversaires, sans pour autant réduire sa mobilité.</description>
       <benefit>Même s’il a effectué un pas de côté pour éviter l’attaque d’un adversaire grâce au don Pas de côté, le personnage peut encore réaliser un pas de placement de 1,50 m (1 case) au cours de son prochain tour, ou bien se déplacer de sa vitesse de déplacement en entier s’il effectue une action de mouvement lors de son prochain tour.</benefit>
     </feat>
-    <feat id="science-du-repositionnement">
+    <feat id="science-du-repositionnement" name="Science du repositionnement">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science du repositionnement.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Science du repositionnement</name>
       <types>
         <type>general</type>
       </types>
@@ -8541,13 +8452,12 @@ Ce don ne s’applique qu’aux compagnons animaux, eidolons, familiers et montu
       <description>Le personnage sait comment forcer ses ennemis à se déplacer sur le champ de bataille.</description>
       <benefit>Le personnage ne provoque pas d’attaque d’opportunité lorsqu’il effectue une manœuvre de repositionnement. De plus, il reçoit un bonus de +2 aux tests des tentatives de repositionnement. Il bénéficie également d’un bonus de +2 à son DMD contre les tentatives de repositionnement effectuées par ses adversaires.</benefit>
     </feat>
-    <feat id="science-du-sale-coup">
+    <feat id="science-du-sale-coup" name="Science du sale coup">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science du sale coup.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Science du sale coup</name>
       <types>
         <type>general</type>
       </types>
@@ -8558,13 +8468,12 @@ Ce don ne s’applique qu’aux compagnons animaux, eidolons, familiers et montu
       <description>Le personnage est doué lorsqu’il s’agit de jouer un sale coup à un adversaire.</description>
       <benefit>Le personnage ne provoque pas d’attaque d’opportunité lorsqu’il effectue une manœuvre de sale coup. De plus, il reçoit un bonus de +2 aux tests des tentatives de sale coup. Il bénéficie également d’un bonus de +2 à son DMD contre les sales coups de ses adversaires.</benefit>
     </feat>
-    <feat id="seconde-chance">
+    <feat id="seconde-chance" name="Seconde chance">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Seconde chance.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Seconde chance</name>
       <types>
         <type>general</type>
       </types>
@@ -8576,13 +8485,12 @@ Ce don ne s’applique qu’aux compagnons animaux, eidolons, familiers et montu
       <description>Les réflexes rapides du personnage lui permettent de tenter sa chance une seconde fois en cas d’attaque ratée.</description>
       <benefit>Lorsque le personnage effectue une attaque à outrance, si sa première attaque échoue, il peut sacrifier toutes les autres attaques qu’il aurait pu effectuer au cours de son tour pour relancer le jet de l’attaque ratée (en utilisant son BBA maximum).</benefit>
     </feat>
-    <feat id="sens-très-affûtés">
+    <feat id="sens-très-affûtés" name="Sens très affûtés">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sens très affûtés.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sens très affûtés</name>
       <types>
         <type>general</type>
       </types>
@@ -8592,13 +8500,12 @@ Ce don ne s’applique qu’aux compagnons animaux, eidolons, familiers et montu
       <description>Les sens du personnage sont exceptionnellement développés, même pour un individu de sa race.</description>
       <benefit>Le personnage reçoit un bonus racial de +4 aux tests de Perception. Ce bonus remplace celui offert par le trait racial Sens aiguisés.</benefit>
     </feat>
-    <feat id="sociable">
+    <feat id="sociable" name="Sociable">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sociable.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sociable</name>
       <types>
         <type>general</type>
       </types>
@@ -8609,26 +8516,24 @@ Ce don ne s’applique qu’aux compagnons animaux, eidolons, familiers et montu
       <description>Le personnage trouve toujours un moyen d’aider les autres et de bien s’entendre avec tout le monde.</description>
       <benefit>Par une action de mouvement, le personnage peut donner à toutes les créatures amicales situées dans un rayon de 9 mètres (6 cases) et capables de le voir ou de l’entendre (y compris lui-même) un bonus de +2 aux tests de Diplomatie pendant un nombre de rounds égal à son modificateur de Charisme (minimum 1 round).</benefit>
     </feat>
-    <feat id="sort-concentré">
+    <feat id="sort-concentré" name="Sort concentré">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort concentré.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort concentré</name>
       <types>
         <type>general</type>
       </types>
       <description>Lorsque le personnage lance un sort qui touche plus d’une créature, il peut faire en sorte qu’un de ses adversaires ait plus de mal à y résister.</description>
       <benefit>Lorsque le personnage lance un sort qui touche ou cible plus d’une créature, il peut choisir une cible ou une créature dans la zone d’effet du sort. Le DD du jet de sauvegarde de cette créature pour résister au sort est augmenté de +2. Le personnage doit choisir sur quelle cible concentrer le sort avant de lancer celui-ci. Un sort concentré occupe un emplacement de sort d’un niveau de plus que le niveau normal du sort. Seuls les sorts autorisant un jet de sauvegarde permettant de résister à leurs effets ou de les amoindrir peuvent bénéficier de ce don.</benefit>
     </feat>
-    <feat id="sort-de-prédilection">
+    <feat id="sort-de-prédilection" name="Sort de prédilection">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort de prédilection.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort de prédilection</name>
       <types>
         <type>general</type>
       </types>
@@ -8639,39 +8544,36 @@ Ce don ne s’applique qu’aux compagnons animaux, eidolons, familiers et montu
       <description>Le personnage lance un sort donné avec une grande facilité.</description>
       <benefit>Le personnage choisit un sort qu’il sait lancer. Il peut le lancer de manière spontanée en sacrifiant un sort préparé ou un emplacement de sort de même niveau ou d’un niveau supérieur. Il peut lui appliquer n’importe quel don de métamagie connu lors de l’incantation : cela augmente le niveau minimum du sort ou de l’emplacement de sort à sacrifier mais pas le temps d’incantation.</benefit>
     </feat>
-    <feat id="sort-ectoplasmique">
+    <feat id="sort-ectoplasmique" name="Sort ectoplasmique">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort ectoplasmique.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort ectoplasmique</name>
       <types>
         <type>general</type>
       </types>
       <description>Les sorts du personnage peuvent traverser l’espace qui sépare les dimensions et créer un effet fantôme dans l’éther.</description>
       <benefit>Un sort ectoplasmique agit pleinement sur les créatures éthérées ou intangibles. Un sort ectoplasmique occupe un emplacement de sort d’un niveau de plus que le niveau normal du sort.</benefit>
     </feat>
-    <feat id="sort-hébétant">
+    <feat id="sort-hébétant" name="Sort hébétant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort hébétant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort hébétant</name>
       <types>
         <type>general</type>
       </types>
       <description>Les sorts du personnage peuvent hébéter leurs cibles.</description>
       <benefit>Le personnage peut modifier un sort pour qu’il hébète les créatures blessées. Les créatures à qui le sort modifié inflige des dégâts deviennent hébétées pendant un nombre de rounds égal au niveau initial du sort. Si le sort autorise un jet de sauvegarde, une réussite annule l’effet d’hébétement. Si le sort n’en autorise pas, la cible peut tenter un jet de Volonté pour annuler l’hébétement. Si le sort en lui-même hébète également la cible, la durée de l’effet métamagique vient s’ajouter à la durée normale du sort. Un sort hébétant utilise un emplacement de sort de trois niveaux de plus que le niveau normal du sort. Les sorts qui n’infligent pas de dégâts ne peuvent pas être modifiés par ce don.</benefit>
     </feat>
-    <feat id="sort-intense">
+    <feat id="sort-intense" name="Sort intense">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort intense.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort intense</name>
       <types>
         <type>general</type>
       </types>
@@ -8679,26 +8581,24 @@ Ce don ne s’applique qu’aux compagnons animaux, eidolons, familiers et montu
       <benefit>Un sort intense augmente le nombre maximum de dés de dégâts de 5 niveaux. Le personnage doit posséder un NLS suffisant pour dépasser le maximum s’il veut pouvoir tirer avantage de ce don. Aucune autre variable du sort n’est affectée, et les sorts qui infligent des dégâts ne dépendant pas du NLS restent inchangés. Un sort intense utilise un emplacement de sort d’un niveau de plus que le niveau normal du sort.
 Par exemple, Un sort de boule de feu est un sort de magicien de niveau 3. Il inflige un nombre de dégâts correspondant à 1d6 par niveau du magicien dans la limite de 10d6. En le préparant à l'aide du don Sort Intense, il nécessite un emplacement de sort de niveau 4, mais repousse la limite de dégâts possibles à 15d6. Pour en tirer un effet le PJ devra néanmoins toujours être de niveau supérieur à 10 ou disposer d'un autre moyen d'augmenter son NLS. Ainsi un magicien de niveau 11 pourra lancer 11d6 points de dégâts et un magicien de niveau 15, 15d6. Par contre, Un magicien de niveau 20 ne pourra pas en tirer plus de dégâts que 15d6.</benefit>
     </feat>
-    <feat id="sort-miséricordieux">
+    <feat id="sort-miséricordieux" name="Sort miséricordieux">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort miséricordieux.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort miséricordieux</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage peut lancer des sorts infligeant des dégâts pour assommer plutôt que tuer ses adversaires.</description>
       <benefit>Le personnage peut modifier les sorts qui infligent des dégâts de sorte qu’ils infligent des dégâts non létaux. Les sorts qui infligent des dégâts d’un type spécifique (comme le feu) infligent désormais des dégâts non létaux du même type. Un sort miséricordieux utilise un emplacement de même niveau que celui du sort normal.</benefit>
     </feat>
-    <feat id="sort-persistant">
+    <feat id="sort-persistant" name="Sort persistant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort persistant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort persistant</name>
       <types>
         <type>general</type>
       </types>
@@ -8706,26 +8606,24 @@ Par exemple, Un sort de boule de feu est un sort de magicien de niveau 3. Il inf
       <benefit>Chaque fois qu’une créature ciblée par un sort persistant ou située dans la zone d’un sort persistant réussit un jet de sauvegarde contre celui-ci, elle doit effectuer un second jet de sauvegarde. Si ce second jet de sauvegarde échoue, la créature subit les pleins effets du sort, comme si elle avait raté son premier jet de sauvegarde. Un sort persistant utilise un emplacement de sort de deux niveaux supplémentaires que le niveau normal du sort.
 Les sorts qui n’imposent pas de jet de sauvegarde permettant d’annuler ou d’amoindrir leurs effets ne peuvent pas bénéficier de ce don.</benefit>
     </feat>
-    <feat id="sort-perturbateur">
+    <feat id="sort-perturbateur" name="Sort perturbateur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort perturbateur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort perturbateur</name>
       <types>
         <type>general</type>
       </types>
       <description>Les énergies magiques des sorts du personnage s’accrochent aux ennemis et gênent leurs incantations.</description>
       <benefit>Les cibles affectées par un sort perturbateur doivent effectuer des tests de Concentration chaque fois qu’elles lancent un sort ou utilisent un pouvoir magique (le DD du test est égal au DD du jet de sauvegarde contre le sort perturbateur augmenté du niveau du sort qu’elles tentent de lancer). L’effet dure 1 round. Les cibles qui évitent les effets normaux du sort échappent également aux effets du don. Un sort perturbateur utilise un emplacement de sort d’un niveau de plus que le niveau normal du sort.</benefit>
     </feat>
-    <feat id="sort-soutenu">
+    <feat id="sort-soutenu" name="Sort soutenu">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort soutenu.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort soutenu</name>
       <types>
         <type>general</type>
       </types>
@@ -8733,13 +8631,12 @@ Les sorts qui n’imposent pas de jet de sauvegarde permettant d’annuler ou d�
       <benefit>Le personnage peut faire en sorte qu’un sort de zone instantané persiste jusqu’au début de son prochain tour. Ceux qui se trouvaient déjà dans la zone d’effet au moment de l’incantation ne subissent aucun effet additionnel mais les autres créatures et objets qui y entrent pendant ce laps de temps sont soumis aux effets du sort. Un sort soutenu possédant une manifestation visuelle obscurcit la vision et offre du camouflage (20% d’échec des attaques) au-delà de 1,50 m (1 case) et un camouflage total (50% d’échec des attaques) au-delà de 6 mètres (4 cases).
 Un sort soutenu occupe un emplacement de sort d’un niveau supplémentaire que le niveau normal du sort.</benefit>
     </feat>
-    <feat id="sort-tonitruant">
+    <feat id="sort-tonitruant" name="Sort tonitruant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort tonitruant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort tonitruant</name>
       <types>
         <type>general</type>
       </types>
@@ -8747,26 +8644,24 @@ Un sort soutenu occupe un emplacement de sort d’un niveau supplémentaire que 
       <benefit>Le personnage peut modifier un sort de sorte qu’il assourdisse les créatures auxquelles il inflige des dégâts. Les créatures blessées par le sort sont assourdies pendant un nombre de rounds égal au niveau initial du sort. Si le sort autorise un jet de sauvegarde, l’effet assourdissant est annulé en cas de réussite. Si le sort n’autorise pas de jet de sauvegarde, la cible bénéficie d’un jet de Vigueur pour annuler l’effet d’assourdissement. Si l’effet normal du sort consiste déjà à assourdir les cibles, la durée de l’effet métamagique s’ajoute à celle du sort. Un sort tonitruant occupe un emplacement de sort de deux niveaux de plus que le niveau normal du sort.
 Les sorts qui n’infligent pas de dégâts ne peuvent pas être modifiés par ce don.</benefit>
     </feat>
-    <feat id="sort-à-rebonds">
+    <feat id="sort-à-rebonds" name="Sort à rebonds">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort à rebonds.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort à rebonds</name>
       <types>
         <type>general</type>
       </types>
       <description>Lorsqu’un sort échoue, le personnage peut le diriger vers une nouvelle cible.</description>
       <benefit>Chaque fois qu’un sort à rebonds visant une cible unique n’a aucun effet sur la cible choisie (à cause de sa résistance à la magie ou d’un jet de sauvegarde réussi), le personnage peut le rediriger par une action rapide vers une autre cible visible située à portée. Le sort ainsi redirigé fonctionne comme si la nouvelle cible avait été choisie dès le départ. Si le sort a un quelconque effet sur la cible (y compris un effet réduit à cause d’un jet de sauvegarde réussi), il ne peut pas être redirigé grâce à ce don. Un sort à rebonds occupe un emplacement de sort d’un niveau de plus que le niveau normal du sort.</benefit>
     </feat>
-    <feat id="sort-écœurant">
+    <feat id="sort-écœurant" name="Sort écœurant">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort écœurant.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort écœurant</name>
       <types>
         <type>general</type>
       </types>
@@ -8774,13 +8669,12 @@ Les sorts qui n’infligent pas de dégâts ne peuvent pas être modifiés par c
       <benefit>Le personnage peut modifier un sort afin qu’il écœure et rende fiévreuses les créatures à qui il inflige des dégâts. Lorsque le sort blesse une créature, celle-ci devient fiévreuse pendant un nombre de rounds égal au niveau initial du sort. Si le sort autorise un jet de sauvegarde, l’effet d’écœurement est annulé en cas de réussite. Si le sort n’autorise normalement pas de jet de sauvegarde, la victime bénéficie d’un jet de Vigueur pour échapper à l’écœurement. Si le sort a également pour effet de rendre la cible fiévreuse, la durée de l’effet métamagique est ajoutée à celle du sort. Un sort écœurant occupe un emplacement de sort de deux niveaux de plus que le niveau normal du sort.
 Les sorts qui n’infligent pas de dégâts ne peuvent pas être altérés par ce don.</benefit>
     </feat>
-    <feat id="sort-éloigné">
+    <feat id="sort-éloigné" name="Sort éloigné">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort éloigné.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort éloigné</name>
       <types>
         <type>general</type>
       </types>
@@ -8788,26 +8682,24 @@ Les sorts qui n’infligent pas de dégâts ne peuvent pas être altérés par c
       <benefit>Le personnage peut modifier un sort possédant une portée de type « contact », « courte » ou « moyenne » en augmentant celle-ci d’une ou de plusieurs catégories (selon l’ordre « contact », « courte », « moyenne », « longue »). Un sort éloigné occupe un emplacement de sort d’un niveau de plus que le niveau normal du sort pour chaque augmentation de catégorie. Par exemple, un sort de contact transformé en sort de longue portée utilisera un emplacement de sort de trois niveaux de plus que le sort normal. Si le sort de base nécessite des attaques de contact au corps à corps, la version modifiée par ce don utilise des attaques de contact à distance.
 Les sorts dont la portée ne figure pas dans la liste donnée plus haut ne peuvent pas être affectés par ce don.</benefit>
     </feat>
-    <feat id="sort-élémentaire">
+    <feat id="sort-élémentaire" name="Sort élémentaire">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort élémentaire.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sort élémentaire</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage peut manipuler la nature élémentaire des sorts.</description>
       <benefit>Choisissez un type d’énergie parmi acide, électricité, feu ou froid. Le personnage peut transformer les dégâts normaux d’un sort en dégâts de ce type d’énergie ou les diviser de sorte que le sort produise 50 % de dégâts de ce type d’énergie et 50 % de dégâts du type normal. Un sort élémentaire utilise un emplacement de sort d’un niveau de plus que le niveau normal du sort.</benefit>
     </feat>
-    <feat id="sous-les-jambes">
+    <feat id="sous-les-jambes" name="Sous les jambes">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sous les jambes.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Sous les jambes</name>
       <types>
         <type>general</type>
       </types>
@@ -8822,13 +8714,12 @@ Les sorts dont la portée ne figure pas dans la liste donnée plus haut ne peuve
       <description>Le personnage peut se faufiler sous et autour des ennemis plus grands que lui.</description>
       <benefit>Le personnage reçoit un bonus d’esquive de +4 aux tests d’Acrobaties pour se faufiler à côté d’ennemis plus grands que lui sans provoquer d’attaques d’opportunité. De plus, il gagne un bonus d’esquive de +2 à la CA contre les attaques d’opportunité qu’il provoque en sortant ou en se déplaçant à l’intérieur de la zone contrôlée par un ennemi plus grand que lui (ce bonus se cumule avec le bonus de +4 offert par Souplesse du serpent, pour un bonus total de +6).</benefit>
     </feat>
-    <feat id="spécialisation-au-bouclier">
+    <feat id="spécialisation-au-bouclier" name="Spécialisation au bouclier">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spécialisation au bouclier.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Spécialisation au bouclier</name>
       <types>
         <type>general</type>
       </types>
@@ -8840,13 +8731,12 @@ Les sorts dont la portée ne figure pas dans la liste donnée plus haut ne peuve
       <description>Le personnage a maîtrisé le maniement d’un type de bouclier.</description>
       <benefit>Choisissez un des types de boucliers (targe, rondache, écu ou pavois). Lorsque le personnage utilise ce type de bouclier, il gagne un bonus de +2 à la CA contre les jets de confirmation des coups critiques. De plus, il peut ajouter le bonus de base de son bouclier (y compris le bonus octroyé par Art du bouclier, mais pas le bonus d’altération) à son DMD.</benefit>
     </feat>
-    <feat id="spécialisation-supérieure-aux-boucliers">
+    <feat id="spécialisation-supérieure-aux-boucliers" name="Spécialisation supérieure aux boucliers">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spécialisation supérieure aux boucliers.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Spécialisation supérieure aux boucliers</name>
       <types>
         <type>combat</type>
       </types>
@@ -8860,26 +8750,24 @@ Les sorts dont la portée ne figure pas dans la liste donnée plus haut ne peuve
       <description>Le personnage maîtrise parfaitement l’utilisation des boucliers et parvient à encore mieux protéger ses organes vitaux.</description>
       <benefit>Choisissez un des types de boucliers (targe, rondache, écu ou pavois) pour lequel le personnage possède le don Spécialisation au bouclier. Lorsqu’il utilise un bouclier de ce type, il gagne un bonus de +2 à la CA contre les jets de confirmation des critiques (ce bonus se cumule avec celui offert par le don Spécialisation au bouclier). De plus, une fois par jour, le personnage peut annuler un coup critique (les dégâts sont donc déterminés normalement).</benefit>
     </feat>
-    <feat id="subtilisation-supérieure">
+    <feat id="subtilisation-supérieure" name="Subtilisation supérieure">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Subtilisation supérieure.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Subtilisation supérieure</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage est doué lorsqu’il s’agit de subtiliser des objets sur ses adversaires au cours d’un combat.</description>
       <benefit>Le personnage reçoit un bonus de +2 aux tests visant à subtiliser un objet à un ennemi. Ce bonus se cumule avec celui offert par le don Science de la subtilisation. S’il réussit à subtiliser un objet à un ennemi pendant un combat, ce dernier ne remarque pas le vol avant la fin de l’affrontement (à moins qu’il ne tente d’utiliser l’objet entretemps).</benefit>
     </feat>
-    <feat id="tacticien-de-la-téléportation">
+    <feat id="tacticien-de-la-téléportation" name="Tacticien de la téléportation">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tacticien de la téléportation.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Tacticien de la téléportation</name>
       <types>
         <type>general</type>
       </types>
@@ -8891,13 +8779,12 @@ Les sorts dont la portée ne figure pas dans la liste donnée plus haut ne peuve
       <description>Le personnage est toujours prêt à faire face aux ennemis qui utiliseraient la téléportation pour s’approcher de lui ou le fuir.</description>
       <benefit>Toute créature utilisant un effet de téléportation pour entrer ou sortir d’une case contrôlée par le personnage provoque une attaque d’opportunité de sa part, même si elle incante sur la défensive ou utilise une capacité surnaturelle.</benefit>
     </feat>
-    <feat id="tacticien-expérimenté">
+    <feat id="tacticien-expérimenté" name="Tacticien expérimenté">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tacticien expérimenté.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Tacticien expérimenté</name>
       <types>
         <type>general</type>
       </types>
@@ -8907,13 +8794,12 @@ Les sorts dont la portée ne figure pas dans la liste donnée plus haut ne peuve
       <description>Avec quelques gestes rapides et deux ou trois ordres, le personnage peut diriger ses alliés au combat.</description>
       <benefit>Le personnage peut utiliser sa capacité de tacticien pour octroyer à ses alliés un don d’équipe une fois de plus par jour.</benefit>
     </feat>
-    <feat id="talent-magique">
+    <feat id="talent-magique" name="Talent magique">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Talent magique.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Talent magique</name>
       <types>
         <type>general</type>
       </types>
@@ -8928,13 +8814,12 @@ Les sorts dont la portée ne figure pas dans la liste donnée plus haut ne peuve
       <description>La magie coule dans les veines du personnage.</description>
       <benefit>Choisissez un sort de niveau 0 appartenant à la liste des ensorceleurs/magiciens. Le personnage peut lancer ce sort trois fois par jour en tant que pouvoir magique avec un NLS égal à son niveau de personnage. Le DD du jet de sauvegarde vaut 10 + le modificateur de Charisme du personnage.</benefit>
     </feat>
-    <feat id="talent-supplémentaire">
+    <feat id="talent-supplémentaire" name="Talent supplémentaire">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Talent supplémentaire.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Talent supplémentaire</name>
       <types>
         <type>general</type>
       </types>
@@ -8944,13 +8829,12 @@ Les sorts dont la portée ne figure pas dans la liste donnée plus haut ne peuve
       <description>Grâce à son entraînement constant, le personnage est parvenu à maîtriser une nouvelle botte secrète.</description>
       <benefit>Le personnage gagne un talent supplémentaire. Il doit en remplir les conditions d’accès.</benefit>
     </feat>
-    <feat id="tir-avec-concentration">
+    <feat id="tir-avec-concentration" name="Tir avec concentration">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir avec concentration.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Tir avec concentration</name>
       <types>
         <type>general</type>
       </types>
@@ -8962,13 +8846,12 @@ Les sorts dont la portée ne figure pas dans la liste donnée plus haut ne peuve
       <description>L’intuition du personnage en matière d’anatomie lui permet de rendre ses tirs plus mortels.</description>
       <benefit>Par une action simple, le personnage peut effectuer une attaque avec un arc ou une arbalète et ajouter son modificateur d’Intelligence aux dégâts. Il doit se trouver à au plus 9 mètres (6 cases) de sa cible pour pouvoir lui infliger ces dégâts supplémentaires. Les créatures immunisées contre les coups critiques et les attaques sournoises le sont également contre ces dégâts supplémentaires.</benefit>
     </feat>
-    <feat id="tir-en-retraite">
+    <feat id="tir-en-retraite" name="Tir en retraite">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir en retraite.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Tir en retraite</name>
       <types>
         <type>general</type>
       </types>
@@ -8984,13 +8867,12 @@ Les sorts dont la portée ne figure pas dans la liste donnée plus haut ne peuve
       <benefit>Une fois par rencontre, lorsque le personnage utilise l’action de retraite, il peut effectuer une unique attaque à distance à n’importe quel moment au cours de son déplacement.
 Normal. Le personnage ne peut pas attaquer au cours d’une retraite.</benefit>
     </feat>
-    <feat id="tir-perturbateur">
+    <feat id="tir-perturbateur" name="Tir perturbateur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir perturbateur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Tir perturbateur</name>
       <types>
         <type>general</type>
       </types>
@@ -9002,13 +8884,12 @@ Normal. Le personnage ne peut pas attaquer au cours d’une retraite.</benefit>
       <description>Grâce à la précision de ses tirs, le personnage peut mener la vie dure à un adversaire tentant de lancer des sorts.</description>
       <benefit>Si le personnage prépare une action afin de tirer sur un adversaire situé dans un rayon de 9 mètres (6 cases) au cas où celui-ci lancerait un sort et si cette attaque à distance réussit, le DD du test de Concentration de la cible pour mener à bien son incantation augmente de +4.</benefit>
     </feat>
-    <feat id="tirailleur-monté">
+    <feat id="tirailleur-monté" name="Tirailleur monté">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tirailleur monté.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Tirailleur monté</name>
       <types>
         <type>general</type>
       </types>
@@ -9020,39 +8901,36 @@ Normal. Le personnage ne peut pas attaquer au cours d’une retraite.</benefit>
       <description>Le personnage sait parfaitement attaquer depuis le dos d’une monture avançant à vive allure.</description>
       <benefit>Si la monture du personnage se déplace de sa vitesse de déplacement ou moins, il peut effectuer une attaque à outrance.</benefit>
     </feat>
-    <feat id="toucher-de-la-sérénité">
+    <feat id="toucher-de-la-sérénité" name="Toucher de la sérénité">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Toucher de la sérénité.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Toucher de la sérénité</name>
       <types>
         <type>general</type>
       </types>
       <description>D’un simple toucher, le personnage peut réduire la dangerosité de n’importe quel ennemi, même le plus violent.</description>
       <benefit>Le personnage doit déclarer qu’il utilise ce don avant d’effectuer son jet d’attaque (de sorte qu’un échec compte comme une tentative). En cas de réussite, l’attaque n’inflige aucun dégât et n’impose aucun effet ni état préjudiciable, mais la cible ne peut plus lancer de sorts ni attaquer (la restriction porte aussi sur les attaques d’opportunité et les attaques sous forme d’actions immédiates) pendant 1 round, à moins de réussir un jet de Volonté contre un DD égal à 10 + la moitié du niveau du personnage + son modificateur de Sagesse. Le personnage peut tenter d’effectuer un toucher de la sérénité par jour par tranche de 4 niveaux de personnage (mais voir Spécial), mais jamais plus d’une fois par round.</benefit>
     </feat>
-    <feat id="traits-supplémentaires">
+    <feat id="traits-supplémentaires" name="Traits supplémentaires">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits supplémentaires.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Traits supplémentaires</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage possède plus de traits que la normale.</description>
       <benefit>Le personnage gagne 2 traits supplémentaires (choisis par le joueur). Ces traits doivent appartenir à deux listes différentes, toutes deux distinctes de celles dans lesquelles le personnage a déjà choisi un trait. Il doit remplir toutes les conditions d’accès à ces traits.</benefit>
     </feat>
-    <feat id="transmutation-tenace">
+    <feat id="transmutation-tenace" name="Transmutation tenace">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transmutation tenace.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Transmutation tenace</name>
       <types>
         <type>general</type>
       </types>
@@ -9062,13 +8940,12 @@ Normal. Le personnage ne peut pas attaquer au cours d’une retraite.</benefit>
       <description>Le personnage maîtrise la magie du changement et, de ce fait, ses transmutations sont plus durables que la moyenne.</description>
       <benefit>Le DD des tests de NLS pour dissiper ou annuler une transmutation lancée par le personnage augmente de +2. De plus, même si le sort est annulé, ses effets persistent pendant 1 round de plus avant d’être dissipés.</benefit>
     </feat>
-    <feat id="travail-en-équipe">
+    <feat id="travail-en-équipe" name="Travail en équipe">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Travail en équipe.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Travail en équipe</name>
       <types>
         <type>general</type>
       </types>
@@ -9081,26 +8958,24 @@ Normal. Le personnage ne peut pas attaquer au cours d’une retraite.</benefit>
       <description>Lorsque le personnage fait partie d’un groupe qui attaque un ennemi, il peut aider un allié par une feinte rapide.</description>
       <benefit>Lorsque le personnage et au moins deux de ses alliés sont adjacents à un adversaire, il peut tenter d’utiliser l’action « aider quelqu’un » par une action de mouvement.</benefit>
     </feat>
-    <feat id="vigie">
+    <feat id="vigie" name="Vigie">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vigie.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Vigie</name>
       <types>
         <type>general</type>
       </types>
       <description>Les alliés du personnage l’aident à ne pas se laisser surprendre.</description>
       <benefit>Chaque fois que le personnage est adjacent à un allié possédant ce même don et capable d’agir lors d’un round de surprise, le personnage lui aussi peut agir au cours du round de surprise. Si, sans ce don, le personnage n’avait pas pu agir au cours du round de surprise, son initiative est égale au minimum entre son jet d’initiative et celui de son allié réduit de 1. Si le personnage et son allié avaient pu agir au cours du round de surprise même sans ce don, alors le personnage peut accomplir une action simple et une action de mouvement (ou une action complexe) pendant ce round de surprise.</benefit>
     </feat>
-    <feat id="vigueur-en-rage">
+    <feat id="vigueur-en-rage" name="Vigueur en rage">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vigueur en rage.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Vigueur en rage</name>
       <types>
         <type>general</type>
       </types>
@@ -9111,13 +8986,12 @@ Normal. Le personnage ne peut pas attaquer au cours d’une retraite.</benefit>
       <description>Lorsque le personnage est en rage, il est plein de vigueur.</description>
       <benefit>Chaque fois que le personnage est en rage, le bonus de moral qui affecte sa Constitution augmente de +2. La rage ne se termine pas automatiquement s’il tombe inconscient : tant qu’il est inconscient, il doit dépenser un round de son quota quotidien de rage chaque round.</benefit>
     </feat>
-    <feat id="visage-de-pierre">
+    <feat id="visage-de-pierre" name="Visage de pierre">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Visage de pierre.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Visage de pierre</name>
       <types>
         <type>general</type>
       </types>
@@ -9127,13 +9001,12 @@ Normal. Le personnage ne peut pas attaquer au cours d’une retraite.</benefit>
       <description>Certains cailloux sont plus expressifs que le personnage !</description>
       <benefit>Le personnage gagne un bonus de +4 aux tests de Bluff pour mentir ou cacher son opinion ou ses véritables motivations, mais pas pour feinter en combat ni faire passer un message secret. De plus, le DD des tests de Psychologie pour obtenir un pressentiment concernant le personnage est de 25 au lieu de 20.</benefit>
     </feat>
-    <feat id="vision-affûtée">
+    <feat id="vision-affûtée" name="Vision affûtée">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision affûtée.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Vision affûtée</name>
       <types>
         <type>general</type>
       </types>
@@ -9143,13 +9016,12 @@ Normal. Le personnage ne peut pas attaquer au cours d’une retraite.</benefit>
       <description>Les sens du personnage sont encore plus affûtés lorsqu’il se trouve dans le noir le plus total.</description>
       <benefit>La portée de la vision dans le noir du personnage s’étend à 36 mètres (24 cases).</benefit>
     </feat>
-    <feat id="yeux-de-lynx">
+    <feat id="yeux-de-lynx" name="Yeux de lynx">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Yeux de lynx.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Yeux de lynx</name>
       <types>
         <type>general</type>
       </types>
@@ -9160,26 +9032,24 @@ Normal. Le personnage ne peut pas attaquer au cours d’une retraite.</benefit>
       <description>Le personnage possède une vue très perçante.</description>
       <benefit>Lorsque le personnage effectue un test de Perception visuelle, il peut ignorer jusqu’à -5 de pénalité de distance, ce qui lui permet de voir avec précision à de plus grandes distances que la plupart des gens.</benefit>
     </feat>
-    <feat id="à-labri">
+    <feat id="à-labri" name="À l'abri">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.À labri.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>À l'abri</name>
       <types>
         <type>general</type>
       </types>
       <description>Les alliés du personnage l’aident à éviter certaines attaques.</description>
       <benefit>Chaque fois que le personnage est adjacent à un allié qui possède également ce don et que lui et cet allié doivent faire un jet de Réflexes contre un sort ou un effet, il peut choisir d’utiliser le résultat de son dé ou du dé de son allié (il applique cependant ses propres modificateurs au résultat choisi). Si le personnage opte pour le résultat de son allié, il se retrouve au sol (ou chancelant pendant son prochain tour s’il est déjà au sol ou ne peut pas être jeté au sol). De plus, le personnage reçoit un bonus d’abri de +2 à la CA contre les attaques à distance tant que son allié porte un bouclier.</benefit>
     </feat>
-    <feat id="âme-dacier">
+    <feat id="âme-dacier" name="Âme d'acier">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Âme dacier.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Âme d'acier</name>
       <types>
         <type>general</type>
       </types>
@@ -9190,39 +9060,36 @@ Normal. Le personnage ne peut pas attaquer au cours d’une retraite.</benefit>
       <description>Le personnage est tout particulièrement résistant à la magie.</description>
       <benefit>Le personnage reçoit un bonus racial de +4 aux jets de sauvegarde contre les sorts et les pouvoirs magiques. Cela remplace le bonus normal octroyé par le trait racial Robustes.</benefit>
     </feat>
-    <feat id="échange-de-place">
+    <feat id="échange-de-place" name="Échange de place">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Échange de place.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Échange de place</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage sait comment changer de place avec un allié au cours d’une mêlée chaotique.</description>
       <benefit>Chaque fois que le personnage est adjacent à un allié qui possède également ce don, il peut se déplacer vers la case de cet allié au cours d’un mouvement normal. En même temps, par une action immédiate, l’allié se déplace vers la case où le personnage se trouvait avant de prendre sa place. Le personnage et son allié doivent être tous les deux d’accord pour faire cet échange et capables de se déplacer. L’allié du personnage doit être de la même taille que lui. Le mouvement de l’allié ne provoque pas d’attaque d’opportunité, mais celui du personnage peut-être (les règles normales s’appliquent). Le mouvement de l’allié du personnage ne réduit pas ses capacités de déplacement lors de son prochain tour.</benefit>
     </feat>
-    <feat id="élément-renforcé">
+    <feat id="élément-renforcé" name="Élément renforcé">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élément renforcé.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Élément renforcé</name>
       <types>
         <type>general</type>
       </types>
       <description>Le personnage lance les sorts liés à un élément donné de telle manière qu’il est plus difficile de leur résister.</description>
       <benefit>Choisissez un type d’énergie (acide, électricité, feu, froid). Le personnage ajoute +1 au DD de tous les jets de sauvegarde contre les sorts infligeant des dégâts du type d’énergie choisi.</benefit>
     </feat>
-    <feat id="élément-supérieur">
+    <feat id="élément-supérieur" name="Élément supérieur">
       <source id="apg">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élément supérieur.ashx">Wiki Pathfinder-fr.org</reference>
         </references>
       </source>
-      <name>Élément supérieur</name>
       <types>
         <type>general</type>
       </types>
@@ -9233,4 +9100,5 @@ Normal. Le personnage ne peut pas attaquer au cours d’une retraite.</benefit>
       <benefit>Le DD de tous les jets de sauvegarde contre les sorts qui infligent des dégâts du type choisi et qui sont lancés par le personnage augmente de +1. Ce bonus se cumule avec celui offert par le don Élément renforcé.</benefit>
     </feat>
   </feats>
+  <monsters />
 </dataSet>
