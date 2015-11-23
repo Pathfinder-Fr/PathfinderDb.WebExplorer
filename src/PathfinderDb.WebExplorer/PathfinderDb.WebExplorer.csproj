@@ -54,8 +54,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\packages\Newtonsoft.Json.4.5.10\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="PathfinderDb.Schema">
-      <HintPath>..\..\packages\PathfinderDb.Schema.0.1.0-pre201511212054\lib\portable-net40+sl50+win+wp80\PathfinderDb.Schema.dll</HintPath>
+    <Reference Include="PathfinderDb.Schema, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PathfinderDb.Schema.1.0.0\lib\portable-net40+sl5+win\PathfinderDb.Schema.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -151,6 +152,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="App_Data\apg.xml" />
     <Content Include="App_Data\bestiary.xml" />
+    <Content Include="App_Data\bestiary2.xml" />
+    <Content Include="App_Data\bestiary3.xml" />
     <Content Include="App_Data\pfrpg.xml" />
     <Content Include="App_Data\uc.xml" />
     <Content Include="App_Data\um.xml" />
