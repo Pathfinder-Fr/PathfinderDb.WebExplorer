@@ -39,23 +39,5 @@
 
             return this.View(model);
         }
-
-        private string AsLevelGroup(int level)
-        {
-            switch (level)
-            {
-                case 0: return "Oraison/Tour";
-                case 1: return "Niveau 1";
-                case 2: return "Niveau 2";
-                case 3: return "Niveau 3";
-                case 4: return "Niveau 4";
-                case 5: return "Niveau 5";
-                case 6: return "Niveau 6";
-                case 7: return "Niveau 7";
-                case 8: return "Niveau 8";
-                case 9: return "Niveau 9";
-                default: return "Niveau ??";
-            }
-        }
     }
 }
