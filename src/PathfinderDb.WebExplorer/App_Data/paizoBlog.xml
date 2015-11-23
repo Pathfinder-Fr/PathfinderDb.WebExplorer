@@ -4,7 +4,7 @@
     <source id="paizoBlog" />
   </sources>
   <spells>
-    <spell id="breeze" school="evocation" descriptor="air">
+    <spell id="brise" school="evocation" descriptor="air">
       <source id="paizoBlog">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brise.ashx">Wiki Pathfinder-fr.org</reference>
@@ -17,7 +17,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Breeze</entry>
         </language>
       </localization>
@@ -33,7 +33,7 @@
       <spellResistance resist="true" />
       <summary />
     </spell>
-    <spell id="jolt" school="transmutation" descriptor="electricity">
+    <spell id="choc" school="transmutation" descriptor="electricity">
       <source id="paizoBlog">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Choc.ashx">Wiki Pathfinder-fr.org</reference>
@@ -46,7 +46,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Jolt</entry>
         </language>
       </localization>
@@ -62,7 +62,7 @@
       <spellResistance resist="true" />
       <summary />
     </spell>
-    <spell id="drench" school="conjuration" descriptor="water">
+    <spell id="détremper" school="conjuration" descriptor="water">
       <source id="paizoBlog">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Détremper.ashx">Wiki Pathfinder-fr.org</reference>
@@ -75,7 +75,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Drench</entry>
         </language>
       </localization>
@@ -91,7 +91,7 @@
       <spellResistance resist="true" objects="true" />
       <summary />
     </spell>
-    <spell id="penumbra" school="evocation" descriptor="darkness">
+    <spell id="pénombre" school="evocation" descriptor="darkness">
       <source id="paizoBlog">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pénombre.ashx">Wiki Pathfinder-fr.org</reference>
@@ -104,7 +104,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Penumbra</entry>
         </language>
       </localization>
@@ -120,7 +120,7 @@
       <spellResistance resist="true" />
       <summary />
     </spell>
-    <spell id="root" school="transmutation" descriptor="earth">
+    <spell id="racine" school="transmutation" descriptor="earth">
       <source id="paizoBlog">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Racine.ashx">Wiki Pathfinder-fr.org</reference>
@@ -133,7 +133,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Root</entry>
         </language>
       </localization>
@@ -162,7 +162,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Scoop</entry>
         </language>
       </localization>

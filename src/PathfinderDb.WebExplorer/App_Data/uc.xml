@@ -4,7 +4,7 @@
     <source id="uc" />
   </sources>
   <spells>
-    <spell id="abundant-ammunition" school="conjuration">
+    <spell id="abondance-de-munitions" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Abondance de munitions.ashx">Wiki Pathfinder-fr.org</reference>
@@ -13,7 +13,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Abundant Ammunition</entry>
         </language>
       </localization>
@@ -31,7 +31,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Les munitions non magiques se régénèrent à chaque round.</summary>
     </spell>
-    <spell id="absorb-toxicity" school="necromancy">
+    <spell id="absorption-de-toxine" school="necromancy">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Absorption de toxine.ashx">Wiki Pathfinder-fr.org</reference>
@@ -40,7 +40,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Absorb Toxicity</entry>
         </language>
       </localization>
@@ -67,7 +67,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Adoration</entry>
         </language>
       </localization>
@@ -85,7 +85,7 @@
       <spellResistance resist="true" />
       <summary>Le personnage gagne un bonus aux tests de Diplomatie et de combat de spectacle.</summary>
     </spell>
-    <spell id="forest-friend" school="abjuration">
+    <spell id="ami-de-la-forêt" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ami de la forêt.ashx">Wiki Pathfinder-fr.org</reference>
@@ -94,7 +94,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Forest Friend</entry>
         </language>
       </localization>
@@ -110,7 +110,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Les plantes forestières se montrent serviables envers le personnage et ses alliés au lieu d’entraver leurs déplacements.</summary>
     </spell>
-    <spell id="nondetection-communal" school="abjuration">
+    <spell id="antidétection-(partagé)" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Antidétection (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -119,7 +119,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Nondetection, Communal</entry>
         </language>
       </localization>
@@ -136,7 +136,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Comme antidétection mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="siege-of-trees-greater" school="transmutation">
+    <spell id="arbres-de-siège-supérieur" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arbres de siège supérieur.ashx">Wiki Pathfinder-fr.org</reference>
@@ -145,7 +145,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Siege of Trees, Greater</entry>
         </language>
       </localization>
@@ -160,7 +160,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Comme arbres de siège mais transforme aussi des arbres TG ou Gig en catapultes végétales de même taille.</summary>
     </spell>
-    <spell id="siege-of-trees" school="transmutation">
+    <spell id="arbres-de-siège" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arbres de siège.ashx">Wiki Pathfinder-fr.org</reference>
@@ -169,7 +169,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Siege of Trees</entry>
         </language>
       </localization>
@@ -184,7 +184,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Transforme des arbres G en catapultes végétales de même taille.</summary>
     </spell>
-    <spell id="bowstaff" school="transmutation">
+    <spell id="arc-bâton" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arc-bâton.ashx">Wiki Pathfinder-fr.org</reference>
@@ -193,7 +193,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Bowstaff</entry>
         </language>
       </localization>
@@ -211,7 +211,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Un arc court peut servir de gourdin et un arc long de bâton.</summary>
     </spell>
-    <spell id="returning-weapon-communal" school="conjuration">
+    <spell id="arme-boomerang-(partagé)" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme boomerang (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -220,7 +220,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Returning Weapon, Communal</entry>
         </language>
       </localization>
@@ -243,7 +243,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Comme arme boomerang mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="returning-weapon" school="conjuration">
+    <spell id="arme-boomerang" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme boomerang.ashx">Wiki Pathfinder-fr.org</reference>
@@ -252,7 +252,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Returning Weapon</entry>
         </language>
       </localization>
@@ -275,7 +275,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Donne la propriété  boomerang à une arme.</summary>
     </spell>
-    <spell id="unerring-weapon" school="transmutation">
+    <spell id="arme-infaillible" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme infaillible.ashx">Wiki Pathfinder-fr.org</reference>
@@ -284,7 +284,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Unerring Weapon</entry>
         </language>
       </localization>
@@ -303,7 +303,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Bonus de +2 qui augmente de +1 tous les quatre niveaux de lanceur de sorts aux jets d’attaque pour confirmer un coup critique.</summary>
     </spell>
-    <spell id="warding-weapon" school="abjuration">
+    <spell id="arme-protectrice" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme protectrice.ashx">Wiki Pathfinder-fr.org</reference>
@@ -312,7 +312,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Warding Weapon</entry>
         </language>
       </localization>
@@ -328,7 +328,7 @@
       <castingTime value="1" />
       <summary>L’arme que le personnage utilise comme focalisateur du sort le protège et lui permet de lancer des sorts sans provoquer d’attaque d’opportunité.</summary>
     </spell>
-    <spell id="effortless-armor" school="transmutation">
+    <spell id="armure-sans-effort" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure sans effort.ashx">Wiki Pathfinder-fr.org</reference>
@@ -337,7 +337,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Effortless Armor</entry>
         </language>
       </localization>
@@ -356,7 +356,7 @@
       <castingTime value="1" />
       <summary>L’armure du personnage ne réduit plus sa vitesse de déplacement.</summary>
     </spell>
-    <spell id="animal-aspect-greater" school="transmutation">
+    <spell id="aspect-animal-supérieur" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aspect animal supérieur.ashx">Wiki Pathfinder-fr.org</reference>
@@ -365,7 +365,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Animal Aspect, Greater</entry>
         </language>
       </localization>
@@ -385,7 +385,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme aspect animal mais donne droit à deux avantages animaux.</summary>
     </spell>
-    <spell id="animal-aspect" school="transmutation">
+    <spell id="aspect-animal" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aspect animal.ashx">Wiki Pathfinder-fr.org</reference>
@@ -394,7 +394,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Animal Aspect</entry>
         </language>
       </localization>
@@ -414,7 +414,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Le personnage bénéficie des avantages d’un animal.</summary>
     </spell>
-    <spell id="haunted-fey-aspect" school="illusion">
+    <spell id="aspect-de-fée-hantée" school="illusion">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aspect de fée hantée.ashx">Wiki Pathfinder-fr.org</reference>
@@ -423,7 +423,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Haunted Fey Aspect</entry>
         </language>
       </localization>
@@ -438,7 +438,7 @@
       <castingTime value="1" />
       <summary>Le personnage s’entoure d’illusions inquiétantes.</summary>
     </spell>
-    <spell id="frightful-aspect" school="transmutation">
+    <spell id="aspect-terrifiant" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aspect terrifiant.ashx">Wiki Pathfinder-fr.org</reference>
@@ -447,7 +447,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Frightful Aspect</entry>
         </language>
       </localization>
@@ -465,7 +465,7 @@
       <castingTime value="1" />
       <summary>Le personnage se transforme en une version G terrifiante de lui-même et émet une aura qui secoue ou effraye les créatures.</summary>
     </spell>
-    <spell id="telekinetic-assembly" school="transmutation">
+    <spell id="assemblage-par-télékinésie" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assemblage par télékinésie.ashx">Wiki Pathfinder-fr.org</reference>
@@ -474,7 +474,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Telekinetic Assembly</entry>
         </language>
       </localization>
@@ -490,7 +490,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Le personnage a besoin d’un ouvrier de moins par tranche de deux niveaux de lanceur de sorts pour assembler une arme de siège.</summary>
     </spell>
-    <spell id="reloading-hands" school="conjuration">
+    <spell id="assistant-de-chargement" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assistant de chargement.ashx">Wiki Pathfinder-fr.org</reference>
@@ -499,7 +499,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Reloading Hands</entry>
         </language>
       </localization>
@@ -517,7 +517,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Charge un tir dans une arme, à chaque round.</summary>
     </spell>
-    <spell id="adjuring-step" school="abjuration" descriptor="force">
+    <spell id="avancée-assurée" school="abjuration" descriptor="force">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Avancée assurée.ashx">Wiki Pathfinder-fr.org</reference>
@@ -526,7 +526,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Adjuring Step</entry>
         </language>
       </localization>
@@ -545,7 +545,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Le personnage peut avancer lentement et sûrement tout en lançant des sorts tant qu’il n’accélère pas, qu’il n’attaque pas et qu’il ne lance pas de sorts offensifs.</summary>
     </spell>
-    <spell id="named-bullet-greater" school="divination">
+    <spell id="balle-dédiée-supérieure" school="divination">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balle dédiée supérieure.ashx">Wiki Pathfinder-fr.org</reference>
@@ -554,7 +554,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Named Bullet, Greater</entry>
         </language>
       </localization>
@@ -573,7 +573,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Comme balle dédiée mais inflige 2 points de dégâts par niveau de lanceur de sorts.</summary>
     </spell>
-    <spell id="named-bullet" school="divination">
+    <spell id="balle-dédiée" school="divination">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balle dédiée.ashx">Wiki Pathfinder-fr.org</reference>
@@ -582,7 +582,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Named Bullet</entry>
         </language>
       </localization>
@@ -601,7 +601,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Les munitions sont plus précises si elles visent un certain type de créature.</summary>
     </spell>
-    <spell id="ablative-barrier" school="conjuration" descriptor="force">
+    <spell id="barrière-protectrice" school="conjuration" descriptor="force">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barrière protectrice.ashx">Wiki Pathfinder-fr.org</reference>
@@ -610,7 +610,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Ablative Barrier</entry>
         </language>
       </localization>
@@ -628,7 +628,7 @@
       <savingThrow target="will" effect="negates" />
       <summary>Entoure la cible de couches de force.</summary>
     </spell>
-    <spell id="shock-shield" school="abjuration">
+    <spell id="bouclier-de-foudre" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier de foudre.ashx">Wiki Pathfinder-fr.org</reference>
@@ -637,7 +637,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Shock Shield</entry>
         </language>
       </localization>
@@ -653,7 +653,7 @@
       <castingTime value="1" />
       <summary>Un bouclier de force protège le personnage jusqu’à ce qu’il le renvoie dans une explosion de foudre.</summary>
     </spell>
-    <spell id="bullet-shield" school="abjuration">
+    <spell id="bouclier-pare-balles" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier pare-balles.ashx">Wiki Pathfinder-fr.org</reference>
@@ -662,7 +662,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Bullet Shield</entry>
         </language>
       </localization>
@@ -679,7 +679,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Le personnage gagne un bonus de parade de +4 à la CA contre les armes à feu.</summary>
     </spell>
-    <spell id="air-bubble" school="conjuration">
+    <spell id="bulle-dair" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bulle dair.ashx">Wiki Pathfinder-fr.org</reference>
@@ -688,7 +688,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Air Bubble</entry>
         </language>
       </localization>
@@ -709,7 +709,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Crée une petite poche d’air autour de la tête du personnage ou autour d’un objet.</summary>
     </spell>
-    <spell id="illusion-of-calm" school="illusion">
+    <spell id="calme-illusoire" school="illusion">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Calme illusoire.ashx">Wiki Pathfinder-fr.org</reference>
@@ -718,7 +718,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Illusion of Calm</entry>
         </language>
       </localization>
@@ -735,7 +735,7 @@
       <savingThrow target="will" effect="disbelief" />
       <summary>On dirait que le personnage est immobile alors qu’il agit.</summary>
     </spell>
-    <spell id="arcane-cannon" school="transmutation">
+    <spell id="canon-arcanique" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Canon arcanique.ashx">Wiki Pathfinder-fr.org</reference>
@@ -744,7 +744,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Arcane Cannon</entry>
         </language>
       </localization>
@@ -759,7 +759,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Le focalisateur du personnage devient un canon magique qui tire de son propre chef.</summary>
     </spell>
-    <spell id="chain-of-perdition" school="evocation" descriptor="force">
+    <spell id="chaîne-de-perdition" school="evocation" descriptor="force">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaîne de perdition.ashx">Wiki Pathfinder-fr.org</reference>
@@ -768,7 +768,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Chain of Perdition</entry>
         </language>
       </localization>
@@ -786,7 +786,7 @@
       <spellResistance resist="true" />
       <summary>Crée une chaîne de force flottante.</summary>
     </spell>
-    <spell id="phantom-chariot" school="conjuration">
+    <spell id="char-fantôme" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Char fantôme.ashx">Wiki Pathfinder-fr.org</reference>
@@ -795,7 +795,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Phantom Chariot</entry>
         </language>
       </localization>
@@ -810,7 +810,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Invoque un carrosse quasi-réel tiré par quatre chevaux.</summary>
     </spell>
-    <spell id="ant-haul-communal" school="transmutation">
+    <spell id="charge-de-fourmi-(partagé)" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge de fourmi (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -819,7 +819,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Ant Haul, Communal</entry>
         </language>
       </localization>
@@ -841,7 +841,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme charge de fourmi mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="telekinetic-charge" school="evocation">
+    <spell id="charge-télékinétique" school="evocation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge télékinétique.ashx">Wiki Pathfinder-fr.org</reference>
@@ -850,7 +850,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Telekinetic Charge</entry>
         </language>
       </localization>
@@ -866,7 +866,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Propulse un allié dans les airs.</summary>
     </spell>
-    <spell id="frost-fall" school="evocation">
+    <spell id="chute-de-température" school="evocation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chute de température.ashx">Wiki Pathfinder-fr.org</reference>
@@ -875,7 +875,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Frost Fall</entry>
         </language>
       </localization>
@@ -893,7 +893,7 @@
       <spellResistance resist="true" />
       <summary>La zone se couvre d’un froid glacial.</summary>
     </spell>
-    <spell id="phantom-driver" school="conjuration">
+    <spell id="conducteur-fantôme" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conducteur fantôme.ashx">Wiki Pathfinder-fr.org</reference>
@@ -902,7 +902,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Phantom Driver</entry>
         </language>
       </localization>
@@ -919,7 +919,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Convoque un fantôme pour conduire un véhicule.</summary>
     </spell>
-    <spell id="deadeye's-lore" school="divination">
+    <spell id="connaissances-du-borgne" school="divination">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances du Borgne.ashx">Wiki Pathfinder-fr.org</reference>
@@ -928,7 +928,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Deadeye's Lore</entry>
         </language>
       </localization>
@@ -947,7 +947,7 @@
       <castingTime unit="round" value="1" />
       <summary>Le personnage gagne un bonus de +4 aux tests de Survie et peut suivre une piste alors qu’il se déplace au maximum de sa vitesse.</summary>
     </spell>
-    <spell id="mutagenic-touch" school="transmutation">
+    <spell id="contact-mutagène" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contact mutagène.ashx">Wiki Pathfinder-fr.org</reference>
@@ -956,7 +956,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Mutagenic Touch</entry>
         </language>
       </localization>
@@ -972,7 +972,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Le personnage transmet une version affaiblie de son mutagène à autrui.</summary>
     </spell>
-    <spell id="thunder-fire" school="transmutation">
+    <spell id="coup-tonitruant" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup tonitruant.ashx">Wiki Pathfinder-fr.org</reference>
@@ -981,7 +981,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Thunder Fire</entry>
         </language>
       </localization>
@@ -999,7 +999,7 @@
       <spellResistance resist="special">oui (inoffensif), voir texte</spellResistance>
       <summary>Les munitions de l’arme ciblée rendent les adversaires sourds.</summary>
     </spell>
-    <spell id="wreath-of-blades" school="abjuration">
+    <spell id="couronne-de-lames" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Couronne de lames.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1008,7 +1008,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Wreath of Blades</entry>
         </language>
       </localization>
@@ -1027,7 +1027,7 @@
       <spellResistance>non (spécial, voir texte)</spellResistance>
       <summary>Quatre lames de mithral tournoient autour du personnage, attaquent les créatures voisines et le protègent contre les attaques d’opportunité quand il lance un sort.</summary>
     </spell>
-    <spell id="phantom-steed-communal" school="conjuration">
+    <spell id="coursier-fantôme-(partagé)" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coursier fantôme (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -1036,7 +1036,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Phantom Steed, Communal</entry>
         </language>
       </localization>
@@ -1053,7 +1053,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Comme coursier fantôme mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="mask-dweomer-communal" school="illusion">
+    <spell id="dissimuler-la-magie-(partagé)" school="illusion">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dissimuler la magie (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -1062,7 +1062,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Mask Dweomer, Communal</entry>
         </language>
       </localization>
@@ -1077,7 +1077,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Comme dissimuler la magie mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="twisted-space" school="transmutation">
+    <spell id="distorsion-spatiale" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Distorsion spatiale.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1086,7 +1086,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Twisted Space</entry>
         </language>
       </localization>
@@ -1104,7 +1104,7 @@
       <spellResistance resist="true" />
       <summary>Les attaques de la créature ciblée atterrissent dans une case aléatoire au lieu de celle qu’elle avait prévue.</summary>
     </spell>
-    <spell id="tongues-communal" school="divination">
+    <spell id="don-des-langues-(partagé)" school="divination">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Don des langues (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -1113,7 +1113,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Tongues, Communal</entry>
         </language>
       </localization>
@@ -1134,7 +1134,7 @@
       <savingThrow target="will" effect="negates" />
       <summary>Comme don des langues mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="burst-of-speed" school="transmutation">
+    <spell id="élan-de-rapidité" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élan de rapidité.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1143,7 +1143,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Burst of Speed</entry>
         </language>
       </localization>
@@ -1163,7 +1163,7 @@
       <savingThrow target="none" effect="none" />
       <summary>La vitesse du personnage augmente. Quand il se déplace, il ignore les attaques d’opportunité et peut traverser l’espace occupé par des créatures plus grandes que lui.</summary>
     </spell>
-    <spell id="endure-elements-communal" school="abjuration">
+    <spell id="endurance-aux-énergies-destructives-(partagé)" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Endurance aux énergies destructives (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -1172,7 +1172,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Endure Elements, Communal</entry>
         </language>
       </localization>
@@ -1194,7 +1194,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme endurance aux énergies destructives mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="magic-siege-engine-greater" school="transmutation">
+    <spell id="engin-de-siège-magique-supérieur" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Engin de siège magique supérieur.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1203,7 +1203,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Magic Siege Engine, Greater</entry>
         </language>
       </localization>
@@ -1224,7 +1224,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>L’engin de siège gagne un bonus de +1 aux jets de visée et de dégâts par tranche de quatre niveaux de lanceur de sorts.</summary>
     </spell>
-    <spell id="magic-siege-engine" school="transmutation">
+    <spell id="engin-de-siège-magique" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Engin de siège magique.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1233,7 +1233,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Magic Siege Engine</entry>
         </language>
       </localization>
@@ -1254,7 +1254,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>L’engin de siège gagne un bonus de +1 aux jets de visée et de dégâts.</summary>
     </spell>
-    <spell id="mind-blank-communal" school="abjuration">
+    <spell id="esprit-impénétrable-(partagé)" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit impénétrable (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -1263,7 +1263,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Mind Blank, Communal</entry>
         </language>
       </localization>
@@ -1280,7 +1280,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme  esprit impénétrable mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="fabricate-bullets" school="transmutation">
+    <spell id="fabrication-de-balles" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fabrication de balles.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1289,7 +1289,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Fabricate Bullets</entry>
         </language>
       </localization>
@@ -1304,7 +1304,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Convertit 0,5 kg de métal en munitions.</summary>
     </spell>
-    <spell id="daybreak-arrow" school="evocation" descriptor="light">
+    <spell id="flèche-de-laube" school="evocation" descriptor="light">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flèche de laube.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1313,7 +1313,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Daybreak Arrow</entry>
         </language>
       </localization>
@@ -1332,7 +1332,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Les munitions ciblées émettent une énergie radieuse.</summary>
     </spell>
-    <spell id="divine-arrow" school="transmutation" descriptor="good">
+    <spell id="flèche-sacrée" school="transmutation" descriptor="good">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flèche sacrée.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1341,7 +1341,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Divine Arrow</entry>
         </language>
       </localization>
@@ -1356,7 +1356,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Imprègne un projectile de puissance sacrée.</summary>
     </spell>
-    <spell id="obsidian-flow" school="transmutation" descriptor="earth fire">
+    <spell id="flot-obsidien" school="transmutation" descriptor="earth fire">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flot obsidien.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1365,7 +1365,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Obsidian Flow</entry>
         </language>
       </localization>
@@ -1382,7 +1382,7 @@
       <savingThrow target="reflex" effect="partial">Réflexes, partiel, voir texte</savingThrow>
       <summary>Transforme une surface en verre fondu.</summary>
     </spell>
-    <spell id="pup-shape" school="transmutation">
+    <spell id="forme-de-bébé" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme de bébé.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1391,7 +1391,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Pup Shape</entry>
         </language>
       </localization>
@@ -1409,7 +1409,7 @@
       <spellResistance resist="true" />
       <summary>Le personnage transforme un animal ou une créature magique en une version plus jeune et plus mignonne d’elle-même, pour une courte durée.</summary>
     </spell>
-    <spell id="dust-form" school="transmutation">
+    <spell id="forme-de-poussière" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme de poussière.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1418,7 +1418,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Dust Form</entry>
         </language>
       </localization>
@@ -1436,7 +1436,7 @@
       <castingTime value="1" />
       <summary>Le personnage devient temporairement une créature intangible faite de poussière.</summary>
     </spell>
-    <spell id="mirror-strike" school="transmutation">
+    <spell id="frappe-miroir" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe miroir.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1445,7 +1445,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Mirror Strike</entry>
         </language>
       </localization>
@@ -1460,7 +1460,7 @@
       <castingTime value="1" />
       <summary>Le personnage frappe plusieurs adversaires lors d’une seule attaque.</summary>
     </spell>
-    <spell id="compel-hostility" school="enchantment">
+    <spell id="hostilité-forcée" school="enchantment">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hostilité forcée.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1469,7 +1469,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Compel Hostility</entry>
         </language>
       </localization>
@@ -1492,7 +1492,7 @@
       <spellResistance resist="special">voir texte</spellResistance>
       <summary>Oblige les adversaires à attaquer le personnage au lieu de ses alliés.</summary>
     </spell>
-    <spell id="shocking-image" school="illusion">
+    <spell id="image-de-foudre" school="illusion">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Image de foudre.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1501,7 +1501,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Shocking Image</entry>
         </language>
       </localization>
@@ -1518,7 +1518,7 @@
       <spellResistance resist="special">voir texte</spellResistance>
       <summary>Comme image miroir mais le double inflige des dégâts électriques quand on le détruit.</summary>
     </spell>
-    <spell id="spontaneous-immolation" school="evocation">
+    <spell id="immolation-spontanée" school="evocation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immolation spontanée.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1527,7 +1527,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Spontaneous Immolation</entry>
         </language>
       </localization>
@@ -1543,7 +1543,7 @@
       <spellResistance resist="true" />
       <summary>La cible subit 3d6 points de dégâts de feu et s’enflamme.</summary>
     </spell>
-    <spell id="spell-immunity-communal" school="abjuration">
+    <spell id="immunité-contre-les-sorts-(partagé)" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immunité contre les sorts (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -1552,7 +1552,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Spell Immunity, Communal</entry>
         </language>
       </localization>
@@ -1570,7 +1570,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme  immunité contre les sorts mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="spell-immunity-greater-communal" school="abjuration">
+    <spell id="immunité-contre-les-sorts-suprême-(partagé)" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immunité contre les sorts suprême (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -1579,7 +1579,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Spell Immunity, Greater Communal</entry>
         </language>
       </localization>
@@ -1596,7 +1596,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme immunité contre les sorts suprême mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="touch-injection" school="transmutation">
+    <spell id="injection" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Injection.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1605,7 +1605,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Touch Injection</entry>
         </language>
       </localization>
@@ -1621,7 +1621,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Le personnage peut administrer une infusion, un élixir, un poison ou une potion par une attaque de contact.</summary>
     </spell>
-    <spell id="moment-of-greatness" school="enchantment">
+    <spell id="instant-de-gloire" school="enchantment">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Instant de gloire.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1630,7 +1630,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Moment of Greatness</entry>
         </language>
       </localization>
@@ -1649,7 +1649,7 @@
       <spellResistance resist="true" />
       <summary>Double un bonus de moral.</summary>
     </spell>
-    <spell id="instrument-of-agony" school="transmutation">
+    <spell id="instrument-dagonie" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Instrument dagonie.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1658,7 +1658,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Instrument of Agony</entry>
         </language>
       </localization>
@@ -1677,7 +1677,7 @@
       <spellResistance resist="special">oui (inoffensif, objet), voir texte</spellResistance>
       <summary>L’arme émet une fureur divine qui donne un bonus aux tests d’Intimidation.</summary>
     </spell>
-    <spell id="blistering-invective" school="evocation">
+    <spell id="invective-cuisante" school="evocation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invective cuisante.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1686,7 +1686,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Blistering Invective</entry>
         </language>
       </localization>
@@ -1704,7 +1704,7 @@
       <spellResistance resist="special">spécial, voir plus bas</spellResistance>
       <summary>Le personnage fait un test d’Intimidation contre tous les adversaires situés dans les 9 (M). Ceux qu’il démoralise subissent des dégâts de feu.</summary>
     </spell>
-    <spell id="heroic-invocation" school="enchantment">
+    <spell id="invocation-héroïque" school="enchantment">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invocation héroïque.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1713,7 +1713,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Heroic Invocation</entry>
         </language>
       </localization>
@@ -1730,7 +1730,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Des créatures bénéficient de bonus aux jets d’attaque et de dégâts, de points de vie temporaires et d’une immunité contre les effets de peur et de charme.</summary>
     </spell>
-    <spell id="deadly-juggernaut" school="necromancy">
+    <spell id="juggernaut-mortel" school="necromancy">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Juggernaut mortel.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1739,7 +1739,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Deadly Juggernaut</entry>
         </language>
       </localization>
@@ -1757,7 +1757,7 @@
       <castingTime value="1" />
       <summary>La puissance du personnage augmente à chaque fois qu’il tue.</summary>
     </spell>
-    <spell id="hostile-juxtaposition-greater" school="conjuration">
+    <spell id="juxtaposition-hostile-supérieure" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Juxtaposition hostile supérieure.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1766,7 +1766,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Hostile Juxtaposition, Greater</entry>
         </language>
       </localization>
@@ -1784,7 +1784,7 @@
       <spellResistance resist="true" />
       <summary>Le personnage peut viser une créature de plus tous les quatre niveaux de lanceur de sorts.</summary>
     </spell>
-    <spell id="hostile-juxtaposition" school="conjuration">
+    <spell id="juxtaposition-hostile" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Juxtaposition hostile.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1793,7 +1793,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Hostile Juxtaposition</entry>
         </language>
       </localization>
@@ -1811,7 +1811,7 @@
       <spellResistance resist="true" />
       <summary>Le personnage crée un lien dimensionnel entre la créature visée et sa personne. Ils échangent de place.</summary>
     </spell>
-    <spell id="hostile-levitation" school="transmutation">
+    <spell id="lévitation-hostile" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lévitation hostile.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1820,7 +1820,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Hostile Levitation</entry>
         </language>
       </localization>
@@ -1837,7 +1837,7 @@
       <spellResistance resist="true" />
       <summary>Fait léviter la créature visée.</summary>
     </spell>
-    <spell id="summoner-conduit" school="necromancy">
+    <spell id="lien-avec-linvocateur" school="necromancy">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lien avec linvocateur.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1846,7 +1846,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Summoner Conduit</entry>
         </language>
       </localization>
@@ -1866,7 +1866,7 @@
       <spellResistance resist="true" />
       <summary>La cible subit des dégâts à chaque fois que ses créatures invoquées en reçoivent.</summary>
     </spell>
-    <spell id="life-conduit-greater" school="conjuration">
+    <spell id="lien-de-vie-supérieur" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lien de vie supérieur.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1875,7 +1875,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Life Conduit, Greater</entry>
         </language>
       </localization>
@@ -1889,7 +1889,7 @@
       <castingTime value="1" />
       <summary>Le personnage peut transférer 3d6 points de vie à son eidolon par une action rapide.</summary>
     </spell>
-    <spell id="life-conduit" school="conjuration">
+    <spell id="lien-de-vie" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lien de vie.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1898,7 +1898,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Life Conduit</entry>
         </language>
       </localization>
@@ -1912,7 +1912,7 @@
       <castingTime value="1" />
       <summary>Le personnage se lie encore plus étroitement avec son eidolon et peut utiliser le pouvoir lien vital pour partager ses points de vie avec lui.</summary>
     </spell>
-    <spell id="companion-mind-link" school="enchantment">
+    <spell id="lien-mental-avec-le-compagnon" school="enchantment">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lien mental avec le compagnon.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1921,7 +1921,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Companion Mind Link</entry>
         </language>
       </localization>
@@ -1936,7 +1936,7 @@
       <castingTime value="1" />
       <summary>Le personnage peut parler avec son compagnon animal et le gère avec une facilité surnaturelle.</summary>
     </spell>
-    <spell id="litany-of-defense" school="transmutation">
+    <spell id="litanie-de-défense" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie de défense.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1945,7 +1945,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Defense</entry>
         </language>
       </localization>
@@ -1963,7 +1963,7 @@
       <spellResistance resist="true" />
       <summary>Double le bonus d’altération d’une armure.</summary>
     </spell>
-    <spell id="litany-of-weakness" school="necromancy" descriptor="languageDependent">
+    <spell id="litanie-de-faiblesse" school="necromancy" descriptor="languageDependent">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie de faiblesse.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1972,7 +1972,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Weakness</entry>
         </language>
       </localization>
@@ -1989,7 +1989,7 @@
       <spellResistance resist="true" />
       <summary>Une cible est fatiguée pour 1 round.</summary>
     </spell>
-    <spell id="litany-of-madness" school="enchantment" descriptor="languageDependent">
+    <spell id="litanie-de-folie" school="enchantment" descriptor="languageDependent">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie de folie.ashx">Wiki Pathfinder-fr.org</reference>
@@ -1998,7 +1998,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Madness</entry>
         </language>
       </localization>
@@ -2015,7 +2015,7 @@
       <spellResistance resist="true" />
       <summary>Une cible est confuse pour au moins 1 round.</summary>
     </spell>
-    <spell id="litany-of-escape" school="conjuration" descriptor="languageDependent">
+    <spell id="litanie-de-fuite" school="conjuration" descriptor="languageDependent">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie de fuite.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2024,7 +2024,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Escape</entry>
         </language>
       </localization>
@@ -2042,7 +2042,7 @@
       <spellResistance resist="true" />
       <summary>Téléporte un allié agrippé pour le libérer.</summary>
     </spell>
-    <spell id="litany-of-sloth" school="enchantment" descriptor="languageDependent mindAffecting">
+    <spell id="litanie-de-paresse" school="enchantment" descriptor="languageDependent mindAffecting">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie de paresse.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2051,7 +2051,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Sloth</entry>
         </language>
       </localization>
@@ -2069,7 +2069,7 @@
       <spellResistance resist="true" />
       <summary>Une cible n’est plus en mesure de faire des attaques d’opportunité pendant 1 round.</summary>
     </spell>
-    <spell id="litany-of-warding" school="transmutation">
+    <spell id="litanie-de-prévention" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie de prévention.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2078,7 +2078,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Warding</entry>
         </language>
       </localization>
@@ -2094,7 +2094,7 @@
       <castingTime unit="swiftAction" value="1" />
       <summary>Deux attaques d’opportunité de plus pendant 1 round.</summary>
     </spell>
-    <spell id="litany-of-thunder" school="evocation" descriptor="languageDependent sonic">
+    <spell id="litanie-de-tonnerre" school="evocation" descriptor="languageDependent sonic">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie de tonnerre.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2103,7 +2103,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Thunder</entry>
         </language>
       </localization>
@@ -2121,7 +2121,7 @@
       <spellResistance resist="true" />
       <summary>Une cible est sourde jusqu’à ce qu’on la débarrasse de cette condition et elle est confuse pour 1 round.</summary>
     </spell>
-    <spell id="litany-of-vengeance" school="transmutation" descriptor="languageDependent">
+    <spell id="litanie-de-vengeance" school="transmutation" descriptor="languageDependent">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie de vengeance.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2130,7 +2130,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Vengeance</entry>
         </language>
       </localization>
@@ -2148,7 +2148,7 @@
       <spellResistance resist="true" />
       <summary>Les alliés qui attaquent la cible de ce sort gagnent un bonus de +5 aux jets de dégâts pendant 1 round.</summary>
     </spell>
-    <spell id="litany-of-righteousness" school="evocation" descriptor="good languageDependent">
+    <spell id="litanie-de-vertu" school="evocation" descriptor="good languageDependent">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie de vertu.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2157,7 +2157,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Righteousness</entry>
         </language>
       </localization>
@@ -2174,7 +2174,7 @@
       <spellResistance resist="true" />
       <summary>Une unique créature Mauvaise reçoit plus de dégâts de la part des créatures qui possède une aura Bonne.</summary>
     </spell>
-    <spell id="litany-of-sight" school="divination">
+    <spell id="litanie-de-vision" school="divination">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie de vision.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2183,7 +2183,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Sight</entry>
         </language>
       </localization>
@@ -2201,7 +2201,7 @@
       <spellResistance resist="true" />
       <summary>Le personnage distingue les créatures et les objets invisibles situés dans les 9 m autour de lui.</summary>
     </spell>
-    <spell id="litany-of-eloquence" school="enchantment" descriptor="languageDependent">
+    <spell id="litanie-déloquence" school="enchantment" descriptor="languageDependent">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie déloquence.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2210,7 +2210,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Eloquence</entry>
         </language>
       </localization>
@@ -2227,7 +2227,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Fascine une créature pendant 1 round.</summary>
     </spell>
-    <spell id="litany-of-entanglement" school="conjuration" descriptor="languageDependent">
+    <spell id="litanie-denchevêtrement" school="conjuration" descriptor="languageDependent">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie denchevêtrement.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2236,7 +2236,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Litany of Entanglement</entry>
         </language>
       </localization>
@@ -2254,7 +2254,7 @@
       <spellResistance resist="true" />
       <summary>Enchevêtre une créature pendant un round.</summary>
     </spell>
-    <spell id="judgment-light" school="evocation" descriptor="light">
+    <spell id="lumière-du-jugement" school="evocation" descriptor="light">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lumière du jugement.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2263,7 +2263,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Judgment Light</entry>
         </language>
       </localization>
@@ -2277,7 +2277,7 @@
       <castingTime value="1" />
       <summary>Le personnage gagne un effet supplémentaire tant que son jugement est actif.</summary>
     </spell>
-    <spell id="pilfering-hand" school="evocation">
+    <spell id="main-vagabonde" school="evocation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Main vagabonde.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2286,7 +2286,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Pilfering Hand</entry>
         </language>
       </localization>
@@ -2306,7 +2306,7 @@
       <spellResistance resist="true" objects="true" />
       <summary>Le personnage peut prendre un objet ou le manipuler de loin.</summary>
     </spell>
-    <spell id="air-walk-communal" school="transmutation">
+    <spell id="marche-dans-les-airs-(partagé)" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marche dans les airs (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -2315,7 +2315,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Air Walk, Communal</entry>
         </language>
       </localization>
@@ -2335,7 +2335,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme marche dans les airs mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="water-walk-communal" school="transmutation">
+    <spell id="marche-sur-londe-(partagé)" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marche sur londe (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -2344,7 +2344,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Water Walk, Communal</entry>
         </language>
       </localization>
@@ -2362,7 +2362,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme  marche sur l’onde mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="sun-metal" school="transmutation" descriptor="fire">
+    <spell id="métal-solaire" school="transmutation" descriptor="fire">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Métal solaire.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2371,7 +2371,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Sun Metal</entry>
         </language>
       </localization>
@@ -2390,7 +2390,7 @@
       <spellResistance resist="true" objects="true" />
       <summary>L’arme touchée émet une gerbe de flammes.</summary>
     </spell>
-    <spell id="lightning-lash-bomb-admixture" school="evocation" descriptor="electricity">
+    <spell id="mixture-pour-bombe-à-décharge-de-foudre" school="evocation" descriptor="electricity">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mixture pour bombe à décharge de foudre.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2399,7 +2399,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Lightning Lash Bomb Admixture</entry>
         </language>
       </localization>
@@ -2415,7 +2415,7 @@
       <spellResistance resist="special">spécial, voir plus bas</spellResistance>
       <summary>La bombe du personnage est agrémentée d’un sceau qui inflige des dégâts électriques à chaque fois que les cibles touchées se déplacent de 1,50 (M).</summary>
     </spell>
-    <spell id="targeted-bomb-admixture" school="transmutation">
+    <spell id="mixture-pour-bombe-ciblée" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mixture pour bombe ciblée.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2424,7 +2424,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Targeted Bomb Admixture</entry>
         </language>
       </localization>
@@ -2440,7 +2440,7 @@
       <spellResistance resist="special">spécial, voir plus bas</spellResistance>
       <summary>Améliore une bombe qui inflige plus de dégâts à une unique créature.</summary>
     </spell>
-    <spell id="viper-bomb-admixture" school="conjuration">
+    <spell id="mixture-pour-bombe-de-vipère" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mixture pour bombe de vipère.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2449,7 +2449,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Viper Bomb Admixture</entry>
         </language>
       </localization>
@@ -2463,7 +2463,7 @@
       <castingTime value="1" />
       <summary>La bombe du personnage invoque des vipères qui mordent les victimes touchées par la bombe ou son aspersion.</summary>
     </spell>
-    <spell id="caging-bomb-admixture" school="evocation" descriptor="force">
+    <spell id="mixture-pour-bombe-demprisonnement" school="evocation" descriptor="force">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mixture pour bombe demprisonnement.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2472,7 +2472,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Caging Bomb Admixture</entry>
         </language>
       </localization>
@@ -2486,7 +2486,7 @@
       <castingTime value="1" />
       <summary>La bombe du personnage crée une cage de force qui piège les créatures qui se trouvent dans le rayon d’aspersion.</summary>
     </spell>
-    <spell id="shadow-bomb-admixture" school="conjuration">
+    <spell id="mixture-pour-bombe-dombre" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mixture pour bombe dombre.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2495,7 +2495,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Shadow Bomb Admixture</entry>
         </language>
       </localization>
@@ -2511,7 +2511,7 @@
       <spellResistance resist="special">spécial, voir plus bas</spellResistance>
       <summary>La bombe du personnage recouvre sa cible d’une substance sombre qui lui donne un camouflage mais limite sa visibilité.</summary>
     </spell>
-    <spell id="languid-bomb-admixture" school="enchantment" descriptor="mindAffecting">
+    <spell id="mixture-pour-bombe-languide" school="enchantment" descriptor="mindAffecting">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mixture pour bombe languide.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2520,7 +2520,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Languid Bomb Admixture</entry>
         </language>
       </localization>
@@ -2536,7 +2536,7 @@
       <spellResistance resist="true" />
       <summary>Les créatures touchées par la bombe ou ses aspersions sont fatiguées.</summary>
     </spell>
-    <spell id="mount-communal" school="conjuration">
+    <spell id="monture-(partagé)" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Monture (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -2545,7 +2545,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Mount, Communal</entry>
         </language>
       </localization>
@@ -2563,7 +2563,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Comme monture mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="tar-pool" school="transmutation" descriptor="earth fire">
+    <spell id="nappe-de-goudron" school="transmutation" descriptor="earth fire">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nappe de goudron.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2572,7 +2572,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Tar Pool</entry>
         </language>
       </localization>
@@ -2589,7 +2589,7 @@
       <savingThrow target="reflex" effect="partial">Réflexes partiel, voir texte</savingThrow>
       <summary>Transforme la couche supérieure du sol en goudron brûlant.</summary>
     </spell>
-    <spell id="liberating-command" school="transmutation">
+    <spell id="ordre-libérateur" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ordre libérateur.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2598,7 +2598,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Liberating Command</entry>
         </language>
       </localization>
@@ -2620,7 +2620,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>La cible fait un test d’Évasion par une action immédiate avec un bonus.</summary>
     </spell>
-    <spell id="terrain-bond" school="enchantment">
+    <spell id="pacte-avec-la-terre" school="enchantment">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pacte avec la terre.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2629,7 +2629,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Terrain Bond</entry>
         </language>
       </localization>
@@ -2643,7 +2643,7 @@
       <castingTime value="1" />
       <summary>Le personnage considère l’endroit où il se trouve comme un environnement de prédilection pour la durée du sort.</summary>
     </spell>
-    <spell id="peacebond" school="abjuration">
+    <spell id="paix-forcée" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paix forcée.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2652,7 +2652,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Peacebond</entry>
         </language>
       </localization>
@@ -2670,7 +2670,7 @@
       <spellResistance resist="true" objects="true" />
       <summary>Fige une arme sur le corps de la cible.</summary>
     </spell>
-    <spell id="share-language-communal" school="divination">
+    <spell id="partage-de-la-langue-(partagé)" school="divination">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Partage de la langue (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -2679,7 +2679,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Share Language, Communal</entry>
         </language>
       </localization>
@@ -2699,7 +2699,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme partage de la langue mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="spider-climb-communal" school="transmutation">
+    <spell id="pattes-daraignée-(partagé)" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pattes daraignée (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -2708,7 +2708,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Spider Climb, Communal</entry>
         </language>
       </localization>
@@ -2727,7 +2727,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme pattes d’araignée mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="stoneskin-communal" school="abjuration">
+    <spell id="peau-de-pierre-(partagé)" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Peau de pierre (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -2736,7 +2736,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Stoneskin, Communal</entry>
         </language>
       </localization>
@@ -2756,7 +2756,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme peau de pierre mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="resinous-skin" school="transmutation">
+    <spell id="peau-résineuse" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Peau résineuse.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2765,7 +2765,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Resinous Skin</entry>
         </language>
       </localization>
@@ -2782,7 +2782,7 @@
       <savingThrow target="none" effect="special">voir texte</savingThrow>
       <summary>Le personnage gagne une RD 5/perforant et un bonus de +4 au DMD contre les tentatives de désarmement.</summary>
     </spell>
-    <spell id="tactical-acumen" school="enchantment">
+    <spell id="perspicacité-tactique" school="enchantment">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Perspicacité tactique.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2791,7 +2791,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Tactical Acumen</entry>
         </language>
       </localization>
@@ -2811,7 +2811,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Le personnage gagne un bonus supplémentaire aux jets d’attaque ou à la CA dû à sa position sur le champ de bataille.</summary>
     </spell>
-    <spell id="brow-gasher" school="necromancy">
+    <spell id="plaie-au-visage" school="necromancy">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Plaie au visage.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2820,7 +2820,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Brow Gasher</entry>
         </language>
       </localization>
@@ -2839,7 +2839,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Une arme tranchante inflige des dégâts de saignement à la tête d’un adversaire.</summary>
     </spell>
-    <spell id="pellet-blast" school="conjuration">
+    <spell id="pluie-de-plomb" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pluie de plomb.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2848,7 +2848,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Pellet Blast</entry>
         </language>
       </localization>
@@ -2865,7 +2865,7 @@
       <savingThrow target="reflex" effect="half" />
       <summary>Crée une explosion de plombs invoqués.</summary>
     </spell>
-    <spell id="certain-grip" school="transmutation">
+    <spell id="poigne-sûre" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poigne sûre.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2874,7 +2874,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Certain Grip</entry>
         </language>
       </localization>
@@ -2891,7 +2891,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Le personnage gagne un bonus de compétence de +4 aux tests d’Acrobaties et d’Escalade et au DMD.</summary>
     </spell>
-    <spell id="weaken-powder" school="transmutation">
+    <spell id="poudre-affaiblie" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poudre affaiblie.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2900,7 +2900,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Weaken Powder</entry>
         </language>
       </localization>
@@ -2918,7 +2918,7 @@
       <spellResistance resist="true" objects="true" />
       <summary>Les munitions de l’arme touchée réduisent sa portée de moitié et imposent un malus de -2 aux jets de dégâts.</summary>
     </spell>
-    <spell id="destabilize-powder" school="transmutation">
+    <spell id="poudre-instable" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poudre instable.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2927,7 +2927,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Destabilize Powder</entry>
         </language>
       </localization>
@@ -2944,7 +2944,7 @@
       <spellResistance resist="true" objects="true" />
       <summary>Les munitions de l’arme à feu visée augmentent ses risques de faire long feu.</summary>
     </spell>
-    <spell id="damp-powder" school="transmutation">
+    <spell id="poudre-mouillée" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poudre mouillée.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2953,7 +2953,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Damp Powder</entry>
         </language>
       </localization>
@@ -2971,7 +2971,7 @@
       <spellResistance resist="true" objects="true" />
       <summary>Les munitions chargées dans l’arme ciblées sont inutilisables.</summary>
     </spell>
-    <spell id="stabilize-powder" school="transmutation">
+    <spell id="poudre-stable" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poudre stable.ashx">Wiki Pathfinder-fr.org</reference>
@@ -2980,7 +2980,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Stabilize Powder</entry>
         </language>
       </localization>
@@ -2997,7 +2997,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Les munitions de l’arme ciblée diminuent les risques de long feu.</summary>
     </spell>
-    <spell id="debilitating-portent" school="enchantment">
+    <spell id="présage-débilitant" school="enchantment">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Présage débilitant.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3006,7 +3006,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Debilitating Portent</entry>
         </language>
       </localization>
@@ -3024,7 +3024,7 @@
       <spellResistance resist="true" />
       <summary>Impose un triste destin à une créature qui voit ses dégâts réduits de moitié quand elle attaque ou lance un sort.</summary>
     </spell>
-    <spell id="jolting-portent" school="evocation" descriptor="electricity">
+    <spell id="présage-traumatisant" school="evocation" descriptor="electricity">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Présage traumatisant.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3033,7 +3033,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Jolting Portent</entry>
         </language>
       </localization>
@@ -3050,7 +3050,7 @@
       <spellResistance resist="true" />
       <summary>Le destin se montre rancunier envers une créature qui reçoit des dégâts d’électricité à chaque fois qu’elle attaque ou qu’elle lance un sort.</summary>
     </spell>
-    <spell id="protection-from-law-communal" school="abjuration" descriptor="chaotic">
+    <spell id="protection-contre-la-loi-(partagé)" school="abjuration" descriptor="chaotic">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection contre la Loi (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -3059,7 +3059,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Protection from Law, Communal</entry>
         </language>
       </localization>
@@ -3081,7 +3081,7 @@
       <spellResistance>non (voir description)</spellResistance>
       <summary>Comme protection contre la Loi mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="protection-from-good-communal" school="abjuration" descriptor="evil">
+    <spell id="protection-contre-le-bien-(partagé)" school="abjuration" descriptor="evil">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection contre le Bien (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -3090,7 +3090,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Protection from Good, Communal</entry>
         </language>
       </localization>
@@ -3112,7 +3112,7 @@
       <spellResistance>non (voir description)</spellResistance>
       <summary>Comme protection contre le Bien mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="protection-from-chaos-communal" school="abjuration" descriptor="lawful">
+    <spell id="protection-contre-le-chaos-(partagé)" school="abjuration" descriptor="lawful">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection contre le Chaos (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -3121,7 +3121,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Protection from Chaos, Communal</entry>
         </language>
       </localization>
@@ -3142,7 +3142,7 @@
       <spellResistance>non (voir description)</spellResistance>
       <summary>Comme  protection contre le Chaos mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="protection-from-evil-communal" school="abjuration" descriptor="good">
+    <spell id="protection-contre-le-mal-(partagé)" school="abjuration" descriptor="good">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection contre le Mal (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -3151,7 +3151,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Protection from Evil, Communal</entry>
         </language>
       </localization>
@@ -3172,7 +3172,7 @@
       <spellResistance>non (voir description)</spellResistance>
       <summary>Comme protection contre le Mal mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="protection-from-energy-communal" school="abjuration">
+    <spell id="protection-contre-les-énergies-destructives-(partagé)" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection contre les énergies destructives (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -3181,7 +3181,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Protection from Energy, Communal</entry>
         </language>
       </localization>
@@ -3203,7 +3203,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme protection contre les énergies destructives mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="protection-from-arrows-communal" school="abjuration">
+    <spell id="protection-contre-les-projectiles-(partagé)" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection contre les projectiles (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -3212,7 +3212,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Protection from Arrows, Communal</entry>
         </language>
       </localization>
@@ -3230,7 +3230,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme  protection contre les projectiles mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="delay-poison-communal" school="conjuration" descriptor="healing">
+    <spell id="ralentissement-du-poison-(partagé)" school="conjuration" descriptor="healing">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ralentissement du poison (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -3239,7 +3239,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Delay Poison, Communal</entry>
         </language>
       </localization>
@@ -3263,7 +3263,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme ralentissement du poison mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="negative-reaction" school="illusion">
+    <spell id="réaction-négative" school="illusion">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Réaction négative.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3272,7 +3272,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Negative Reaction</entry>
         </language>
       </localization>
@@ -3291,7 +3291,7 @@
       <spellResistance resist="true" />
       <summary>La créature ciblée ne peut pas influencer positivement autrui.</summary>
     </spell>
-    <spell id="recoil-fire" school="transmutation">
+    <spell id="recul-excessif" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Recul excessif.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3300,7 +3300,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Recoil Fire</entry>
         </language>
       </localization>
@@ -3317,7 +3317,7 @@
       <spellResistance resist="true" objects="true" />
       <summary>Les tirs de l’arme à feu ciblée génèrent un recul excessif.</summary>
     </spell>
-    <spell id="reinforce-armaments-communal" school="transmutation">
+    <spell id="renforcer-larmement-(partagé)" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Renforcer larmement (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -3326,7 +3326,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Reinforce Armaments, Communal</entry>
         </language>
       </localization>
@@ -3346,7 +3346,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Comme  renforcer l’armement mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="reinforce-armaments" school="transmutation">
+    <spell id="renforcer-larmement" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Renforcer larmement.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3355,7 +3355,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Reinforce Armaments</entry>
         </language>
       </localization>
@@ -3375,7 +3375,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Mitige temporairement la propriété fragile d’une arme ou d’une armure.</summary>
     </spell>
-    <spell id="jury-rig" school="transmutation">
+    <spell id="réparation-improvisée" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Réparation improvisée.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3384,7 +3384,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Jury-Rig</entry>
         </language>
       </localization>
@@ -3404,7 +3404,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>L’objet cible n’est plus brisé.</summary>
     </spell>
-    <spell id="locate-weakness" school="divination">
+    <spell id="repérer-les-faiblesses" school="divination">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repérer les faiblesses.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3413,7 +3413,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Locate Weakness</entry>
         </language>
       </localization>
@@ -3431,7 +3431,7 @@
       <castingTime value="1" />
       <summary>Le personnage lance deux fois les dés de dégâts des coups critiques et prend les meilleurs.</summary>
     </spell>
-    <spell id="resist-energy-communal" school="abjuration">
+    <spell id="résistance-aux-énergies-destructives-(partagé)" school="abjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Résistance aux énergies destructives (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -3440,7 +3440,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Resist Energy, Communal</entry>
         </language>
       </localization>
@@ -3464,7 +3464,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme résistance aux énergies destructives mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="kinetic-reverberation" school="transmutation">
+    <spell id="réverbération-cinétique" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Réverbération cinétique.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3473,7 +3473,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Kinetic Reverberation</entry>
         </language>
       </localization>
@@ -3490,7 +3490,7 @@
       <spellResistance resist="true" objects="true" />
       <summary>Renvoie la force de l’attaque ennemie dans son arme.</summary>
     </spell>
-    <spell id="lock-gaze" school="enchantment" descriptor="mindAffecting">
+    <spell id="river-le-regard" school="enchantment" descriptor="mindAffecting">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.River le regard.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3499,7 +3499,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Lock Gaze</entry>
         </language>
       </localization>
@@ -3519,7 +3519,7 @@
       <spellResistance resist="true" />
       <summary>Oblige la cible à regarder uniquement le personnage pendant toute la durée du sort.</summary>
     </spell>
-    <spell id="bestow-weapon-proficiency" school="enchantment" descriptor="mindAffecting">
+    <spell id="savoir-manier-une-arme" school="enchantment" descriptor="mindAffecting">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Savoir manier une arme.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3528,7 +3528,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Bestow Weapon Proficiency</entry>
         </language>
       </localization>
@@ -3552,7 +3552,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Accorde le maniement d’une arme pour une courte période.</summary>
     </spell>
-    <spell id="life-conduit-improved" school="conjuration">
+    <spell id="science-du-lien-de-vie" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science du lien de vie.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3561,7 +3561,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Life Conduit, Improved</entry>
         </language>
       </localization>
@@ -3575,7 +3575,7 @@
       <castingTime value="1" />
       <summary>Transfère 2d6 points de vie à l’eidolon par une action rapide.</summary>
     </spell>
-    <spell id="qualm" school="enchantment" descriptor="mindAffecting">
+    <spell id="scrupule" school="enchantment" descriptor="mindAffecting">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scrupule.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3584,7 +3584,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Qualm</entry>
         </language>
       </localization>
@@ -3603,7 +3603,7 @@
       <spellResistance resist="true" />
       <summary>La cible a un malus aux tests de caractéristique, de compétence et de Concentration tant qu’elle n’a pas passé un round entier sans rien faire.</summary>
     </spell>
-    <spell id="fiery-shuriken" school="conjuration" descriptor="fire">
+    <spell id="shuriken-de-feu" school="conjuration" descriptor="fire">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Shuriken de feu.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3612,7 +3612,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Fiery Shuriken</entry>
         </language>
       </localization>
@@ -3628,7 +3628,7 @@
       <spellResistance resist="true" />
       <summary>Invoque des projectiles enflammés que le personnage peut lancer sur ses adversaires.</summary>
     </spell>
-    <spell id="wilderness-soldiers" school="transmutation" descriptor="fire">
+    <spell id="soldats-de-la-nature" school="transmutation" descriptor="fire">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soldats de la nature.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3637,7 +3637,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Wilderness Soldiers</entry>
         </language>
       </localization>
@@ -3653,7 +3653,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Les plantes voisines aident le personnage quand il se bat.</summary>
     </spell>
-    <spell id="symbol-of-striking" school="illusion">
+    <spell id="symbole-fatal" school="illusion">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole fatal.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3662,7 +3662,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Symbol of Striking</entry>
         </language>
       </localization>
@@ -3682,7 +3682,7 @@
       <spellResistance resist="special">oui, voir texte</spellResistance>
       <summary>Comme symbole de mort mais occupe une case de 1,50 (M).</summary>
     </spell>
-    <spell id="flash-fire" school="transmutation">
+    <spell id="tir-aveuglant" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir aveuglant.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3691,7 +3691,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Flash Fire</entry>
         </language>
       </localization>
@@ -3708,7 +3708,7 @@
       <spellResistance resist="special">oui (objet), voir texte</spellResistance>
       <summary>Les munitions de l’arme ciblée créent un éclair qui aveugle le tireur et ceux qui l’entourent.</summary>
     </spell>
-    <spell id="energy-siege-shot-greater" school="evocation">
+    <spell id="tir-dénergie-à-larme-de-siège-supérieur" school="evocation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir dénergie à larme de siège supérieur.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3717,7 +3717,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Energy Siege Shot, Greater</entry>
         </language>
       </localization>
@@ -3734,7 +3734,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Comme  tir d’énergie à l’arme de siège mais affecte un engin de n’importe quelle taille.</summary>
     </spell>
-    <spell id="energy-siege-shot" school="evocation">
+    <spell id="tir-dénergie-à-larme-de-siège" school="evocation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir dénergie à larme de siège.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3743,7 +3743,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Energy Siege Shot</entry>
         </language>
       </localization>
@@ -3760,7 +3760,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>Un engin de siège G inflige le type de dégâts d’énergie choisi par le personnage et provoque des effets supplémentaires en fonction.</summary>
     </spell>
-    <spell id="longshot" school="transmutation">
+    <spell id="tir-longue-distance" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir longue distance.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3769,7 +3769,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Longshot</entry>
         </language>
       </localization>
@@ -3789,7 +3789,7 @@
       <castingTime value="1" />
       <summary>Bonus de +3 m au facteur de portée de toutes les armes à distance.</summary>
     </spell>
-    <spell id="ricochet-shot" school="evocation">
+    <spell id="tir-par-ricochet" school="evocation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir par ricochet.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3798,7 +3798,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Ricochet Shot</entry>
         </language>
       </localization>
@@ -3815,7 +3815,7 @@
       <spellResistance resist="true" objects="true" harmless="true" />
       <summary>L’arme à projectile touchée donne la propriété ricochet à ses munitions.</summary>
     </spell>
-    <spell id="discovery-torch" school="evocation" descriptor="light">
+    <spell id="torche-révélatrice" school="evocation" descriptor="light">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Torche révélatrice.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3824,7 +3824,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Discovery Torch</entry>
         </language>
       </localization>
@@ -3842,7 +3842,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Les objets touchés émettent une vive lumière qui donne des bonus de Perception et de Psychologie.</summary>
     </spell>
-    <spell id="walk-through-space" school="conjuration">
+    <spell id="traverser-lespace" school="conjuration">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traverser lespace.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3851,7 +3851,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Walk through Space</entry>
         </language>
       </localization>
@@ -3869,7 +3869,7 @@
       <castingTime value="1" />
       <summary>Le personnage peut dépenser une action de mouvement pour se téléporter à 9 m de sa position ou pour se relever sans provoquer d’attaque d’opportunité alors qu’il était à terre.</summary>
     </spell>
-    <spell id="find-quarry" school="divination">
+    <spell id="trouver-la-proie" school="divination">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trouver la proie.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3878,7 +3878,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Find Quarry</entry>
         </language>
       </localization>
@@ -3894,7 +3894,7 @@
       <savingThrow target="none" effect="none" />
       <summary>Le personnage sent si une créature donnée se trouve dans un rayon de 30 km.</summary>
     </spell>
-    <spell id="darkvision-communal" school="transmutation">
+    <spell id="vision-dans-le-noir-(partagé)" school="transmutation">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision dans le noir (partagé).ashx">Wiki Pathfinder-fr.org</reference>
@@ -3903,7 +3903,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Darkvision, Communal</entry>
         </language>
       </localization>
@@ -3922,7 +3922,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Comme vision dans le noir mais la durée d’effet se divise entre les créatures touchées.</summary>
     </spell>
-    <spell id="see-alignment" school="divination">
+    <spell id="voir-lalignement" school="divination">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voir lalignement.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3931,7 +3931,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">See Alignment</entry>
         </language>
       </localization>
@@ -3949,7 +3949,7 @@
       <spellResistance resist="true" harmless="true" />
       <summary>Le personnage choisit un alignement. Toutes les créatures et tous les objets de cet alignement présents dans son champ de vision émettent un halo fantomatique.</summary>
     </spell>
-    <spell id="healing-thief" school="necromancy">
+    <spell id="vol-de-soins" school="necromancy">
       <source id="uc">
         <references>
           <reference href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol de soins.ashx">Wiki Pathfinder-fr.org</reference>
@@ -3958,7 +3958,7 @@
         </references>
       </source>
       <localization>
-        <language sourceId="pfrpg" xml:lang="en-US">
+        <language xml:lang="en-US">
           <entry href="name">Healing Thief</entry>
         </language>
       </localization>
